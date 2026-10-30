@@ -168,19 +168,5 @@ footer a.cb-text-white:hover {
     margin-top: 40px;
 }
 
-/* Custom Floating Badges */
-.badge-internship {
-    background-color: rgba(13, 110, 253, 0.1);
-    color: var(--cb-primary);
-}
 
-.badge-fulltime {
-    background-color: rgba(25, 135, 84, 0.1);
-    color: var(--cb-success);
-}
-
-.badge-scholarship {
-    background-color: rgba(255, 193, 7, 0.15);
-    color: #b78103;
-}
 
