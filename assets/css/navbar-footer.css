@@ -1,0 +1,186 @@
+:root {
+    --cb-primary: #0d6efd;
+    --cb-primary-dark: #0a58ca;
+    --cb-success: #198754;
+    --cb-warning: #ffc107;
+    --cb-light: #f8f9fa;
+    --cb-dark: #212529;
+    --cb-gray-100: #f1f3f5;
+    --cb-gray-200: #e9ecef;
+    --cb-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --cb-shadow-hover: 0 15px 35px rgba(13, 110, 253, 0.12);
+}
+
+body {
+    font-family: 'Kantumruy Pro', 'Inter', sans-serif;
+    color: var(--cb-dark);
+    background-color: #ffffff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .card,
+    .category-card,
+    .job-card,
+    .resource-card {
+        transition: all 0.25s ease-in-out;
+    }
+}
+
+/* Helper text colors (v6 removed .text-white) */
+.cb-text-white {
+    color: #ffffff;
+}
+
+.cb-text-white-75 {
+    color: rgba(255, 255, 255, 0.75);
+}
+
+/* Top Notification Bar */
+.top-bar {
+    background-color: #0b2239;
+    color: #ffffff;
+    font-size: 0.85rem;
+}
+
+/* Navbar Styling */
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.logo {
+    width: 180px;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--cb-primary);
+}
+
+.navbar-brand span {
+    color: var(--cb-dark);
+}
+
+.navbar .nav-link {
+    font-weight: 500;
+    color: #495057;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    color: var(--cb-primary);
+}
+.btn-group{
+    list-style: none;
+}
+
+
+/* Notification Bell Styling */
+.nav-noti-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.nav-noti-btn:hover,
+.nav-noti-btn:focus {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+
+
+/* Notification Menu: width, no inner padding, clipped rounded corners */
+.noti-menu {
+    --bs-menu-min-width: 360px;
+    --bs-menu-padding-x: 0;
+    --bs-menu-padding-y: 0;
+    width: 360px;
+    max-width: 90vw;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.noti-list {
+    max-height: 360px;
+    overflow-y: auto;
+}
+
+.noti-time {
+    font-size: 0.75rem;
+}
+
+/* Notification Icon Container Badge */
+.noti-icon {
+    width: 38px;
+    height: 38px;
+}
+
+/* Background Highlight for Unread Items */
+.noti-list .unread {
+    background-color: #f4f8ff;
+    transition: background-color 0.2s ease;
+}
+
+.noti-list .menu-item {
+    border-radius: 0;
+}
+
+.noti-list .menu-item:hover {
+    background-color: #e9ecef;
+    white-space: normal;
+}
+
+/* Footer */
+footer {
+    background-color: #0b1727;
+    color: #a0aec0;
+    font-size: 0.92rem;
+}
+
+footer h5 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+footer a {
+    color: #a0aec0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff;
+    padding-left: 4px;
+}
+
+footer a.cb-text-white,
+footer a.cb-text-white:hover {
+    color: #ffffff;
+    padding-left: 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 25px;
+    margin-top: 40px;
+}
+
+/* Custom Floating Badges */
+.badge-internship {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: var(--cb-primary);
+}
+
+.badge-fulltime {
+    background-color: rgba(25, 135, 84, 0.1);
+    color: var(--cb-success);
+}
+
+.badge-scholarship {
+    background-color: rgba(255, 193, 7, 0.15);
+    color: #b78103;
+}
+
