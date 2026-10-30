@@ -17,7 +17,9 @@ body {
     background-color: #ffffff;
 }
 
+
 @media (prefers-reduced-motion: no-preference) {
+
     .card,
     .category-card,
     .job-card,
@@ -48,10 +50,6 @@ body {
     background-color: rgba(255, 255, 255, 0.95);
 }
 
-.logo {
-    width: 180px;
-}
-
 .navbar-brand {
     font-weight: 700;
     font-size: 1.5rem;
@@ -72,10 +70,27 @@ body {
 .navbar .nav-link.active {
     color: var(--cb-primary);
 }
-.btn-group{
-    list-style: none;
+
+/* Menu  */
+.menu-item {
+    font-family: 'Kantumruy Pro' !important;
+    font-weight: 500 !important;
+    padding: 10px 10px !important;
+    font-size: 15px;
 }
 
+.menu-item:hover {
+    background-color: #65b2df;
+    color: white;
+}
+
+.hat {
+    color: #0b1727;
+}
+
+.logo {
+    width: 180px;
+}
 
 /* Notification Bell Styling */
 .nav-noti-btn {
@@ -89,6 +104,7 @@ body {
     background-color: rgba(13, 110, 253, 0.1);
     color: #0d6efd;
 }
+
 
 
 /* Notification Menu: width, no inner padding, clipped rounded corners */
@@ -167,6 +183,3 @@ footer a.cb-text-white:hover {
     padding-top: 25px;
     margin-top: 40px;
 }
-
-
-

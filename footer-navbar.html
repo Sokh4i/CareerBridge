@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CareerBridge - ស្ពានតភ្ជាប់ឱកាសការងារ និងអាហារូបករណ៍សម្រាប់យុវជនកម្ពុជា</title>
 
-    
     <!-- Google Fonts (Kantumruy Pro & Inter) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,8 +13,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
 
-    <!-- Bootstrap 5 CSS -->
-    <link href="assets/vendor/Bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap 6 CSS (replace the files in assets/vendor/Bootstrap with the v6 dist) -->
+    <link rel="stylesheet" href="assets/vendor/Bootstrap/css/bootstrap.min.css">
 
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -27,280 +26,268 @@
 <body>
 
     <!-- Top Announcement Bar -->
-    <div class="top-bar text-white py-2">
+    <div class="top-bar py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <div>
-                <span class="badge bg-warning text-dark me-2">NEW</span>
+                <span class="badge theme-warning me-3">NEW</span>
                 <small>វេទិកាការងារ & អាហារូបករណ៍លេខ១ សម្រាប់និស្សិតកម្ពុជា 🎓</small>
             </div>
-            <div class="d-none d-md-block">
+            <div class="d-none md:d-block">
                 <small><i class="fa-solid fa-graduation-cap me-1"></i> CareerBridge</small>
             </div>
         </div>
     </div>
 
     <!-- Main Navigation Bar -->
-    <nav class="navbar navbar-expand-lg sticky-top border-bottom">
+    <nav class="navbar lg:navbar-expand sticky-top border-bottom">
         <div class="container">
             <!-- Brand Logo -->
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img class="logo" src="assets/img/logo 3.png" alt="">
+                <img class="logo" src="assets/img/logo.png" alt="CareerBridge">
             </a>
 
-            <!-- Mobile Toggle -->
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarMain">
-                <span class="navbar-toggler-icon"></span>
+            <!-- Mobile Toggle (now opens a Drawer instead of Collapse) -->
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
             </button>
 
-            <!-- Nav Links -->
-            <div class="collapse navbar-collapse" id="navbarMain">
-                <ul class="navbar-nav m-auto mb-2 mb-lg-0 align-items-lg-center">
+            <!-- Nav Links (Drawer on mobile, inline from lg up) -->
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarMain" aria-labelledby="navbarMainLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarMainLabel">CareerBridge</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
 
-                    <li class="nav-item">
-                        <a class="nav-link active" href="index.html">ទំព័រដើម</a>
-                    </li>
+                <div class="drawer-body">
+                    <ul class="navbar-nav m-auto lg:mb-0 mb-3 lg:align-items-center">
 
-                    <!-- Jobs Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="jobsDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            ការងារ (Jobs)
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="jobsDropdown">
-                            <li><a class="dropdown-item" href="#featured-section"><i
-                                        class="fa-solid fa-list me-2 text-primary"></i>ការងារទាំងអស់ (All Jobs)</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#featured-section"><i
-                                        class="fa-solid fa-user-graduate me-2 text-info"></i>ការងារអនុវត្តសាជីវកម្ម
-                                    (Internship)</a></li>
-                            <li><a class="dropdown-item" href="#featured-section"><i
-                                        class="fa-solid fa-clock me-2 text-warning"></i>ការងារភាគម៉ោង (Part-time)</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#featured-section"><i
-                                        class="fa-solid fa-briefcase me-2 text-success"></i>ការងារពេញម៉ោង
-                                    (Full-time)</a></li>
-                        </ul>
-                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">ទំព័រដើម</a>
+                        </li>
 
-                    <!-- Scholarships Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="scholarshipDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            អាហារូបករណ៍
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="scholarshipDropdown">
-                            <li><a class="dropdown-item" href="#featured-section"><i
-                                        class="fa-solid fa-flag me-2 text-danger"></i>អាហារូបករណ៍ក្នុងប្រទេស (Local)</a>
-                            </li>
-                            <li><a class="dropdown-item" href="#featured-section"><i
-                                        class="fa-solid fa-globe me-2 text-primary"></i>អាហារូបករណ៍ក្រៅប្រទេស
-                                    (International)</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Career Resources Dropdown -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            ឯកសារផ្សេងៗ
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
-                            <li><a class="dropdown-item" href="#resources-section"><i
-                                        class="fa-solid fa-file-lines me-2 text-primary"></i>គន្លឹះសរសេរ CV & Cover
-                                    Letter</a></li>
-                            <li><a class="dropdown-item" href="#resources-section"><i
-                                        class="fa-solid fa-download me-2 text-success"></i>ទាញយក CV Templates
-                                    ឥតគិតថ្លៃ</a></li>
-                            <li><a class="dropdown-item" href="#resources-section"><i
-                                        class="fa-solid fa-comments me-2 text-warning"></i>គន្លឹះសម្ភាសន៍ការងារ</a></li>
-                        </ul>
-                    </li>
-
-
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact-section">ទំនាក់ទំនង</a>
-                    </li>
-                </ul>
-
-                <div class="btn-group">
-                    <!-- Notification Bell Dropdown Button -->
-                    <li class="nav-item dropdown me-2">
-                        <a class="nav-link dropdown-toggle nav-noti-btn position-relative d-flex align-items-center justify-content-center"
-                            href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false" title="ការជូនដំណឹង">
-                            <i class="fa-regular fa-bell fs-5"></i>
-                            <!-- Unread Badge Count -->
-                            <span
-                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger shadow-sm"
-                                id="notiBadge">
-                                3
-                                <span class="visually-hidden">unread notifications</span>
-                            </span>
-                        </a>
-
-                        <!-- Notification Dropdown Menu -->
-                        <div class="dropdown-menu dropdown-menu-end shadow-lg border-0 noti-dropdown p-0 mt-2"
-                            aria-labelledby="notificationDropdown">
-                            <!-- Header -->
-                            <div
-                                class="dropdown-header d-flex justify-content-between align-items-center bg-light p-3 border-bottom rounded-top">
-                                <h6 class="m-0 fw-bold text-dark fs-6">
-                                    <i class="fa-solid fa-bell text-primary me-2"></i>ការជូនដំណឹង (Notifications)
-                                </h6>
-                            </div>
-
-                            <!-- Notification Items Container -->
-                            <div class="noti-list" style="max-height: 360px; overflow-y: auto;">
-
-                                <!-- Alert 1: Application Sent -->
-                                <a class="dropdown-item p-3 border-bottom unread d-flex align-items-start gap-3"
-                                    href="#">
-                                    <div
-                                        class="noti-icon bg-success-subtle text-success rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-                                        <i class="fa-solid fa-circle-check fs-6"></i>
-                                    </div>
-                                    <div class="flex-grow-1 text-wrap">
-                                        <div class="d-flex justify-content-between align-items-center mb-1">
-                                            <strong class="text-dark small">ដាក់ពាក្យជោគជ័យ</strong>
-                                            <span class="text-muted text-xs" style="font-size: 0.75rem;">10
-                                                នាទីមុន</span>
-                                        </div>
-                                        <p class="mb-0 text-secondary small lh-sm">
-                                            ការដាក់ពាក្យរបស់អ្នកសម្រាប់ <strong>Junior Web Developer</strong>
-                                            ត្រូវបានបញ្ជូនជោគជ័យ។
-                                        </p>
-                                    </div>
-                                </a>
-
-                                <!-- Alert 2: CV Status / Interview Alert -->
-                                <a class="dropdown-item p-3 border-bottom unread d-flex align-items-start gap-3"
-                                    href="#">
-                                    <div
-                                        class="noti-icon bg-primary-subtle text-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-                                        <i class="fa-solid fa-user-tie fs-6"></i>
-                                    </div>
-                                    <div class="flex-grow-1 text-wrap">
-                                        <div class="d-flex justify-content-between align-items-center mb-1">
-                                            <strong class="text-dark small">កំពុងពិនិត្យ CV / ហៅសម្ភាសន៍</strong>
-                                            <span class="text-muted text-xs" style="font-size: 0.75rem;">2
-                                                ម៉ោងមុន</span>
-                                        </div>
-                                        <p class="mb-0 text-secondary small lh-sm">
-                                            ធនាគារ <strong>ABA Bank</strong> បានពិនិត្យ CV របស់អ្នក
-                                            និងបានអញ្ជើញអ្នកចូលរួមសម្ភាសន៍។
-                                        </p>
-                                    </div>
-                                </a>
-
-                                <!-- Alert 3: Deadline Alert -->
-                                <a class="dropdown-item p-3 unread d-flex align-items-start gap-3" href="#">
-                                    <div
-                                        class="noti-icon bg-warning-subtle text-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
-                                        <i class="fa-solid fa-triangle-exclamation fs-6"></i>
-                                    </div>
-                                    <div class="flex-grow-1 text-wrap">
-                                        <div class="d-flex justify-content-between align-items-center mb-1">
-                                            <strong class="text-dark small">ជិតផុតកំណត់ដាក់ពាក្យ</strong>
-                                            <span class="text-muted text-xs" style="font-size: 0.75rem;">1
-                                                ថ្ងៃមុន</span>
-                                        </div>
-                                        <p class="mb-0 text-secondary small lh-sm">
-                                            អាហារូបករណ៍ <strong>MEXT Japan Scholarship</strong>
-                                            នឹងផុតកំណត់ទទួលពាក្យក្នុងពេល 2 ថ្ងៃទៀត!
-                                        </p>
-                                    </div>
-                                </a>
+                        <!-- Jobs Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                ការងារ (Jobs) <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="#featured-section"><i
+                                class="fa-solid fa-user-graduate me-3 fg-info hat"></i>ការងារហាត់ការ
+                                (Internship)</a>
+                                <a class="menu-item" href="#featured-section"><i
+                                class="fa-solid fa-clock me-3 fg-warning"></i>ការងារភាគម៉ោង (Part-time)</a>
+                                <a class="menu-item" href="#featured-section"><i
+                                class="fa-solid fa-briefcase me-3 fg-success"></i>ការងារពេញម៉ោង
+                                (Full-time)</a>
 
                             </div>
+                        </li>
 
-                            <!-- Footer Link -->
-                            <div class="dropdown-footer text-center p-2 bg-light border-top rounded-bottom">
-                                <a href="applications.html" class="text-primary fw-semibold text-decoration-none small">
-                                    មើលប្រវត្តិដាក់ពាក្យទាំងអស់ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
+                        <!-- Scholarships Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                អាហារូបករណ៍ <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="#featured-section"><i
+                                class="fa-solid fa-flag me-3 fg-danger"></i>អាហារូបករណ៍ក្នុងប្រទេស (Local)</a>
+                                <a class="menu-item" href="#featured-section"><i
+                                class="fa-solid fa-globe me-3 fg-primary"></i>អាហារូបករណ៍ក្រៅប្រទេស
+                                (International)</a>
+
+                            </div>
+                        </li>
+
+                        <!-- Career Resources Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                ឯកសារផ្សេងៗ <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="#resources-section"><i
+                                class="fa-solid fa-file-lines me-3 fg-primary"></i>គន្លឹះសរសេរ CV & Cover
+                                Letter</a>
+                                <a class="menu-item" href="#resources-section"><i
+                                class="fa-solid fa-download me-3 fg-success"></i>ទាញយក CV Templates
+                                ឥតគិតថ្លៃ</a>
+                                <a class="menu-item" href="#resources-section"><i
+                                class="fa-solid fa-comments me-3 fg-warning"></i>គន្លឹះសម្ភាសន៍ការងារ</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section">ទំនាក់ទំនង</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-actions d-flex align-items-center gap-3">
+                        <!-- Notification Bell Menu -->
+                        <div class="position-relative">
+                            <button type="button"
+                                class="btn-text theme-secondary btn-icon nav-noti-btn position-relative d-flex align-items-center justify-content-center"
+                                id="notificationDropdown" data-bs-toggle="menu" data-bs-placement="bottom-end"
+                                aria-expanded="false" title="ការជូនដំណឹង" aria-label="ការជូនដំណឹង">
+                                <i class="fa-regular fa-bell fs-lg"></i>
+                                <!-- Unread Badge Count -->
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge theme-danger rounded-pill shadow-sm"
+                                    id="notiBadge">
+                                    3
+                                    <span class="visually-hidden">unread notifications</span>
+                                </span>
+                            </button>
+
+                            <!-- Notification Menu -->
+                            <div class="menu noti-menu shadow-lg">
+                                <!-- Header -->
+                                <div class="noti-header d-flex justify-content-between align-items-center bg-1 p-5 border-bottom">
+                                    <h6 class="m-0 fw-bold fg-1 fs-md">
+                                        <i class="fa-solid fa-bell fg-primary me-3"></i>ការជូនដំណឹង (Notifications)
+                                    </h6>
+                                </div>
+
+                                <!-- Notification Items Container -->
+                                <div class="noti-list">
+
+                                    <!-- Alert 1: Application Sent -->
+                                    <a class="menu-item p-5 border-bottom unread d-flex align-items-start gap-5"
+                                        href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-success fg-emphasis-success rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-circle-check fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">ដាក់ពាក្យជោគជ័យ</strong>
+                                                <span class="fg-2 noti-time">10 នាទីមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                ការដាក់ពាក្យរបស់អ្នកសម្រាប់ <strong>Junior Web Developer</strong>
+                                                ត្រូវបានបញ្ជូនជោគជ័យ។
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                    <!-- Alert 2: CV Status / Interview Alert -->
+                                    <a class="menu-item p-5 border-bottom unread d-flex align-items-start gap-5"
+                                        href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-primary fg-emphasis-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-user-tie fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">កំពុងពិនិត្យ CV / ហៅសម្ភាសន៍</strong>
+                                                <span class="fg-2 noti-time">2 ម៉ោងមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                ធនាគារ <strong>ABA Bank</strong> បានពិនិត្យ CV របស់អ្នក
+                                                និងបានអញ្ជើញអ្នកចូលរួមសម្ភាសន៍។
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                    <!-- Alert 3: Deadline Alert -->
+                                    <a class="menu-item p-5 unread d-flex align-items-start gap-5" href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-warning fg-emphasis-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-triangle-exclamation fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">ជិតផុតកំណត់ដាក់ពាក្យ</strong>
+                                                <span class="fg-2 noti-time">1 ថ្ងៃមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                អាហារូបករណ៍ <strong>MEXT Japan Scholarship</strong>
+                                                នឹងផុតកំណត់ទទួលពាក្យក្នុងពេល 2 ថ្ងៃទៀត!
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <!-- Footer Link -->
+                                <div class="noti-footer text-center p-3 bg-1 border-top">
+                                    <a href="applications.html" class="fg-primary fw-semibold text-decoration-none small">
+                                        មើលប្រវត្តិដាក់ពាក្យទាំងអស់ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </li>
-                    <!-- Auth Action Buttons -->
-                    <li class="nav-item ms-lg-3 mt-3 mt-lg-0">
-                        <a class="btn btn-outline-primary rounded-pill px-3 me-2" href="#" data-bs-toggle="modal"
-                            data-bs-target="#loginModal">ចូលប្រើ</a>
-                        <a class="btn btn-primary rounded-pill px-3 shadow-sm" href="#" data-bs-toggle="modal"
-                            data-bs-target="#registerModal">ចុះឈ្មោះ</a>
-                    </li>
+
+                        <!-- Auth Action Buttons -->
+                        <div class="d-flex align-items-center gap-3">
+                            <button type="button" class="btn-outline theme-primary rounded-pill px-5"
+                                data-bs-toggle="dialog" data-bs-target="#loginModal">ចូលប្រើ</button>
+                            <button type="button" class="btn-solid theme-primary rounded-pill px-5 shadow-sm"
+                                data-bs-toggle="dialog" data-bs-target="#registerModal">ចុះឈ្មោះ</button>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </dialog>
         </div>
     </nav>
 
-
-
-
-
-
     <!-- Footer -->
-    <footer class="pt-5 pb-4">
+    <footer class="pt-12 pb-7">
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-7">
                 <!-- Brand Info -->
-                <div class="col-lg-4">
-                    <a class="navbar-brand d-flex align-items-center text-white mb-3" href="#">
-                        <img src="assets/img/logo 3.png" alt="" class="logo">
+                <div class="lg:col-4">
+                    <a class="navbar-brand d-flex align-items-center cb-text-white mb-5" href="#">
+                        <img src="assets/img/logo 3.png" alt="CareerBridge" class="logo">
                     </a>
-                    <p class="small text-white mb-3 text-footer">
+                    <p class="small cb-text-white mb-5 text-footer">
                         CareerBridge គឺជាវេទិការស្វែងរកការងារ និងអាហារូបករណ៍ឥតគិតថ្លៃ
                         រចនាឡើងយ៉ាងពិសេសសម្រាប់សិស្ស-និស្សិត និងអ្នកទើបបញ្ចប់ការសិក្សានៅកម្ពុជា។
                     </p>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-white"><i class="fa-brands fa-facebook fs-5"></i></a>
-                        <a href="#" class="text-white"><i class="fa-brands fa-telegram fs-5"></i></a>
+                    <div class="d-flex gap-5">
+                        <a href="#" class="cb-text-white" aria-label="Facebook"><i class="fa-brands fa-facebook fs-lg"></i></a>
+                        <a href="#" class="cb-text-white" aria-label="Telegram"><i class="fa-brands fa-telegram fs-lg"></i></a>
                     </div>
                 </div>
 
                 <!-- Quick Links -->
-                <div class="col-6 col-lg-2">
+                <div class="col-6 lg:col-2">
                     <h5>តំណភ្ជាប់រហ័ស</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">ទំព័រដើម</a></li>
-                        <li class="mb-2"><a href="#featured-section">ស្វែងរកការងារ</a></li>
-                        <li class="mb-2"><a href="#featured-section">អាហារូបករណ៍</a></li>
-                        <li class="mb-2"><a href="#resources-section">ធនធាន CV</a></li>
+                        <li class="mb-3"><a href="#">ទំព័រដើម</a></li>
+                        <li class="mb-3"><a href="#featured-section">ស្វែងរកការងារ</a></li>
+                        <li class="mb-3"><a href="#featured-section">អាហារូបករណ៍</a></li>
+                        <li class="mb-3"><a href="#resources-section">ធនធាន CV</a></li>
                     </ul>
                 </div>
 
                 <!-- Categories Links -->
-                <div class="col-6 col-lg-2">
+                <div class="col-6 lg:col-2">
                     <h5>ប្រភេទការងារ</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><a href="#">Internships</a></li>
-                        <li class="mb-2"><a href="#">Part-Time Jobs</a></li>
-                        <li class="mb-2"><a href="#">Full-Time Jobs</a></li>
-                        <li class="mb-2"><a href="#">អាហារូបករណ៍ក្រៅប្រទេស</a></li>
+                        <li class="mb-3"><a href="#">Internships</a></li>
+                        <li class="mb-3"><a href="#">Part-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">Full-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">អាហារូបករណ៍ក្រៅប្រទេស</a></li>
                     </ul>
                 </div>
 
                 <!-- Academic Assignment Credit -->
-                <div class="col-lg-4">
+                <div class="lg:col-4">
                     <h5>ទំនាក់ទំនង</h5>
-                    <p class="small text-white-75 mb-2">
+                    <p class="small cb-text-white-75 mb-3">
                         <i class="fa-solid fa-location-dot"></i>
                         <strong>#42 ផ្លូវ 606 សង្កាត់បឹងកក់ ២ ខណ្ឌទួលគោក រាជធានីភ្នំពេញ, Phnom Penh, Cambodia</strong>
                     </p>
-                    <p class="small text-white-75 mb-2">
+                    <p class="small cb-text-white-75 mb-3">
                         <i class="fa-solid fa-phone"></i>
-                        <strong>
-                            +855 12345678</strong>
+                        <strong>+123 12345678</strong>
                     </p>
-                    <p class="small text-white-75 mb-2">
-                        <i class="fa-solid fa-envelope"></i>    
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-envelope"></i>
                         <strong>Email : CareerBridge@gmail.com</strong>
                     </p>
-
-                    
                 </div>
             </div>
 
@@ -311,68 +298,11 @@
         </div>
     </footer>
 
-    <!-- Login Modal Simulation -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-4 border-0">
-                <div class="modal-body p-4 text-center">
-                    <h4 class="fw-bold mb-2">ចូលប្រើប្រាស់គណនី</h4>
-                    <p class="text-muted small mb-4">សូមបញ្ចូល Email និង Password របស់អ្នក</p>
+   <script type="module">
+        import * as bootstrap from './assets/vendor/bootstrap/js/bootstrap.bundle.js';
+        window.bootstrap = bootstrap;
+    </script>
 
-                    <form
-                        onsubmit="event.preventDefault(); alert('ចូលប្រព័ន្ធជោគជ័យ! (Simulated Login)'); bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();">
-                        <div class="mb-3 text-start">
-                            <label class="form-label small fw-semibold">អាសយដ្ឋាន Email</label>
-                            <input type="email" class="form-control" placeholder="student@example.com" required>
-                        </div>
-                        <div class="mb-3 text-start">
-                            <label class="form-label small fw-semibold">ពាក្យសម្ងាត់ (Password)</label>
-                            <input type="password" class="form-control" placeholder="••••••••" required>
-                        </div>
-                        <button type="submit" class="btn btn-primary w-100 py-2 rounded-3 fw-bold mb-3">Log In</button>
-                    </form>
-                    <small class="text-muted">មិនទាន់មានគណនី? <a href="#" data-bs-toggle="modal"
-                            data-bs-target="#registerModal" data-bs-dismiss="modal">ចុះឈ្មោះនៅទីនេះ</a></small>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Register Modal Simulation -->
-    <div class="modal fade" id="registerModal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content rounded-4 border-0">
-                <div class="modal-body p-4 text-center">
-                    <h4 class="fw-bold mb-2">បង្កើតគណនីថ្មី</h4>
-                    <p class="text-muted small mb-4">ចុះឈ្មោះដោយឥតគិតថ្លៃដើម្បីស្វែងរកការងារ និងអាហារូបករណ៍</p>
-
-                    <form
-                        onsubmit="event.preventDefault(); alert('ចុះឈ្មោះគណនីជោគជ័យ! (Simulated Register)'); bootstrap.Modal.getInstance(document.getElementById('registerModal')).hide();">
-                        <div class="mb-3 text-start">
-                            <label class="form-label small fw-semibold">ឈ្មោះពេញ</label>
-                            <input type="text" class="form-control" placeholder="សុខ ចាន់" required>
-                        </div>
-                        <div class="mb-3 text-start">
-                            <label class="form-label small fw-semibold">អាសយដ្ឋាន Email</label>
-                            <input type="email" class="form-control" placeholder="student@example.com" required>
-                        </div>
-                        <div class="mb-3 text-start">
-                            <label class="form-label small fw-semibold">ពាក្យសម្ងាត់</label>
-                            <input type="password" class="form-control" placeholder="••••••••" required>
-                        </div>
-                        <button type="submit"
-                            class="btn btn-primary w-100 py-2 rounded-3 fw-bold mb-3">Register</button>
-                    </form>
-                    <small class="text-muted">មានគណនីរួចហើយ? <a href="#" data-bs-toggle="modal"
-                            data-bs-target="#loginModal" data-bs-dismiss="modal">ចូលប្រព័ន្ធ</a></small>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- Bootstrap 5 JS Bundle -->
-    <script src="assets/vendor/Bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
 </body>
