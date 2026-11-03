@@ -18,15 +18,6 @@ body {
 }
 
 
-@media (prefers-reduced-motion: no-preference) {
-
-    .card,
-    .category-card,
-    .job-card,
-    .resource-card {
-        transition: all 0.25s ease-in-out;
-    }
-}
 
 /* Helper text colors (v6 removed .text-white) */
 .cb-text-white {
