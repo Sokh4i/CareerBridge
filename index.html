@@ -20,11 +20,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- css  -->
     <link rel="stylesheet" href="assets/css/navbar-footer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
+
 <body>
-                            
-    
+
     <!-- Top Announcement Bar -->
     <div class="top-bar py-3">
         <div class="container d-flex justify-content-between align-items-center">
@@ -47,14 +48,14 @@
             </a>
 
             <!-- Mobile Toggle (now opens a Drawer instead of Collapse) -->
-            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
-                data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false"
+            <button class="btn-icon navbar-toggler border border-1" type="button" data-bs-toggle="drawer"
+                data-bs-target="#navbarMain" data-bs-theme="light" aria-controls="navbarMain" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon" aria-hidden="true"></span>
             </button>
 
             <!-- Nav Links (Drawer on mobile, inline from lg up) -->
-            <dialog class="drawer drawer-end" tabindex="-1" id="navbarMain" aria-labelledby="navbarMainLabel">
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarMain" aria-labelledby="navbarMainLabel" data-bs-theme="light">
                 <div class="drawer-header">
                     <h5 class="drawer-title" id="navbarMainLabel">CareerBridge</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
@@ -239,6 +240,16 @@
 
 
 
+
+
+
+
+
+
+
+
+    
+
     <!-- Footer -->
     <footer class="pt-12 pb-7">
         <div class="container">
@@ -305,14 +316,13 @@
         </div>
     </footer>
 
-
-     <!-- Bootstrap JavaScript  -->
-     <script type="module">
+   <script type="module">
         import * as bootstrap from './assets/vendor/bootstrap/js/bootstrap.bundle.js';
         window.bootstrap = bootstrap;
     </script>
-    
+
 
 
 </body>
+
 </html>
