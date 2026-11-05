@@ -12,11 +12,10 @@
 }
 
 html {
-  scrollbar-gutter: auto !important;
+    scrollbar-gutter: auto !important;
 }
-
 body {
-    font-family: 'Kantumruy Pro', 'Inter', sans-serif;
+    font-family: 'Kantumruy Pro', 'Inter', sans-serif !important;
     color: var(--cb-dark);
     background-color: #ffffff;
 }
@@ -99,9 +98,11 @@ body {
     background-color: rgba(13, 110, 253, 0.1);
     color: #0d6efd;
 }
-
-.drawer-body {
-    display: block !important;
+.drawer{
+    display:block;
+}
+.drawer img{
+   --bs-avatar-size: 2.75rem;
 }
 
 
@@ -145,6 +146,9 @@ body {
     background-color: #e9ecef;
     white-space: normal;
 }
+
+/* user menu  */
+
 
 /* Footer */
 footer {
