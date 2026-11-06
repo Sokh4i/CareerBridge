@@ -1,0 +1,352 @@
+<!doctype html>
+<html lang="km">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>អាហារូបករណ៍អន្តរជាតិ | CareerBridge</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/Bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/phallyka.css">
+    <link rel="stylesheet" href="assets/css/navbar-footer.css">
+</head>
+
+<body>
+
+     <!-- Top Announcement Bar -->
+    <div class="top-bar py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <span class="badge theme-warning me-3">NEW</span>
+                <small>វេទិកាការងារ & អាហារូបករណ៍លេខ១ សម្រាប់និស្សិតកម្ពុជា 🎓</small>
+            </div>
+            <div class="d-none md:d-block">
+                <small><i class="fa-solid fa-graduation-cap me-1"></i> CareerBridge</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar lg:navbar-expand sticky-top border-bottom">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img class="logo" src="assets/img/Logo head.png" alt="CareerBridge">
+            </a>
+
+            <!-- Mobile Toggle (now opens a Drawer instead of Collapse) -->
+            <button class="btn-icon navbar-toggler border border-1" type="button" data-bs-toggle="drawer"
+                data-bs-target="#navbarMain" data-bs-theme="light" aria-controls="navbarMain" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+
+            <!-- Nav Links (Drawer on mobile, inline from lg up) -->
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarMain" aria-labelledby="navbarMainLabel"
+                data-bs-theme="light">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarMainLabel">CareerBridge</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+
+                <div class="drawer-body">
+                    <ul class="navbar-nav m-auto lg:mb-0 mb-3 lg:align-items-center ">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">ទំព័រដើម</a>
+                        </li>
+
+                        <!-- Jobs Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                ការងារ (Jobs) <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="#featured-section"><i
+                                        class="fa-solid fa-user-graduate me-3 fg-info hat"></i>ការងារហាត់ការ
+                                    (Internship)</a>
+                                <a class="menu-item" href="#featured-section"><i
+                                        class="fa-solid fa-clock me-3 fg-warning"></i>ការងារភាគម៉ោង (Part-time)</a>
+                                <a class="menu-item" href="#featured-section"><i
+                                        class="fa-solid fa-briefcase me-3 fg-success"></i>ការងារពេញម៉ោង
+                                    (Full-time)</a>
+
+                            </div>
+                        </li>
+
+                        <!-- Scholarships Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                អាហារូបករណ៍ <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="#featured-section"><i
+                                        class="fa-solid fa-flag me-3 fg-danger"></i>អាហារូបករណ៍ក្នុងប្រទេស (Local)</a>
+                                <a class="menu-item" href="#featured-section"><i
+                                        class="fa-solid fa-globe me-3 fg-primary"></i>អាហារូបករណ៍ក្រៅប្រទេស
+                                    (International)</a>
+
+                            </div>
+                        </li>
+
+                        <!-- Career Resources Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                ឯកសារផ្សេងៗ <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="#resources-section"><i
+                                        class="fa-solid fa-file-lines me-3 fg-primary"></i>គន្លឹះសរសេរ CV & Cover
+                                    Letter</a>
+                                <a class="menu-item" href="#resources-section"><i
+                                        class="fa-solid fa-download me-3 fg-success"></i>ទាញយក CV Templates
+                                    ឥតគិតថ្លៃ</a>
+                                <a class="menu-item" href="#resources-section"><i
+                                        class="fa-solid fa-comments me-3 fg-warning"></i>គន្លឹះសម្ភាសន៍ការងារ</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section">ទំនាក់ទំនង</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-actions d-flex align-items-center gap-3">
+                        <!-- Notification Bell Menu -->
+                        <div class="position-relative d-flex align-items-center gap-3">
+                            <button type="button"
+                                class="btn-text theme-secondary btn-icon nav-noti-btn position-relative"
+                                id="notificationDropdown" data-bs-toggle="menu" data-bs-placement="bottom-end"
+                                title="ការជូនដំណឹង" aria-label="ការជូនដំណឹង">
+                                <i class="fa-regular fa-bell fs-lg"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge theme-danger rounded-pill shadow-sm"
+                                    id="notiBadge">
+                                    3
+                                    <span class="visually-hidden">unread notifications</span>
+                                </span>
+                            </button>
+
+                            <div class="menu noti-menu shadow-lg" aria-labelledby="notificationDropdown">
+                                <div
+                                    class="noti-header d-flex justify-content-between align-items-center bg-1 p-5 border-bottom">
+                                    <h6 class="m-0 fw-bold fg-1 fs-md">
+                                        <i class="fa-solid fa-bell fg-primary me-3"></i>ការជូនដំណឹង (Notifications)
+                                    </h6>
+                                </div>
+
+                                <div class="noti-list">
+                                    <!-- Alert 1: Application Sent -->
+                                    <a class="menu-item p-5 border-bottom unread d-flex align-items-start gap-5"
+                                        href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-success fg-emphasis-success rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-circle-check fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">ដាក់ពាក្យជោគជ័យ</strong>
+                                                <span class="fg-2 noti-time">10 នាទីមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                ការដាក់ពាក្យរបស់អ្នកសម្រាប់ <strong>Junior Web Developer</strong>
+                                                ត្រូវបានបញ្ជូនជោគជ័យ។
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                    <!-- Alert 2: CV Status / Interview Alert -->
+                                    <a class="menu-item p-5 border-bottom unread d-flex align-items-start gap-5"
+                                        href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-primary fg-emphasis-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-user-tie fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">កំពុងពិនិត្យ CV / ហៅសម្ភាសន៍</strong>
+                                                <span class="fg-2 noti-time">2 ម៉ោងមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                ធនាគារ <strong>ABA Bank</strong> បានពិនិត្យ CV របស់អ្នក
+                                                និងបានអញ្ជើញអ្នកចូលរួមសម្ភាសន៍។
+                                            </p>
+                                        </div>
+                                    </a>
+                                     <!-- Alert 3: Deadline Alert -->
+                                    <a class="menu-item p-5 unread d-flex align-items-start gap-5" href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-warning fg-emphasis-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-triangle-exclamation fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">ជិតផុតកំណត់ដាក់ពាក្យ</strong>
+                                                <span class="fg-2 noti-time">1 ថ្ងៃមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                អាហារូបករណ៍ <strong>MEXT Japan Scholarship</strong>
+                                                នឹងផុតកំណត់ទទួលពាក្យក្នុងពេល 2 ថ្ងៃទៀត!
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="noti-footer text-center p-3 bg-1 border-top">
+                                    <a href="applications.html"
+                                        class="fg-primary fw-semibold text-decoration-none small">
+                                        មើលប្រវត្តិដាក់ពាក្យទាំងអស់ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Userrrr -->
+                            <button type="button" class="btn-text theme-secondary btn-icon nav-user-btn"
+                                id="userDropdown" data-bs-toggle="menu" data-bs-placement="bottom-end" title="គណនី"
+                                aria-label="គណនី">
+                                <span class="avatar avatar-lg">
+                                    <img class="avatar-img" src="assets/img/Sokhai/profile/_MG_2053%20copy5.jpg"
+                                        alt="Profile">
+                                </span>
+                            </button>
+                            <!-- User list Menu  -->
+                            <div class="menu user-menu shadow-lg" aria-labelledby="userDropdown">
+                                <a class="menu-item" href="#"><i
+                                        class="fa-regular fa-user me-3 fg-primary"></i>ព័ត៌មានផ្ទាល់ខ្លួន</a>
+                                <a class="menu-item" href="#"><i
+                                        class="fa-solid fa-gear me-3 fg-secondary"></i>ការកំណត់</a>
+                                <hr class="menu-divider">
+                                <a class="menu-item" href="#"><i
+                                        class="fa-solid fa-right-from-bracket me-3 fg-danger"></i>ចាកចេញ</a>
+                            </div>
+                        </div>
+
+                        <!-- Auth Action Buttons -->
+                        <!-- <div class="d-flex align-items-center gap-3">
+
+                        </div> -->
+                    </div>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+    <header class="page-head">
+        <div class="container"><span class="eyebrow">អាហារូបករណ៍អន្តរជាតិ</span>
+            <h1>ពង្រីកពិភពសិក្សារបស់អ្នកទៅកាន់អន្តរជាតិ</h1>
+            <p>ស្វែងរកឱកាសទៅសិក្សានៅក្រៅប្រទេស និងទទួលបានបទពិសោធន៍ថ្មីៗពីជុំវិញពិភពលោក។</p>
+            <a href="index.html#choose" class="btn btn-outline-primary rounded-pill px-3 mt-2"><i
+                    class="fa-solid fa-arrow-left me-2"></i>ត្រឡប់ទៅជ្រើសរើស</a>
+        </div>
+    </header>
+    <main class="section">
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-2">
+                <div><span class="eyebrow">SCHOLARSHIP OPPORTUNITIES</span>
+                    <h2 class="section-title mb-1">ឱកាសអាហារូបករណ៍</h2>
+                    <p class="text-secondary mb-0">សូមអានព័ត៌មាន និងពិនិត្យលក្ខខណ្ឌមុនពេលដាក់ពាក្យ។</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <article class="scholar-card">
+                        <div class="scholar-top">
+                            <div class="scholar-icon"><i class="fa-solid fa-earth-asia"></i></div><span
+                                class="open-pill">ឱកាសសិក្សា</span>
+                        </div>
+                        <h2>អាហារូបករណ៍សិក្សានៅប្រទេសជប៉ុន</h2>
+                        <div class="org">កម្មវិធីអាហារូបករណ៍អន្តរជាតិ</div>
+                        <p class="mt-3">ឱកាសសិក្សាសម្រាប់និស្សិតដែលចង់ស្វែងយល់ពីបច្ចេកវិទ្យា វប្បធម៌ និងការស្រាវជ្រាវ។
+                        </p>
+                        <div class="facts">
+                            <div><small>ប្រទេស</small><strong>ជប៉ុន</strong></div>
+                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
+                            <div><small>ជំនាញ</small><strong>វិស្វកម្ម / IT / វិទ្យាសាស្ត្រ</strong></div>
+                            <div><small>អត្ថប្រយោជន៍</small><strong>អាស្រ័យលើកម្មវិធី</strong></div>
+                            <div class="col-12">
+                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
+                        </div>
+                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="scholar-card">
+                        <div class="scholar-top">
+                            <div class="scholar-icon"><i class="fa-solid fa-building-columns"></i></div><span
+                                class="open-pill">ឱកាសសិក្សា</span>
+                        </div>
+                        <h2>អាហារូបករណ៍សិក្សានៅប្រទេសចិន</h2>
+                        <div class="org">កម្មវិធីសហប្រតិបត្តិការអប់រំ</div>
+                        <p class="mt-3">ឱកាសសិក្សាក្នុងវិស័យពាណិជ្ជកម្ម វិស្វកម្ម និងភាសា។</p>
+                        <div class="facts">
+                            <div><small>ប្រទេស</small><strong>ចិន</strong></div>
+                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
+                            <div><small>ជំនាញ</small><strong>ពាណិជ្ជកម្ម / វិស្វកម្ម</strong></div>
+                            <div><small>អត្ថប្រយោជន៍</small><strong>អាស្រ័យលើកម្មវិធី</strong></div>
+                            <div class="col-12">
+                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
+                        </div>
+                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="scholar-card">
+                        <div class="scholar-top">
+                            <div class="scholar-icon"><i class="fa-solid fa-microchip"></i></div><span
+                                class="open-pill">ឱកាសសិក្សា</span>
+                        </div>
+                        <h2>អាហារូបករណ៍សិក្សានៅប្រទេសកូរ៉េ</h2>
+                        <div class="org">កម្មវិធីអាហារូបករណ៍កូរ៉េ</div>
+                        <p class="mt-3">សម្រាប់និស្សិតដែលមានគោលដៅសិក្សាផ្នែកបច្ចេកវិទ្យា សិល្បៈ និងវិទ្យាសាស្ត្រ។</p>
+                        <div class="facts">
+                            <div><small>ប្រទេស</small><strong>កូរ៉េខាងត្បូង</strong></div>
+                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
+                            <div><small>ជំនាញ</small><strong>IT / វិទ្យាសាស្ត្រ / សិល្បៈ</strong></div>
+                            <div><small>អត្ថប្រយោជន៍</small><strong>អាស្រ័យលើកម្មវិធី</strong></div>
+                            <div class="col-12">
+                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
+                        </div>
+                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </article>
+                </div>
+                <div class="col-md-6">
+                    <article class="scholar-card">
+                        <div class="scholar-top">
+                            <div class="scholar-icon"><i class="fa-solid fa-landmark"></i></div><span
+                                class="open-pill">ឱកាសសិក្សា</span>
+                        </div>
+                        <h2>អាហារូបករណ៍សិក្សានៅប្រទេសអូស្ត្រាលី</h2>
+                        <div class="org">កម្មវិធីអាហារូបករណ៍អន្តរជាតិ</div>
+                        <p class="mt-3">ឱកាសបន្តការសិក្សានៅសាកលវិទ្យាល័យ និងអភិវឌ្ឍបទពិសោធន៍អន្តរជាតិ។</p>
+                        <div class="facts">
+                            <div><small>ប្រទេស</small><strong>អូស្ត្រាលី</strong></div>
+                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
+                            <div><small>ជំនាញ</small><strong>គ្រប់ជំនាញ</strong></div>
+                            <div><small>អត្ថប្រយោជន៍</small><strong>អាស្រ័យលើកម្មវិធី</strong></div>
+                            <div class="col-12">
+                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
+                        </div>
+                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                class="fa-solid fa-arrow-right ms-1"></i></a>
+                    </article>
+                </div>
+            </div>
+            <p class="note mt-4"><i class="fa-solid fa-circle-info me-1"></i>ចំណាំ៖
+                ព័ត៌មានខាងលើជាគំរូសម្រាប់គម្រោងសិក្សា។
+                សូមពិនិត្យគេហទំព័រផ្លូវការរបស់ស្ថាប័នផ្តល់អាហារូបករណ៍សម្រាប់ព័ត៌មានពិត និងកាលកំណត់ថ្មីៗ។</p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <a class="brand" href="index.html">Career<span>Bridge</span></a><small>© 2026 CareerBridge ·
+                គម្រោងសិក្សា</small>
+        </div>
+    </footer>
+</body>
+
+</html>

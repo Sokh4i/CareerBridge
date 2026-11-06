@@ -1,32 +1,19 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="km">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CareerBridge - ស្ពានតភ្ជាប់ឱកាសការងារ និងអាហារូបករណ៍សម្រាប់យុវជនកម្ពុជា</title>
-
-    <!-- Google Fonts (Kantumruy Pro & Inter) -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
-
-    <!-- Bootstrap 6 CSS (replace the files in assets/vendor/Bootstrap with the v6 dist) -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ទំព័រដើម | CareerBridge</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/vendor/Bootstrap/css/bootstrap.min.css">
-
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/phallyka.css">
     <link rel="stylesheet" href="assets/css/navbar-footer.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-
 </head>
 
 <body>
 
-    <!-- Top Announcement Bar -->
+     <!-- Top Announcement Bar -->
     <div class="top-bar py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <div>
@@ -63,10 +50,10 @@
                 </div>
 
                 <div class="drawer-body">
-                    <ul class="navbar-nav m-auto lg:mb-0 mb-3 lg:align-items-center">
+                    <ul class="navbar-nav m-auto lg:mb-0 mb-3 lg:align-items-center ">
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">ទំព័រដើម</a>
+                            <a class="nav-link " aria-current="page" href="index.html">ទំព័រដើម</a>
                         </li>
 
                         <!-- Jobs Menu -->
@@ -89,7 +76,7 @@
 
                         <!-- Scholarships Menu -->
                         <li class="nav-item">
-                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                            <button class="nav-link active" type="button" data-bs-toggle="menu" aria-expanded="false">
                                 អាហារូបករណ៍ <i class="fa-solid fa-chevron-down ms-1 small"></i>
                             </button>
                             <div class="menu" data-bs-theme="light">
@@ -127,13 +114,12 @@
 
                     <div class="nav-actions d-flex align-items-center gap-3">
                         <!-- Notification Bell Menu -->
-                        <div class="position-relative">
+                        <div class="position-relative d-flex align-items-center gap-3">
                             <button type="button"
-                                class="btn-text theme-secondary btn-icon nav-noti-btn position-relative d-flex align-items-center justify-content-center"
+                                class="btn-text theme-secondary btn-icon nav-noti-btn position-relative"
                                 id="notificationDropdown" data-bs-toggle="menu" data-bs-placement="bottom-end"
-                                aria-expanded="false" title="ការជូនដំណឹង" aria-label="ការជូនដំណឹង">
+                                title="ការជូនដំណឹង" aria-label="ការជូនដំណឹង">
                                 <i class="fa-regular fa-bell fs-lg"></i>
-                                <!-- Unread Badge Count -->
                                 <span
                                     class="position-absolute top-0 start-100 translate-middle badge theme-danger rounded-pill shadow-sm"
                                     id="notiBadge">
@@ -142,9 +128,7 @@
                                 </span>
                             </button>
 
-                            <!-- Notification Menu -->
-                            <div class="menu noti-menu shadow-lg">
-                                <!-- Header -->
+                            <div class="menu noti-menu shadow-lg" aria-labelledby="notificationDropdown">
                                 <div
                                     class="noti-header d-flex justify-content-between align-items-center bg-1 p-5 border-bottom">
                                     <h6 class="m-0 fw-bold fg-1 fs-md">
@@ -152,9 +136,7 @@
                                     </h6>
                                 </div>
 
-                                <!-- Notification Items Container -->
                                 <div class="noti-list">
-
                                     <!-- Alert 1: Application Sent -->
                                     <a class="menu-item p-5 border-bottom unread d-flex align-items-start gap-5"
                                         href="#">
@@ -192,8 +174,7 @@
                                             </p>
                                         </div>
                                     </a>
-
-                                    <!-- Alert 3: Deadline Alert -->
+                                     <!-- Alert 3: Deadline Alert -->
                                     <a class="menu-item p-5 unread d-flex align-items-start gap-5" href="#">
                                         <div
                                             class="noti-icon bg-subtle-warning fg-emphasis-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
@@ -210,10 +191,8 @@
                                             </p>
                                         </div>
                                     </a>
-
                                 </div>
 
-                                <!-- Footer Link -->
                                 <div class="noti-footer text-center p-3 bg-1 border-top">
                                     <a href="applications.html"
                                         class="fg-primary fw-semibold text-decoration-none small">
@@ -221,201 +200,123 @@
                                     </a>
                                 </div>
                             </div>
+
+                            <!-- Userrrr -->
+                            <button type="button" class="btn-text theme-secondary btn-icon nav-user-btn"
+                                id="userDropdown" data-bs-toggle="menu" data-bs-placement="bottom-end" title="គណនី"
+                                aria-label="គណនី">
+                                <span class="avatar avatar-lg">
+                                    <img class="avatar-img" src="assets/img/Sokhai/profile/_MG_2053%20copy5.jpg"
+                                        alt="Profile">
+                                </span>
+                            </button>
+                            <!-- User list Menu  -->
+                            <div class="menu user-menu shadow-lg" aria-labelledby="userDropdown">
+                                <a class="menu-item" href="#"><i
+                                        class="fa-regular fa-user me-3 fg-primary"></i>ព័ត៌មានផ្ទាល់ខ្លួន</a>
+                                <a class="menu-item" href="#"><i
+                                        class="fa-solid fa-gear me-3 fg-secondary"></i>ការកំណត់</a>
+                                <hr class="menu-divider">
+                                <a class="menu-item" href="#"><i
+                                        class="fa-solid fa-right-from-bracket me-3 fg-danger"></i>ចាកចេញ</a>
+                            </div>
                         </div>
 
                         <!-- Auth Action Buttons -->
-                        <div class="d-flex align-items-center gap-3">
-                            <button type="button" class="btn-outline theme-primary rounded-pill px-5"
-                                data-bs-toggle="dialog" data-bs-target="#loginModal">ចូលប្រើ</button>
-                            <button type="button" class="btn-solid theme-primary rounded-pill px-5 shadow-sm"
-                                data-bs-toggle="dialog" data-bs-target="#registerModal">ចុះឈ្មោះ</button>
-                        </div>
+                        <!-- <div class="d-flex align-items-center gap-3">
+
+                        </div> -->
                     </div>
                 </div>
             </dialog>
         </div>
     </nav>
-
-
-    <section class="hero-section">
+    <header class="hero">
+        <div class="container position-relative" style="z-index:1">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-7"><span class="eyebrow">ស្វាគមន៍មកកាន់ CAREERBRIDGE</span>
+                    <h1>បើកទ្វារទៅកាន់ <span style="color:#2563eb">អនាគតសិក្សា</span> របស់អ្នក</h1>
+                    <p class="mt-3">ស្វែងរកអាហារូបករណ៍ដែលសាកសមនឹងគោលដៅរបស់អ្នក ទាំងក្នុងប្រទេសកម្ពុជា និងក្រៅប្រទេស។
+                        ចាប់ផ្តើមដំណើររបស់អ្នកជាមួយយើងថ្ងៃនេះ!</p>
+                    <a href="#choose" class="btn btn-primary rounded-pill px-4 py-3 mt-3">ស្វែងរកអាហារូបករណ៍ <i
+                            class="fa-solid fa-arrow-right ms-2"></i></a>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-art"><i class="fa-solid fa-graduation-cap cap"></i></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section">
         <div class="container">
-            <div class="row gy-5 align-items-center">
-                <div class="lg:col-7 col-12">
-                    <span class="hero-badge mb-3"><span class="me-2"
-                            aria-hidden="true">🚀</span>ស្ពានចម្លងទៅកាន់ពិភពការងារដំបូងរបស់អ្នក</span>
-                    <h1 class="hero-title mb-3">ភ្ជាប់និស្សិតកម្ពុជា ទៅកាន់ <span
-                            class="text-primary-cb">ឱកាសការងារ</span> &amp; <span
-                            class="text-success-cb">អាហារូបករណ៍</span></h1>
-                    <p class="text-muted-cb mb-4">CareerBridge ជួយសម្រួលដល់សិស្ស-និស្សិត និងអ្នកទើបបញ្ចប់ការសិក្សា
-                        ក្នុងការស្វែងរកការងារ Internship, Part-time, Full-time និងអាហារូបករណ៍សិក្សាទាំងក្នុង
-                        និងក្រៅប្រទេស ដោយងាយស្រួល និងរហ័ស។</p>
-
-                    <div class="search-box mb-4">
-                        <form onsubmit="event.preventDefault(); triggerSearch();">
-                            <div class="row g-2 align-items-center">
-                                <div class="md:col-4 col-12 search-divider">
-                                    <div class="d-flex align-items-center">
-                                        <span class="ms-2" aria-hidden="true">🔍</span>
-                                        <input type="text" id="searchInput" class="form-control search-input"
-                                            placeholder="ឈ្មោះការងារ ជំនាញ ឬក្រុមហ៊ុន...">
-                                    </div>
-                                </div>
-                                <div class="md:col-3 col-12 search-divider">
-                                    <div class="d-flex align-items-center">
-                                        <span class="ms-2" aria-hidden="true">📚</span>
-                                        <select class="form-control search-input" id="categorySelect">
-                                            <option value="">គ្រប់ប្រភេទ</option>
-                                            <option value="internship">Internship</option>
-                                            <option value="parttime">Part-time</option>
-                                            <option value="fulltime">Full-time</option>
-                                            <option value="scholarship">អាហារូបករណ៍</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="md:col-3 col-12 search-divider">
-                                    <div class="d-flex align-items-center">
-                                        <span class="ms-2" aria-hidden="true">📍</span>
-                                        <select class="form-control search-input" id="locationSelect">
-                                            <option value="">គ្រប់ទីតាំង</option>
-                                            <option value="phnompenh">ភ្នំពេញ</option>
-                                            <option value="siemreap">សៀមរាប</option>
-                                            <option value="battambang">បាត់ដំបង</option>
-                                            <option value="remote">Working from Home</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="md:col-2 col-12"><button type="submit" class="btn-search">ស្វែងរក</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-
-                    <div class="d-flex align-items-center gap-2 text-muted-cb" style="flex-wrap:wrap;font-size:.875rem">
-                        <span>ពាក្យគន្លឹះពេញនិយម៖</span>
-                        <a href="#" class="tag-pill">Web Developer</a><a href="#" class="tag-pill">Graphic Design</a><a
-                            href="#" class="tag-pill">Marketing Intern</a><a href="#" class="tag-pill">Japan
-                            Scholarship</a>
-                    </div>
+            <div class="text-center mb-5"><span class="eyebrow">WHY CAREERBRIDGE?</span>
+                <h2 class="section-title">ហេតុអ្វីគួរជ្រើសរើស CareerBridge?</h2>
+                <p class="section-sub">យើងជួយឱ្យការស្វែងរកអាហារូបករណ៍កាន់តែងាយស្រួល ច្បាស់លាស់ និងមានរបៀបរៀបរយ។</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <article class="reason-card">
+                        <div class="reason-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <h3>ស្វែងរកងាយស្រួល</h3>
+                        <p>ប្រមូលឱកាសអាហារូបករណ៍នៅកន្លែងតែមួយ ដើម្បីសន្សំពេលវេលា។</p>
+                    </article>
                 </div>
-
-
-                <div class="lg:col-5 col-12 text-center">
-                    <div style="position:relative">
-                        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20800%20533%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%230d6efd%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%236ea8fe%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%22800%22%20height%3D%22533%22%20fill%3D%22url%28%23g%29%22/%3E%3Ccircle%20cx%3D%22640%22%20cy%3D%22110%22%20r%3D%2290%22%20fill%3D%22%23fff%22%20opacity%3D%22.15%22/%3E%3Ccircle%20cx%3D%22120%22%20cy%3D%22450%22%20r%3D%22130%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22/%3E%3Cpath%20d%3D%22M400%20150%20230%20230l170%2080%20170-80z%22%20fill%3D%22%23fff%22/%3E%3Cpath%20d%3D%22M290%20275v80c0%2030%2050%2055%20110%2055s110-25%20110-55v-80l-110%2052z%22%20fill%3D%22%23fff%22%20opacity%3D%22.9%22/%3E%3Cpath%20d%3D%22M570%20230v110%22%20stroke%3D%22%23ffc107%22%20stroke-width%3D%228%22/%3E%3Ccircle%20cx%3D%22570%22%20cy%3D%22350%22%20r%3D%2214%22%20fill%3D%22%23ffc107%22/%3E%3C/svg%3E"
-                            alt="Students Working" class="img-fluid rounded-4 border border-4 border-white"
-                            style="box-shadow:0 1rem 3rem rgba(0,0,0,.18)">
-                        <div class="float-badge" style="top:24px;left:12px">
-                            <div class="float-icon bg-success"><span class="" aria-hidden="true">✔️</span></div>
-                            <div class="text-start">
-                                <h6 class="mb-0 fw-bold">1,250+</h6><small
-                                    class="text-muted-cb">សិស្សទទួលបានការងារ</small>
-                            </div>
-                        </div>
-                        <div class="float-badge" style="bottom:24px;right:12px">
-                            <div class="float-icon bg-primary"><span class="" aria-hidden="true">🏢</span></div>
-                            <div class="text-start">
-                                <h6 class="mb-0 fw-bold">350+</h6><small class="text-muted-cb">ក្រុមហ៊ុនដៃគូ</small>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-md-6 col-lg-3">
+                    <article class="reason-card">
+                        <div class="reason-icon"><i class="fa-solid fa-list-check"></i></div>
+                        <h3>ព័ត៌មានច្បាស់លាស់</h3>
+                        <p>បង្ហាញប្រទេស កម្រិតសិក្សា ជំនួយ និងកាលកំណត់ដាក់ពាក្យ។</p>
+                    </article>
                 </div>
+                <div class="col-md-6 col-lg-3">
+                    <article class="reason-card">
+                        <div class="reason-icon"><i class="fa-solid fa-compass"></i></div>
+                        <h3>ជម្រើសច្រើន</h3>
+                        <p>ជ្រើសរើសការសិក្សាក្នុងស្រុក ឬស្វែងយល់ពីឱកាសអន្តរជាតិ។</p>
+                    </article>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <article class="reason-card">
+                        <div class="reason-icon"><i class="fa-solid fa-file-pen"></i></div>
+                        <h3>ដាក់ពាក្យងាយៗ</h3>
+                        <p>ចូលទៅកាន់ទម្រង់ដាក់ពាក្យពីអាហារូបករណ៍ដែលអ្នកចាប់អារម្មណ៍។</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section pt-0" id="choose">
+        <div class="container">
+            <div class="text-center mb-5"><span class="eyebrow">CHOOSE YOUR PATH</span>
+                <h2 class="section-title">តើអ្នកចង់សិក្សានៅទីណា?</h2>
+                <p class="section-sub">ជ្រើសរើសប្រភេទអាហារូបករណ៍មួយ ដើម្បីមើលឱកាសដែលមាន។</p>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6"><a class="choice-card" href="local.html">
+                        <div class="choice-visual local-visual"><i class="fa-solid fa-building-columns"></i></div>
+                        <h3>🇰🇭 អាហារូបករណ៍ក្នុងស្រុក</h3>
+                        <p>ស្វែងរកឱកាសសិក្សានៅសាកលវិទ្យាល័យ និងស្ថាប័នក្នុងប្រទេសកម្ពុជា។</p><span
+                            class="arrow-link">មើលអាហារូបករណ៍ក្នុងស្រុក <i
+                                class="fa-solid fa-arrow-right ms-1"></i></span>
+                    </a></div>
+                <div class="col-md-6"><a class="choice-card" href="international.html">
+                        <div class="choice-visual world-visual"><i class="fa-solid fa-earth-asia"></i></div>
+                        <h3>🌏 អាហារូបករណ៍អន្តរជាតិ</h3>
+                        <p>ស្វែងយល់ពីឱកាសទៅសិក្សានៅប្រទេសផ្សេងៗជុំវិញពិភពលោក។</p><span
+                            class="arrow-link">មើលអាហារូបករណ៍អន្តរជាតិ <i
+                                class="fa-solid fa-arrow-right ms-1"></i></span>
+                    </a></div>
             </div>
         </div>
     </section>
 
 
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-    <!-- Footer -->
-    <footer class="pt-12 pb-7">
-        <div class="container">
-            <div class="row g-7">
-                <!-- Brand Info -->
-                <div class="lg:col-4">
-                    <a class="navbar-brand d-flex align-items-center cb-text-white mb-5" href="#">
-                        <img src="assets/img/logo 3.png" alt="CareerBridge" class="logo">
-                    </a>
-                    <p class="small cb-text-white mb-5 text-footer">
-                        CareerBridge គឺជាវេទិការស្វែងរកការងារ និងអាហារូបករណ៍ឥតគិតថ្លៃ
-                        រចនាឡើងយ៉ាងពិសេសសម្រាប់សិស្ស-និស្សិត និងអ្នកទើបបញ្ចប់ការសិក្សានៅកម្ពុជា។
-                    </p>
-                    <div class="d-flex gap-5">
-                        <a href="#" class="cb-text-white" aria-label="Facebook"><i
-                                class="fa-brands fa-facebook fs-lg"></i></a>
-                        <a href="#" class="cb-text-white" aria-label="Telegram"><i
-                                class="fa-brands fa-telegram fs-lg"></i></a>
-                    </div>
-                </div>
-
-                <!-- Quick Links -->
-                <div class="col-6 lg:col-2">
-                    <h5>តំណភ្ជាប់រហ័ស</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><a href="#">ទំព័រដើម</a></li>
-                        <li class="mb-3"><a href="#featured-section">ស្វែងរកការងារ</a></li>
-                        <li class="mb-3"><a href="#featured-section">អាហារូបករណ៍</a></li>
-                        <li class="mb-3"><a href="#resources-section">ធនធាន CV</a></li>
-                    </ul>
-                </div>
-
-                <!-- Categories Links -->
-                <div class="col-6 lg:col-2">
-                    <h5>ប្រភេទការងារ</h5>
-                    <ul class="list-unstyled">
-                        <li class="mb-3"><a href="#">Internships</a></li>
-                        <li class="mb-3"><a href="#">Part-Time Jobs</a></li>
-                        <li class="mb-3"><a href="#">Full-Time Jobs</a></li>
-                        <li class="mb-3"><a href="#">អាហារូបករណ៍ក្រៅប្រទេស</a></li>
-                    </ul>
-                </div>
-
-                <!-- Academic Assignment Credit -->
-                <div class="lg:col-4">
-                    <h5>ទំនាក់ទំនង</h5>
-                    <p class="small cb-text-white-75 mb-3">
-                        <i class="fa-solid fa-location-dot"></i>
-                        <strong>#42 ផ្លូវ 606 សង្កាត់បឹងកក់ ២ ខណ្ឌទួលគោក រាជធានីភ្នំពេញ, Phnom Penh, Cambodia</strong>
-                    </p>
-                    <p class="small cb-text-white-75 mb-3">
-                        <i class="fa-solid fa-phone"></i>
-                        <strong>+123 12345678</strong>
-                    </p>
-                    <p class="small cb-text-white-75 mb-3">
-                        <i class="fa-solid fa-envelope"></i>
-                        <strong>Email : CareerBridge@gmail.com</strong>
-                    </p>
-                </div>
-            </div>
-
-            <!-- Bottom Copyright -->
-            <div class="footer-bottom text-center small">
-                <p class="mb-0">&copy; ២០២៦ CareerBridge KH. រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ
-                    រៀបចំឡើងសម្រាប់និស្សិតកម្ពុជាដែលទើបបញ្ចប់ការសិក្សា។</p>
-            </div>
+    <footer class="footer">
+        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+            <a class="brand" href="index.html">Career<span>Bridge</span></a><small>© 2026 CareerBridge ·
+                គម្រោងសិក្សា</small>
         </div>
     </footer>
-
-    <script type="module">
-        import * as bootstrap from './assets/vendor/bootstrap/js/bootstrap.bundle.js';
-        window.bootstrap = bootstrap;
-    </script>
-    <script src="assets/JS/Script.js"></script>
-
-
-
 </body>
 
 </html>
