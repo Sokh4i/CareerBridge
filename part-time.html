@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part-time Jobs | CareerBridge</title>
+    <!-- Google Fonts (Kantumruy Pro & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/jobs.css">
+    
+    <!-- Bootstrap 6 CSS (replace the files in assets/vendor/Bootstrap with the v6 dist) -->
+    <link rel="stylesheet" href="assets/vendor/Bootstrap/css/bootstrap.min.css">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/navbar-footer.css">
+    <!-- part-time page css -->
+    <link rel="stylesheet" href="assets/css/part-time.css">
+
+</head>
+<body>
+    
+     <!-- Top Announcement Bar -->
+    <div class="top-bar py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <span class="badge theme-warning me-3">NEW</span>
+                <small>វេទិកាការងារ & អាហារូបករណ៍លេខ១ សម្រាប់និស្សិតកម្ពុជា 🎓</small>
+            </div>
+            <div class="d-none md:d-block">
+                <small><i class="fa-solid fa-graduation-cap me-1"></i> CareerBridge</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar lg:navbar-expand sticky-top border-bottom">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img class="logo" src="assets/img/Logo head.png" alt="CareerBridge">
+            </a>
+
+            <!-- Mobile Toggle (now opens a Drawer instead of Collapse) -->
+            <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer"
+                data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+
+            <!-- Nav Links (Drawer on mobile, inline from lg up) -->
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarMain" aria-labelledby="navbarMainLabel">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarMainLabel">CareerBridge</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+
+                <div class="drawer-body">
+                    <ul class="navbar-nav m-auto lg:mb-0 mb-3 lg:align-items-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">ទំព័រដើម</a>
+                        </li>
+
+                        <!-- Jobs Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                ការងារ (Jobs) <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="jobs.html"><i
+                                class="fa-solid fa-user-graduate me-3 fg-info hat"></i>ការងារហាត់ការ
+                                (Internship)</a>
+                                <a class="menu-item" href="parttime.html"><i
+                                class="fa-solid fa-clock me-3 fg-warning"></i>ការងារភាគម៉ោង (Part-time)</a>
+                                <a class="menu-item" href="#featured-section"><i
+                                class="fa-solid fa-briefcase me-3 fg-success"></i>ការងារពេញម៉ោង
+                                (Full-time)</a>
+
+                            </div>
+                        </li>
+
+                        <!-- Scholarships Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                អាហារូបករណ៍ <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="#featured-section"><i
+                                class="fa-solid fa-flag me-3 fg-danger"></i>អាហារូបករណ៍ក្នុងប្រទេស (Local)</a>
+                                <a class="menu-item" href="#featured-section"><i
+                                class="fa-solid fa-globe me-3 fg-primary"></i>អាហារូបករណ៍ក្រៅប្រទេស
+                                (International)</a>
+
+                            </div>
+                        </li>
+
+                        <!-- Career Resources Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                ឯកសារផ្សេងៗ <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="#resources-section"><i
+                                class="fa-solid fa-file-lines me-3 fg-primary"></i>គន្លឹះសរសេរ CV & Cover
+                                Letter</a>
+                                <a class="menu-item" href="#resources-section"><i
+                                class="fa-solid fa-download me-3 fg-success"></i>ទាញយក CV Templates
+                                ឥតគិតថ្លៃ</a>
+                                <a class="menu-item" href="#resources-section"><i
+                                class="fa-solid fa-comments me-3 fg-warning"></i>គន្លឹះសម្ភាសន៍ការងារ</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section">ទំនាក់ទំនង</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-actions d-flex align-items-center gap-3">
+                        <!-- Notification Bell Menu -->
+                        <div class="position-relative">
+                            <button type="button"
+                                class="btn-text theme-secondary btn-icon nav-noti-btn position-relative d-flex align-items-center justify-content-center"
+                                id="notificationDropdown" data-bs-toggle="menu" data-bs-placement="bottom-end"
+                                aria-expanded="false" title="ការជូនដំណឹង" aria-label="ការជូនដំណឹង">
+                                <i class="fa-regular fa-bell fs-lg"></i>
+                                <!-- Unread Badge Count -->
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge theme-danger rounded-pill shadow-sm"
+                                    id="notiBadge">
+                                    3
+                                    <span class="visually-hidden">unread notifications</span>
+                                </span>
+                            </button>
+
+                            <!-- Notification Menu -->
+                            <div class="menu noti-menu shadow-lg">
+                                <!-- Header -->
+                                <div class="noti-header d-flex justify-content-between align-items-center bg-1 p-5 border-bottom">
+                                    <h6 class="m-0 fw-bold fg-1 fs-md">
+                                        <i class="fa-solid fa-bell fg-primary me-3"></i>ការជូនដំណឹង (Notifications)
+                                    </h6>
+                                </div>
+
+                                <!-- Notification Items Container -->
+                                <div class="noti-list">
+
+                                    <!-- Alert 1: Application Sent -->
+                                    <a class="menu-item p-5 border-bottom unread d-flex align-items-start gap-5"
+                                        href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-success fg-emphasis-success rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-circle-check fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">ដាក់ពាក្យជោគជ័យ</strong>
+                                                <span class="fg-2 noti-time">10 នាទីមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                ការដាក់ពាក្យរបស់អ្នកសម្រាប់ <strong>Junior Web Developer</strong>
+                                                ត្រូវបានបញ្ជូនជោគជ័យ។
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                    <!-- Alert 2: CV Status / Interview Alert -->
+                                    <a class="menu-item p-5 border-bottom unread d-flex align-items-start gap-5"
+                                        href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-primary fg-emphasis-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-user-tie fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">កំពុងពិនិត្យ CV / ហៅសម្ភាសន៍</strong>
+                                                <span class="fg-2 noti-time">2 ម៉ោងមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                ធនាគារ <strong>ABA Bank</strong> បានពិនិត្យ CV របស់អ្នក
+                                                និងបានអញ្ជើញអ្នកចូលរួមសម្ភាសន៍។
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                    <!-- Alert 3: Deadline Alert -->
+                                    <a class="menu-item p-5 unread d-flex align-items-start gap-5" href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-warning fg-emphasis-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-triangle-exclamation fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">ជិតផុតកំណត់ដាក់ពាក្យ</strong>
+                                                <span class="fg-2 noti-time">1 ថ្ងៃមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                អាហារូបករណ៍ <strong>MEXT Japan Scholarship</strong>
+                                                នឹងផុតកំណត់ទទួលពាក្យក្នុងពេល 2 ថ្ងៃទៀត!
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                </div>
+
+                                <!-- Footer Link -->
+                                <div class="noti-footer text-center p-3 bg-1 border-top">
+                                    <a href="applications.html" class="fg-primary fw-semibold text-decoration-none small">
+                                        មើលប្រវត្តិដាក់ពាក្យទាំងអស់ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Auth Action Buttons -->
+                        <div class="d-flex align-items-center gap-3">
+                            <button type="button" class="btn-outline theme-primary rounded-pill px-5"
+                                data-bs-toggle="dialog" data-bs-target="#loginModal">ចូលប្រើ</button>
+                            <button type="button" class="btn-solid theme-primary rounded-pill px-5 shadow-sm"
+                                data-bs-toggle="dialog" data-bs-target="#registerModal">ចុះឈ្មោះ</button>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+ <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+
+      <div class="row g-4 align-items-center py-6 banner-size">
+        <div class="lg:col-7">
+          <p class="eyebrow mb-2 mt-6">Your career starts here</p>
+          <h1 class="hero-title mb-3">Find a part-time job that fits you.</h1>
+          <p class="hero-lead mb-4">Earn money, gain experience, and keep studying at the same time.</p>
+
+          <!-- Location picker: filters the cards below (pure CSS) -->
+          <div class="search-box shadow">
+            <div class="row g-2">
+              <div class="md:col-8">
+                <select id="location" class="form-control form-control-lg border-0" aria-label="Location">
+                  <option value="all">Any location</option>
+                  <option value="pp">Phnom Penh</option>
+                  <option value="sr">Siem Reap</option>
+                  <option value="bb">Battambang</option>
+                  <option value="remote">Remote</option>
+                </select>
+              </div>
+              <div class="md:col-4 d-grid">
+                <a href="#jobs" class="btn btn-lg btn-navy">Search part-time jobs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-5">
+          <div class="hero-panel text-center">
+            <h2 class="panel-title mt-3 mb-1">Work smart. Study well.</h2>
+            <p class="hero-lead small mb-0">Flexible hours made for students and fresh graduates.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- JOB LISTINGS -->
+  <main class="container py-6 mb-4" id="jobs">
+    <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+      <div>
+        <p class="eyebrow eyebrow-dark mb-1">Explore opportunities</p>
+        <h2 class="section-title mb-1">Part-time opportunities</h2>
+        <p class="muted mb-0">Flexible jobs you can do around your classes.</p>
+      </div>
+
+      <!-- Category filter: Bootstrap 6 btn-check (radio inside a label), no JavaScript -->
+      <div class="d-flex flex-wrap gap-2" role="group" aria-label="Filter by category">
+        <label class="btn btn-sm btn-outline btn-check filter"><input type="radio" name="cat" id="cat-all" checked> All</label>
+        <label class="btn btn-sm btn-outline btn-check filter"><input type="radio" name="cat" id="cat-food"> Food &amp; Service</label>
+        <label class="btn btn-sm btn-outline btn-check filter"><input type="radio" name="cat" id="cat-retail"> Retail &amp; Sales</label>
+        <label class="btn btn-sm btn-outline btn-check filter"><input type="radio" name="cat" id="cat-education"> Education</label>
+        <label class="btn btn-sm btn-outline btn-check filter"><input type="radio" name="cat" id="cat-online"> Online &amp; Admin</label>
+      </div>
+    </div>
+
+    <div class="row g-4">
+
+      <!-- Part-time Job 1 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="food" data-loc="pp">
+        <article class="card job-card pt-card tone-food h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-mug-hot pt-icon" aria-hidden="true"></i>
+            <img src="assets/img/barista.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 28 Nov 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">Brew &amp; Bean Café</div>
+                <h3 class="job-title">Barista</h3>
+              </div>
+              <div class="company-logo logo-blue">BB</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Evenings</span>
+              <span class="tag">On-site</span>
+              <span class="tag">20 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$2–3 / hour</strong>
+              <small class="muted d-block">Phnom Penh</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-1">Apply</button>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Part-time Job 2 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="food" data-loc="sr">
+        <article class="card job-card pt-card tone-food h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-utensils pt-icon" aria-hidden="true"></i>
+            <img class="img" src="assets/img/Waiter.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 5 Dec 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">Khmer Kitchen</div>
+                <h3 class="job-title">Waiter / Waitress</h3>
+              </div>
+              <div class="company-logo logo-orange">KK</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Weekends</span>
+              <span class="tag">On-site</span>
+              <span class="tag">16 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$120–180 / month</strong>
+              <small class="muted d-block">Siem Reap</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-2">Apply</button>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Part-time Job 3 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="food" data-loc="bb">
+        <article class="card job-card pt-card tone-food h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-bread-slice pt-icon" aria-hidden="true"></i>
+            <img src="assets/img/backery assistant.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 12 Dec 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">Sweet Angkor Bakery</div>
+                <h3 class="job-title">Bakery Assistant</h3>
+              </div>
+              <div class="company-logo logo-pink">SA</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Mornings</span>
+              <span class="tag">On-site</span>
+              <span class="tag">18 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$100–160 / month</strong>
+              <small class="muted d-block">Battambang</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-3">Apply</button>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Part-time Job 4 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="retail" data-loc="pp">
+        <article class="card job-card pt-card tone-retail h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-bag-shopping pt-icon" aria-hidden="true"></i>
+            <img src="assets/img/Sales Assistant.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 20 Nov 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">Metro Mart</div>
+                <h3 class="job-title">Sales Assistant</h3>
+              </div>
+              <div class="company-logo logo-green">MM</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Flexible shifts</span>
+              <span class="tag">On-site</span>
+              <span class="tag">20 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$150–220 / month</strong>
+              <small class="muted d-block">Phnom Penh</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-4">Apply</button>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Part-time Job 5 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="retail" data-loc="sr">
+        <article class="card job-card pt-card tone-retail h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-cash-register pt-icon" aria-hidden="true"></i>
+            <img src="assets/img/Cashier.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 30 Nov 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">Fresh Mart</div>
+                <h3 class="job-title">Cashier</h3>
+              </div>
+              <div class="company-logo logo-teal">FM</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Evenings</span>
+              <span class="tag">On-site</span>
+              <span class="tag">20 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$130–200 / month</strong>
+              <small class="muted d-block">Siem Reap</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-5">Apply</button>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Part-time Job 6 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="retail" data-loc="pp">
+        <article class="card job-card pt-card tone-retail h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-mobile-screen-button pt-icon" aria-hidden="true"></i>
+            <img src="assets/img/parttime/phone-shop.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 15 Dec 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">Techzone</div>
+                <h3 class="job-title">Mobile Shop Assistant</h3>
+              </div>
+              <div class="company-logo logo-purple">TZ</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Weekends</span>
+              <span class="tag">On-site</span>
+              <span class="tag">16 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$140–210 / month</strong>
+              <small class="muted d-block">Phnom Penh</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-6">Apply</button>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Part-time Job 7 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="education" data-loc="pp">
+        <article class="card job-card pt-card tone-education h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-book-open pt-icon" aria-hidden="true"></i>
+            <img src="assets/img/parttime/english-tutor.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 25 Nov 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">Bright Minds Center</div>
+                <h3 class="job-title">English Tutor</h3>
+              </div>
+              <div class="company-logo logo-blue">BM</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Evenings</span>
+              <span class="tag">On-site</span>
+              <span class="tag">12 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$4–6 / hour</strong>
+              <small class="muted d-block">Phnom Penh</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-7">Apply</button>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Part-time Job 8 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="education" data-loc="remote">
+        <article class="card job-card pt-card tone-education h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-calculator pt-icon" aria-hidden="true"></i>
+            <img src="assets/img/parttime/math-tutor.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 10 Dec 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">LearnKH</div>
+                <h3 class="job-title">Math Tutor (Online)</h3>
+              </div>
+              <div class="company-logo logo-orange">LK</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Flexible</span>
+              <span class="tag">Remote</span>
+              <span class="tag">10 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$3–5 / hour</strong>
+              <small class="muted d-block">Work from anywhere</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-8">Apply</button>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Part-time Job 9 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="education" data-loc="bb">
+        <article class="card job-card pt-card tone-education h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-chalkboard-user pt-icon" aria-hidden="true"></i>
+            <img src="assets/img/parttime/teaching-assistant.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 6 Dec 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">Sunrise School</div>
+                <h3 class="job-title">Teaching Assistant</h3>
+              </div>
+              <div class="company-logo logo-green">SS</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Afternoons</span>
+              <span class="tag">On-site</span>
+              <span class="tag">15 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$100–170 / month</strong>
+              <small class="muted d-block">Battambang</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-9">Apply</button>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Part-time Job 10 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="online" data-loc="remote">
+        <article class="card job-card pt-card tone-online h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-share-nodes pt-icon" aria-hidden="true"></i>
+            <img src="assets/img/parttime/social-media.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 18 Dec 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">PixelPost</div>
+                <h3 class="job-title">Social Media Assistant</h3>
+              </div>
+              <div class="company-logo logo-pink">PP</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Flexible</span>
+              <span class="tag">Remote</span>
+              <span class="tag">15 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$100–180 / month</strong>
+              <small class="muted d-block">Work from anywhere</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-10">Apply</button>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Part-time Job 11 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="online" data-loc="pp">
+        <article class="card job-card pt-card tone-online h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-keyboard pt-icon" aria-hidden="true"></i>
+            <img src="assets/img/parttime/data-entry.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 22 Nov 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">OfficeLink</div>
+                <h3 class="job-title">Data Entry Clerk</h3>
+              </div>
+              <div class="company-logo logo-teal">OL</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Afternoons</span>
+              <span class="tag">On-site</span>
+              <span class="tag">20 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$120–190 / month</strong>
+              <small class="muted d-block">Phnom Penh</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-11">Apply</button>
+          </div>
+
+        </article>
+      </div>
+
+      <!-- Part-time Job 12 -->
+      <div class="md:col-6 lg:col-4 job" data-cat="online" data-loc="remote">
+        <article class="card job-card pt-card tone-online h-100">
+
+          <!-- Job picture -->
+          <div class="pt-photo">
+            <i class="fa-solid fa-headset pt-icon" aria-hidden="true"></i>
+            <img src="assets/img/parttime/customer-support.jpg" alt="">
+            <div class="pt-photo-top">
+              <span class="date-pill">Apply by 8 Dec 2026</span>
+              <label class="bookmark" aria-label="Save this job">
+                <input type="checkbox">
+                <i class="fa-regular fa-bookmark off"></i>
+                <i class="fa-solid fa-bookmark on"></i>
+              </label>
+            </div>
+          </div>
+
+          <!-- Job info -->
+          <div class="pt-body">
+            <div class="d-flex justify-content-between align-items-center gap-3 mb-3">
+              <div>
+                <div class="company">ChatNow KH</div>
+                <h3 class="job-title">Customer Support (Chat)</h3>
+              </div>
+              <div class="company-logo logo-purple">CN</div>
+            </div>
+            <div class="tags">
+              <span class="tag">Part-time</span>
+              <span class="tag">Evening shifts</span>
+              <span class="tag">Remote</span>
+              <span class="tag">20 hrs/week</span>
+            </div>
+          </div>
+
+          <!-- Pay, location and Apply button -->
+          <div class="job-footer d-flex justify-content-between align-items-center">
+            <div>
+              <strong class="pay">$130–200 / month</strong>
+              <small class="muted d-block">Work from anywhere</small>
+            </div>
+            <button type="button" class="btn btn-sm btn-apply" data-bs-toggle="dialog" data-bs-target="#applyModal-12">Apply</button>
+          </div>
+
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <!-- APPLY MODALS (one per job, opened by the Apply buttons) -->
+    <!-- Apply modal 1: Barista -->
+    <dialog class="apply-dialog tone-food" id="applyModal-1" aria-labelledby="applyTitle-1">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-blue">BB</div>
+          <div class="flex-grow-1">
+            <div class="company">Brew &amp; Bean Café</div>
+            <h3 class="job-title" id="applyTitle-1">Barista</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$2–3 / hour</span>
+            <span class="tag">Phnom Penh · On-site</span>
+            <span class="tag">Evenings</span>
+            <span class="tag">Apply by 28 Nov 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-1">Full name</label>
+            <input type="text" class="form-control" id="name-1" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-1">Email</label>
+              <input type="email" class="form-control" id="email-1" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-1">Phone</label>
+              <input type="tel" class="form-control" id="phone-1" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-1">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-1" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-1">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-1" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+    <!-- Apply modal 2: Waiter / Waitress -->
+    <dialog class="apply-dialog tone-food" id="applyModal-2" aria-labelledby="applyTitle-2">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-orange">KK</div>
+          <div class="flex-grow-1">
+            <div class="company">Khmer Kitchen</div>
+            <h3 class="job-title" id="applyTitle-2">Waiter / Waitress</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$120–180 / month</span>
+            <span class="tag">Siem Reap · On-site</span>
+            <span class="tag">Weekends</span>
+            <span class="tag">Apply by 5 Dec 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-2">Full name</label>
+            <input type="text" class="form-control" id="name-2" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-2">Email</label>
+              <input type="email" class="form-control" id="email-2" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-2">Phone</label>
+              <input type="tel" class="form-control" id="phone-2" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-2">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-2" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-2">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-2" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+    <!-- Apply modal 3: Bakery Assistant -->
+    <dialog class="apply-dialog tone-food" id="applyModal-3" aria-labelledby="applyTitle-3">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-pink">SA</div>
+          <div class="flex-grow-1">
+            <div class="company">Sweet Angkor Bakery</div>
+            <h3 class="job-title" id="applyTitle-3">Bakery Assistant</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$100–160 / month</span>
+            <span class="tag">Battambang · On-site</span>
+            <span class="tag">Mornings</span>
+            <span class="tag">Apply by 12 Dec 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-3">Full name</label>
+            <input type="text" class="form-control" id="name-3" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-3">Email</label>
+              <input type="email" class="form-control" id="email-3" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-3">Phone</label>
+              <input type="tel" class="form-control" id="phone-3" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-3">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-3" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-3">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-3" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+    <!-- Apply modal 4: Sales Assistant -->
+    <dialog class="apply-dialog tone-retail" id="applyModal-4" aria-labelledby="applyTitle-4">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-green">MM</div>
+          <div class="flex-grow-1">
+            <div class="company">Metro Mart</div>
+            <h3 class="job-title" id="applyTitle-4">Sales Assistant</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$150–220 / month</span>
+            <span class="tag">Phnom Penh · On-site</span>
+            <span class="tag">Flexible shifts</span>
+            <span class="tag">Apply by 20 Nov 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-4">Full name</label>
+            <input type="text" class="form-control" id="name-4" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-4">Email</label>
+              <input type="email" class="form-control" id="email-4" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-4">Phone</label>
+              <input type="tel" class="form-control" id="phone-4" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-4">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-4" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-4">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-4" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+    <!-- Apply modal 5: Cashier -->
+    <dialog class="apply-dialog tone-retail" id="applyModal-5" aria-labelledby="applyTitle-5">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-teal">FM</div>
+          <div class="flex-grow-1">
+            <div class="company">Fresh Mart</div>
+            <h3 class="job-title" id="applyTitle-5">Cashier</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$130–200 / month</span>
+            <span class="tag">Siem Reap · On-site</span>
+            <span class="tag">Evenings</span>
+            <span class="tag">Apply by 30 Nov 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-5">Full name</label>
+            <input type="text" class="form-control" id="name-5" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-5">Email</label>
+              <input type="email" class="form-control" id="email-5" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-5">Phone</label>
+              <input type="tel" class="form-control" id="phone-5" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-5">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-5" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-5">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-5" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+    <!-- Apply modal 6: Mobile Shop Assistant -->
+    <dialog class="apply-dialog tone-retail" id="applyModal-6" aria-labelledby="applyTitle-6">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-purple">TZ</div>
+          <div class="flex-grow-1">
+            <div class="company">Techzone</div>
+            <h3 class="job-title" id="applyTitle-6">Mobile Shop Assistant</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$140–210 / month</span>
+            <span class="tag">Phnom Penh · On-site</span>
+            <span class="tag">Weekends</span>
+            <span class="tag">Apply by 15 Dec 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-6">Full name</label>
+            <input type="text" class="form-control" id="name-6" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-6">Email</label>
+              <input type="email" class="form-control" id="email-6" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-6">Phone</label>
+              <input type="tel" class="form-control" id="phone-6" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-6">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-6" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-6">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-6" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+    <!-- Apply modal 7: English Tutor -->
+    <dialog class="apply-dialog tone-education" id="applyModal-7" aria-labelledby="applyTitle-7">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-blue">BM</div>
+          <div class="flex-grow-1">
+            <div class="company">Bright Minds Center</div>
+            <h3 class="job-title" id="applyTitle-7">English Tutor</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$4–6 / hour</span>
+            <span class="tag">Phnom Penh · On-site</span>
+            <span class="tag">Evenings</span>
+            <span class="tag">Apply by 25 Nov 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-7">Full name</label>
+            <input type="text" class="form-control" id="name-7" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-7">Email</label>
+              <input type="email" class="form-control" id="email-7" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-7">Phone</label>
+              <input type="tel" class="form-control" id="phone-7" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-7">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-7" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-7">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-7" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+    <!-- Apply modal 8: Math Tutor (Online) -->
+    <dialog class="apply-dialog tone-education" id="applyModal-8" aria-labelledby="applyTitle-8">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-orange">LK</div>
+          <div class="flex-grow-1">
+            <div class="company">LearnKH</div>
+            <h3 class="job-title" id="applyTitle-8">Math Tutor (Online)</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$3–5 / hour</span>
+            <span class="tag">Work from anywhere · Remote</span>
+            <span class="tag">Flexible</span>
+            <span class="tag">Apply by 10 Dec 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-8">Full name</label>
+            <input type="text" class="form-control" id="name-8" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-8">Email</label>
+              <input type="email" class="form-control" id="email-8" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-8">Phone</label>
+              <input type="tel" class="form-control" id="phone-8" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-8">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-8" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-8">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-8" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+    <!-- Apply modal 9: Teaching Assistant -->
+    <dialog class="apply-dialog tone-education" id="applyModal-9" aria-labelledby="applyTitle-9">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-green">SS</div>
+          <div class="flex-grow-1">
+            <div class="company">Sunrise School</div>
+            <h3 class="job-title" id="applyTitle-9">Teaching Assistant</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$100–170 / month</span>
+            <span class="tag">Battambang · On-site</span>
+            <span class="tag">Afternoons</span>
+            <span class="tag">Apply by 6 Dec 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-9">Full name</label>
+            <input type="text" class="form-control" id="name-9" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-9">Email</label>
+              <input type="email" class="form-control" id="email-9" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-9">Phone</label>
+              <input type="tel" class="form-control" id="phone-9" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-9">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-9" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-9">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-9" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+    <!-- Apply modal 10: Social Media Assistant -->
+    <dialog class="apply-dialog tone-online" id="applyModal-10" aria-labelledby="applyTitle-10">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-pink">PP</div>
+          <div class="flex-grow-1">
+            <div class="company">PixelPost</div>
+            <h3 class="job-title" id="applyTitle-10">Social Media Assistant</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$100–180 / month</span>
+            <span class="tag">Work from anywhere · Remote</span>
+            <span class="tag">Flexible</span>
+            <span class="tag">Apply by 18 Dec 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-10">Full name</label>
+            <input type="text" class="form-control" id="name-10" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-10">Email</label>
+              <input type="email" class="form-control" id="email-10" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-10">Phone</label>
+              <input type="tel" class="form-control" id="phone-10" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-10">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-10" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-10">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-10" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+    <!-- Apply modal 11: Data Entry Clerk -->
+    <dialog class="apply-dialog tone-online" id="applyModal-11" aria-labelledby="applyTitle-11">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-teal">OL</div>
+          <div class="flex-grow-1">
+            <div class="company">OfficeLink</div>
+            <h3 class="job-title" id="applyTitle-11">Data Entry Clerk</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$120–190 / month</span>
+            <span class="tag">Phnom Penh · On-site</span>
+            <span class="tag">Afternoons</span>
+            <span class="tag">Apply by 22 Nov 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-11">Full name</label>
+            <input type="text" class="form-control" id="name-11" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-11">Email</label>
+              <input type="email" class="form-control" id="email-11" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-11">Phone</label>
+              <input type="tel" class="form-control" id="phone-11" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-11">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-11" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-11">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-11" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+    <!-- Apply modal 12: Customer Support (Chat) -->
+    <dialog class="apply-dialog tone-online" id="applyModal-12" aria-labelledby="applyTitle-12">
+      <form method="dialog">
+
+        <div class="apply-head">
+          <div class="company-logo logo-purple">CN</div>
+          <div class="flex-grow-1">
+            <div class="company">ChatNow KH</div>
+            <h3 class="job-title" id="applyTitle-12">Customer Support (Chat)</h3>
+          </div>
+          <button type="button" class="apply-close" data-bs-dismiss="dialog" aria-label="Close">&times;</button>
+        </div>
+
+        <div class="apply-body">
+          <div class="tags mb-4">
+            <span class="tag">$130–200 / month</span>
+            <span class="tag">Work from anywhere · Remote</span>
+            <span class="tag">Evening shifts</span>
+            <span class="tag">Apply by 8 Dec 2026</span>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="name-12">Full name</label>
+            <input type="text" class="form-control" id="name-12" placeholder="Your full name" required>
+          </div>
+          <div class="row g-3 mb-3">
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="email-12">Email</label>
+              <input type="email" class="form-control" id="email-12" placeholder="you@email.com" required>
+            </div>
+            <div class="md:col-6">
+              <label class="form-label small fw-bold" for="phone-12">Phone</label>
+              <input type="tel" class="form-control" id="phone-12" placeholder="012 345 678" required>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label class="form-label small fw-bold" for="avail-12">Available days &amp; hours</label>
+            <input type="text" class="form-control" id="avail-12" placeholder="e.g. Mon–Fri after 5 PM, weekends">
+          </div>
+          <div class="mb-1">
+            <label class="form-label small fw-bold" for="msg-12">Tell us about yourself</label>
+            <textarea class="form-control" id="msg-12" rows="3" placeholder="Write a short message"></textarea>
+          </div>
+        </div>
+
+        <div class="apply-foot">
+          <button type="submit" class="btn btn-sm btn-apply">Submit</button>
+        </div>
+
+      </form>
+    </dialog>
+
+ <!-- footer -->
+    <footer class="pt-12 pb-7">
+        <div class="container">
+            <div class="row g-7">
+                <!-- Brand Info -->
+                <div class="lg:col-4">
+                    <a class="navbar-brand d-flex align-items-center cb-text-white mb-5" href="#">
+                        <img src="assets/img/logo 3.png" alt="CareerBridge" class="logo">
+                    </a>
+                    <p class="small cb-text-white mb-5 text-footer">
+                        CareerBridge គឺជាវេទិការស្វែងរកការងារ និងអាហារូបករណ៍ឥតគិតថ្លៃ
+                        រចនាឡើងយ៉ាងពិសេសសម្រាប់សិស្ស-និស្សិត និងអ្នកទើបបញ្ចប់ការសិក្សានៅកម្ពុជា។
+                    </p>
+                    <div class="d-flex gap-5">
+                        <a href="#" class="cb-text-white" aria-label="Facebook"><i class="fa-brands fa-facebook fs-lg"></i></a>
+                        <a href="#" class="cb-text-white" aria-label="Telegram"><i class="fa-brands fa-telegram fs-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 lg:col-2">
+                    <h5>តំណភ្ជាប់រហ័ស</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#">ទំព័រដើម</a></li>
+                        <li class="mb-3"><a href="#featured-section">ស្វែងរកការងារ</a></li>
+                        <li class="mb-3"><a href="#featured-section">អាហារូបករណ៍</a></li>
+                        <li class="mb-3"><a href="#resources-section">ធនធាន CV</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories Links -->
+                <div class="col-6 lg:col-2">
+                    <h5>ប្រភេទការងារ</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#">Internships</a></li>
+                        <li class="mb-3"><a href="#">Part-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">Full-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">អាហារូបករណ៍ក្រៅប្រទេស</a></li>
+                    </ul>
+                </div>
+
+                <!-- Academic Assignment Credit -->
+                <div class="lg:col-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <strong>#42 ផ្លូវ 606 សង្កាត់បឹងកក់ ២ ខណ្ឌទួលគោក រាជធានីភ្នំពេញ, Phnom Penh, Cambodia</strong>
+                    </p>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-phone"></i>
+                        <strong>+123 12345678</strong>
+                    </p>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <strong>Email : CareerBridge@gmail.com</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="footer-bottom text-center small">
+                <p class="mb-0">&copy; ២០២៦ CareerBridge KH. រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ រៀបចំឡើងសម្រាប់និស្សិតកម្ពុជាដែលទើបបញ្ចប់ការសិក្សា។</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module">
+        import * as bootstrap from './assets/vendor/bootstrap/js/bootstrap.bundle.js';
+        window.bootstrap = bootstrap;
+    </script>
+
+    <script src="assets/vendor/Bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
