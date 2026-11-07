@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="km" data-bs-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>គន្លឹះសរសេរ CV & Motivation Letter ឱ្យត្រូវស្តង់ដារ | CareerBridge</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 6 CSS -->
+    <link rel="stylesheet" href="assets/vendor/Bootstrap/css/bootstrap.min.css">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/navbar-footer.css">
+    <link rel="stylesheet" href="assets/css/Cv-Cover-letter.css">
+</head>
+
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <span class="badge theme-warning me-3">NEW</span>
+                <small>វេទិកាការងារ & អាហារូបករណ៍លេខ១ សម្រាប់និស្សិតកម្ពុជា 🎓</small>
+            </div>
+            <div class="d-none md:d-block">
+                <small><i class="fa-solid fa-graduation-cap me-1"></i> CareerBridge</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar lg:navbar-expand sticky-top border-bottom">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img class="logo" src="assets/img/Logo head.png" alt="CareerBridge">
+            </a>
+
+            <button class="btn-icon navbar-toggler border border-1" type="button" data-bs-toggle="drawer"
+                data-bs-target="#navbarMain" data-bs-theme="light" aria-controls="navbarMain" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarMain" aria-labelledby="navbarMainLabel"
+                data-bs-theme="light">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarMainLabel">CareerBridge</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+
+                <div class="drawer-body">
+                    <ul class="navbar-nav m-auto lg:mb-0 mb-3 lg:align-items-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">ទំព័រដើម</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                ការងារ (Jobs) <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="index.html#featured-section"><i
+                                        class="fa-solid fa-user-graduate me-3 fg-info hat"></i>ការងារហាត់ការ
+                                    (Internship)</a>
+                                <a class="menu-item" href="index.html#featured-section"><i
+                                        class="fa-solid fa-clock me-3 fg-warning"></i>ការងារភាគម៉ោង (Part-time)</a>
+                                <a class="menu-item" href="index.html#featured-section"><i
+                                        class="fa-solid fa-briefcase me-3 fg-success"></i>ការងារពេញម៉ោង (Full-time)</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                អាហារូបករណ៍ <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="index.html#featured-section"><i
+                                        class="fa-solid fa-flag me-3 fg-danger"></i>អាហារូបករណ៍ក្នុងប្រទេស (Local)</a>
+                                <a class="menu-item" href="index.html#featured-section"><i
+                                        class="fa-solid fa-globe me-3 fg-primary"></i>អាហារូបករណ៍ក្រៅប្រទេស
+                                    (International)</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <button class="nav-link active" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                ឯកសារផ្សេងៗ <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="Cv-Cover-letter.html"><i
+                                        class="fa-solid fa-file-lines me-3 fg-primary"></i>គន្លឹះសរសេរ CV & Cover
+                                    Letter</a>
+                                <a class="menu-item" href="index.html#resources-section"><i
+                                        class="fa-solid fa-download me-3 fg-success"></i>ទាញយក CV Templates
+                                    ឥតគិតថ្លៃ</a>
+                                <a class="menu-item" href="index.html#resources-section"><i
+                                        class="fa-solid fa-comments me-3 fg-warning"></i>គន្លឹះសម្ភាសន៍ការងារ</a>
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section">ទំនាក់ទំនង</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-actions d-flex align-items-center gap-3">
+                        <div class="d-flex align-items-center gap-3">
+                            <button type="button" class="btn-outline theme-primary rounded-pill px-5"
+                                data-bs-toggle="dialog" data-bs-target="#loginModal">ចូលប្រើ</button>
+                            <button type="button" class="btn-solid theme-primary rounded-pill px-5 shadow-sm"
+                                data-bs-toggle="dialog" data-bs-target="#registerModal">ចុះឈ្មោះ</button>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- ============ HERO ============ -->
+        <header class="cv-hero">
+            <div class="container d-flex flex-column align-items-center text-center">
+                <nav aria-label="breadcrumb" class="cv-breadcrumb small">
+                    <a href="index.html">ទំព័រដើម</a>
+                    <span aria-hidden="true">/</span>
+                    <span>ឯកសារផ្សេងៗ</span>
+                    <span aria-hidden="true">/</span>
+                    <span aria-current="page">គន្លឹះសរសេរ CV & Cover Letter</span>
+                </nav>
+                <h1 class="cv-hero-title">គន្លឹះក្នុងការសរសេរឯកសារដាក់ពាក្យឱ្យត្រូវស្តង់ដារ</h1>
+                <p class="cv-hero-lead">
+                    ស្វែងយល់ពីរបៀបសរសេរ CV និង Cover Letter ឱ្យមានលក្ខណៈវិជ្ជាជីវៈ ដើម្បីបង្ហាញពីសមត្ថភាព
+                    ចំណេះដឹង បទពិសោធន៍ និងជំនាញរបស់អ្នក។ មេរៀននេះនឹងជួយណែនាំអ្នកពីការរៀបចំព័ត៌មាន
+                    ការជ្រើសរើសពាក្យពេចន៍ និងការរចនាឯកសារឱ្យមានភាពទាក់ទាញ
+                    ដើម្បីបង្កើនឱកាសក្នុងការទទួលបានការងារដែលអ្នកចង់បាន។
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-5">
+                    <a href="#cv-section" class="btn-solid theme-primary rounded-pill px-6">
+                        <i class="fa-solid fa-file-lines me-3"></i>គន្លឹះសរសេរ CV
+                    </a>
+                    <a href="#letter-section" class="btn-outline theme-primary rounded-pill px-6">
+                        <i class="fa-solid fa-envelope-open-text me-3"></i>សរសេរ Motivation Letter
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- In-page navigation -->
+        <div class="cv-subnav" id="cv-subnav">
+            <div class="container">
+                <ul class="cv-subnav-list d-flex flex-wrap justify-content-center text-center">
+                    <li><a href="#cv-structure">រចនាសម្ព័ន្ធ CV</a></li>
+                    <li><a href="#cv-format">ទ្រង់ទ្រាយ</a></li>
+                    <li><a href="#letter-section">Motivation Letter</a></li>
+                    <li><a href="#mistakes">កំហុសដែលជួបញឹកញាប់</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- ============ PART 1: CV ============ -->
+        <section class="cv-section" id="cv-section">
+            <div class="container">
+                <div class="cv-section-head">
+                    <h2>គន្លឹះក្នុងការសរសេរប្រវត្តិរូបសង្ខេប (CV)</h2>
+                    <p>CV ដ៏ល្អមួយ ឆ្លើយបានលឿនថា “តើបុគ្គលនេះសមនឹងតួនាទីនេះឬទេ?”។ ចាប់ផ្តើមពីរចនាសម្ព័ន្ធត្រឹមត្រូវ
+                        មុននឹងគិតពីការតុបតែងរូបរាង។</p>
+                </div>
+
+                <!-- CV structure: sheet + explanation -->
+                <div class="row d-flex gap-5 align-items-start" id="cv-structure">
+                    <div class="lg:col-5 ">
+
+                        <figure class="cv-paper-wrap">
+                            <div class="cv-paper" role="img" aria-label="ឧទាហរណ៍ CV របស់អ្នកទើបបញ្ចប់ការសិក្សា">
+
+                                <div class="cv-top">
+                                    <p class="cv-kingdom"><u>KINGDOM OF CAMBODIA</u></p>
+                                    <p class="cv-kingdom">Nation Religion King</p>
+                                    <h5 class="cv-title">CURRICULUM VITAE</h5>
+                                </div>
+
+                                <div class="cv-id">
+                                    <div class="cv-photo">4x6</div>
+                                    <dl>
+                                        <div class="cv-row">
+                                            <dt>Name</dt>
+                                            <dd><strong>HENG SOKHAI</strong></dd>
+                                        </div>
+                                        <div class="cv-row">
+                                            <dt>Address</dt>
+                                            <dd class="blank">Phum Trapeang Chhuk, Sensok, Phnom Penh</dd>
+                                        </div>
+                                        <div class="cv-row">
+                                            <dt>Email</dt>
+                                            <dd class="blank">hengsokhai@gmail.com</dd>
+                                        </div>
+                                        <div class="cv-row">
+                                            <dt>Tel</dt>
+                                            <dd class="blank"> 011 314 121</dd>
+                                        </div>
+                                        <div class="cv-row">
+                                            <dt>Apply for</dt>
+                                            <dd class="blank">Barista</dd>
+                                        </div>
+                                    </dl>
+                                </div>
+                                <hr class="cv-rule">
+
+                                <div class="cv-bar">Personal Data:</div>
+                                <dl class="cv-body">
+                                    <div class="cv-row">
+                                        <dt>Sex</dt>
+                                        <dd>Male</dd>
+                                    </div>
+                                    <div class="cv-row">
+                                        <dt>Marital Status</dt>
+                                        <dd>Single</dd>
+                                    </div>
+                                    <div class="cv-row">
+                                        <dt>Nationality</dt>
+                                        <dd>Cambodian</dd>
+                                    </div>
+                                    <div class="cv-row">
+                                        <dt>Health</dt>
+                                        <dd>Good</dd>
+                                    </div>
+                                    <div class="cv-row">
+                                        <dt>Date of Birth</dt>
+                                        <dd class="blank">9 September 2007</dd>
+                                    </div>
+                                    <div class="cv-row">
+                                        <dt>Place of Birth</dt>
+                                        <dd>Phnom Penh</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="cv-bar">Education and Professional Qualifications:</div>
+                                <dl class="cv-body">
+                                    <div class="cv-row">
+                                        <dt>2019-2025</dt>
+                                        <dd>Diploma of National Baccalaureate (BAC II)<br>&nbsp;At&nbsp;Preah Sihanouk High School.
+                                        </dd>
+                                    </div>
+                                    <div class="cv-row">
+                                        <dt>Computer</dt>
+                                        <dd>Ms. Word &amp; Excel, Internet and E-mail.</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="cv-bar">Experiences:</div>
+                                <dl class="cv-body">
+                                    <div class="cv-row">
+                                        <dt>Jan 13 to July 14</dt>
+                                        <dd>Seller at Emart</dd>
+                                    </div>
+                                    <div class="cv-row">
+                                        <dt>Jun 15 to July 15</dt>
+                                        <dd>Seller at Starmart</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="cv-bar">Languages and Proficiency:</div>
+                                <dl class="cv-body">
+                                    <div class="cv-row">
+                                        <dt>Khmer</dt>
+                                        <dd>Native</dd>
+                                    </div>
+                                    <div class="cv-row">
+                                        <dt>English</dt>
+                                        <dd>Good</dd>
+                                    </div>
+                                </dl>
+
+                                <div class="cv-bar">Skills:</div>
+                                <div class="cv-body">
+                                    <ul>
+                                        <li>Good at communication</li>
+                                        <li>Be hard working and honest</li>
+                                        <li>Be responsible, patient and friendly</li>
+                                        <li>Ability to work in team</li>
+                                    </ul>
+                                </div>
+
+                                <div class="cv-bar">Interests:</div>
+                                <div class="cv-body">
+                                    <p>Reading Books, Newspaper, Magazine, Listening to music, enjoy traveling,
+                                        watching TV, go sightseeing and talking with friends.</p>
+                                </div>
+                            </div>
+                    </div>
+
+                    <div class="lg:col-6">
+                        <h3 class="cv-h3">តើដាក់អ្វីក្នុងផ្នែកនីមួយៗ?</h3>
+                        <ol class="cv-steps">
+                            <li>
+                                <h4>ព័ត៌មានផ្ទាល់ខ្លួន និងទំនាក់ទំនង</h4>
+                                <p>បង្ហាញព័ត៌មានសំខាន់ៗដូចជា ឈ្មោះពេញ លេខទូរស័ព្ទ អ៊ីមែល និងទីតាំងរស់នៅ។
+                                    ត្រូវប្រាកដថាព័ត៌មានទាំងនេះមានភាពត្រឹមត្រូវ
+                                    និងអាចឱ្យនិយោជកទាក់ទងអ្នកបានងាយស្រួល។
+                                </p>
+                            </li>
+                            <li>
+                                <h4>សេចក្តីសង្ខេបអំពីខ្លួន</h4>
+                                <p>អ្នកជានរណា មានជំនាញអ្វីសំខាន់ ហើយកំពុងស្វែងរកអ្វី។
+                                    សរសេរឱ្យត្រូវនឹងតួនាទីដែលដាក់ពាក្យ។</p>
+                            </li>
+                            <li>
+                                <h4>ប្រវត្តិការអប់រំ</h4>
+                                <p>បង្ហាញពីកម្រិតសិក្សា ឈ្មោះសាលា ឬសាកលវិទ្យាល័យ មុខជំនាញ និងឆ្នាំសិក្សា។
+                                    អ្នកអាចបន្ថែមសមិទ្ធផលសិក្សា ឬគម្រោងដែលបានធ្វើ ដើម្បីបង្ហាញពីចំណេះដឹងរបស់អ្នក។
+                                </p>
+                            </li>
+                            <li>
+                                <h4>បទពិសោធន៍ ហាត់ការ និងការងារស្ម័គ្រចិត្ត</h4>
+                                <p>រៀបរាប់ពីការងារដែលធ្លាប់ធ្វើ កន្លែងធ្វើការ តួនាទី និងរយៈពេល។ គួរបញ្ជាក់ពីភារកិច្ច
+                                    សមិទ្ធផល និងជំនាញដែលទទួលបានពីបទពិសោធន៍ទាំងនោះ។</p>
+                            </li>
+                            <li>
+                                <h4>ជំនាញ និងភាសា</h4>
+                                <p>បង្ហាញពីជំនាញដែលអ្នកមាន ដូចជា ជំនាញកុំព្យូទ័រ ការរចនា ការទំនាក់ទំនង ការងារជាក្រុម
+                                    និងការដោះស្រាយបញ្ហា។ គួរជ្រើសរើសជំនាញដែលសមស្របនឹងការងារដែលអ្នកចង់ដាក់ពាក្យ។</p>
+                            </li>
+                            <li>
+                                <h4>សកម្មភាព និងសមិទ្ធផល</h4>
+                                <p>បន្ថែមព័ត៌មានអំពីសកម្មភាពសិក្សា ការងារស្ម័គ្រចិត្ត ការចូលរួមក្នុងកម្មវិធីផ្សេងៗ
+                                    និងពានរង្វាន់ដែលអ្នកទទួលបាន។ ផ្នែកនេះជួយបង្ហាញពីភាពសកម្ម ការទទួលខុសត្រូវ
+                                    និងសមត្ថភាពរបស់អ្នក។
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Format -->
+                    <div class="cv-block" id="cv-format">
+                        <h3 class="cv-h3">ទ្រង់ទ្រាយដែលត្រូវតាមស្តង់ដារ</h3>
+                        <div class="cv-grid-4">
+                            <div class="cv-fact">
+                                <i class="fa-solid fa-file"></i>
+                                <h4>ទំព័រ</h4>
+                                <p>១ ទំព័រសម្រាប់អ្នកទើបបញ្ចប់ការសិក្សា ហើយ ២ ទំព័រជាអតិបរមាបើមានបទពិសោធន៍ច្រើន។</p>
+                            </div>
+                            <div class="cv-fact">
+                                <i class="fa-solid fa-font"></i>
+                                <h4>ពុម្ពអក្សរ</h4>
+                                <p>ប្រើពុម្ពអក្សរមួយ ឬពីរប្រភេទ ទំហំ ១០–១២ pt ឱ្យអានស្រួល។ ភាសាខ្មែរ
+                                   ប្រើ Khmer OS Battambang ហើយអង់គ្លេស ប្រើ Arial ឬ Calibri។</p>
+                            </div>
+                            <div class="cv-fact">
+                                <i class="fa-solid fa-file-pdf"></i>
+                                <h4>ប្រភេទឯកសារ</h4>
+                                <p>ផ្ញើជា PDF ដើម្បីកុំឱ្យទ្រង់ទ្រាយប្រែប្រួល។ ដាក់ឈ្មោះឯកសារដូចជា
+                                    <code>CV_Sokha-Chan.pdf</code>។
+                                </p>
+                            </div>
+                            <div class="cv-fact">
+                                <i class="fa-solid fa-image-portrait"></i>
+                                <h4>រូបថត</h4>
+                                <p>ក្រុមហ៊ុនក្នុងស្រុកខ្លះសុំរូបថត ប៉ុន្តែអាហារូបករណ៍
+                                    និងក្រុមហ៊ុនអន្តរជាតិភាគច្រើនមិនត្រូវការ។</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Checklist -->
+                    <div class="cv-block">
+                        <div class="cv-checklist">
+                            <h3 class="cv-h3">បញ្ជីត្រួតពិនិត្យមុនផ្ញើ CV</h3>
+                            <ul>
+                                <li><label><input type="checkbox"> ព័ត៌មានទំនាក់ទំនងត្រឹមត្រូវ
+                                        ហើយអ៊ីមែលមើលទៅវិជ្ជាជីវៈ</label></li>
+                                <li><label><input type="checkbox"> មានពាក្យគន្លឹះដែលត្រូវនឹងការប្រកាសជួលបុគ្គលិក</label>
+                                </li>
+                                <li><label><input type="checkbox"> ចំណុចនីមួយៗចាប់ផ្តើមដោយកិរិយាសព្ទ
+                                        ហើយមានលេខយ៉ាងហោចណាស់ពាក់កណ្តាល</label></li>
+                                <li><label><input type="checkbox"> កាលបរិច្ឆេទ
+                                        និងទ្រង់ទ្រាយស៊ីសង្វាក់គ្នាទាំងអស់</label>
+                                </li>
+                                <li><label><input type="checkbox"> បានពិនិត្យអក្ខរាវិរុទ្ធ
+                                        ហើយឱ្យមិត្តភក្តិម្នាក់អានម្តងទៀត</label></li>
+                                <li><label><input type="checkbox"> រក្សាទុកជា PDF ហើយបើកមើលម្តងទៀតលើទូរស័ព្ទ</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- ============ PART 2: LETTER ============ -->
+        <section class="cv-section is-alt" id="letter-section">
+            <div class="container">
+                <div class="cv-section-head">
+                    <h2>វិធីសាស្ត្រសរសេរសំបុត្រស្នើសុំការងារ ឬអាហារូបករណ៍ (Motivation Letter)</h2>
+                    <p>CV ប្រាប់ថាអ្នកបានធ្វើអ្វី ចំណែកសំបុត្រប្រាប់ថា <em>ហេតុអ្វី</em> អ្នកសមនឹងឱកាសនេះ
+                        និងអ្វីដែលអ្នកនឹងធ្វើបន្ទាប់។ សំបុត្រល្អមួយមិនលើសពី ១ ទំព័រ (ប្រហែល ៣០០–៤០០ ពាក្យ) ទេ
+                        លុះត្រាតែអាហារូបករណ៍កំណត់ផ្សេង។</p>
+                </div>
+
+                <!-- Job vs scholarship -->
+                <div class="row g-5 mb-8">
+                    <div class="md:col-6">
+                        <div class="cv-type">
+                            <h3><i class="fa-solid fa-briefcase"></i> សំបុត្រស្នើសុំការងារ</h3>
+                            <p>ផ្តោតលើ <strong>តម្លៃដែលអ្នកនាំមកឱ្យក្រុមហ៊ុន</strong>។ បង្ហាញជំនាញដែលត្រូវនឹងតួនាទី
+                                ហើយប្រាប់ថាអ្នកបានស្រាវជ្រាវអំពីក្រុមហ៊ុន។</p>
+                        </div>
+                    </div>
+                    <div class="md:col-6">
+                        <div class="cv-type">
+                            <h3><i class="fa-solid fa-graduation-cap"></i> សំបុត្រស្នើសុំអាហារូបករណ៍</h3>
+                            <p>ផ្តោតលើ <strong>គោលដៅ និងផលប៉ះពាល់</strong>។ ពន្យល់ពីមូលហេតុជ្រើសមុខជំនាញ
+                                ហើយអ្នកនឹងយកចំណេះដឹងមកអភិវឌ្ឍសហគមន៍ ឬប្រទេសកម្ពុជាយ៉ាងដូចម្តេច។</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row g-7 align-items-start">
+                    <!-- Structure -->
+                    <div class="lg:col-5">
+                        <h3 class="cv-h3">រចនាសម្ព័ន្ធ ៤ កថាខណ្ឌ</h3>
+                        <ol class="cv-steps is-compact">
+                            <li>
+                                <h4>ការបើក</h4>
+                                <p>បញ្ជាក់ថាអ្នកដាក់ពាក្យសម្រាប់អ្វី ហើយមានចំណុចទាក់ទាញមួយប្រយោគដែលធ្វើឱ្យគេចង់អានបន្ត។
+                                </p>
+                            </li>
+                            <li>
+                                <h4>ហេតុអ្វីអ្នកសម</h4>
+                                <p>ជ្រើសបទពិសោធន៍ ២–៣ ដែលទាក់ទងបំផុត ហើយភ្ជាប់វាទៅនឹងតម្រូវការរបស់គេ។</p>
+                            </li>
+                            <li>
+                                <h4>ហេតុអ្វីអង្គការ ឬកម្មវិធីនេះ</h4>
+                                <p>បង្ហាញថាអ្នកយល់ពីបេសកកម្ម ឬកម្មវិធីសិក្សារបស់គេ ហើយអ្នកចង់ចូលរួមដោយសារអ្វី។</p>
+                            </li>
+                            <li>
+                                <h4>ការបញ្ចប់</h4>
+                                <p>សង្ខេបចំណុចខ្លាំង ថ្លែងអំណរគុណ និងប្រាប់ថាអ្នកត្រៀមខ្លួនសម្ភាសន៍។</p>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <!-- Sample letter -->
+                    <div class="lg:col-7">
+                        <article class="cv-letter" aria-label="គំរូសំបុត្រ">
+                            <header class="cv-letter-meta">
+                                <span>[ឈ្មោះរបស់អ្នក] · [លេខទូរស័ព្ទ] · [អ៊ីមែល]</span>
+                                <span>[ថ្ងៃ ខែ ឆ្នាំ]</span>
+                            </header>
+                            <p class="cv-letter-to">
+                                ជូនចំពោះ៖ [ឈ្មោះអ្នកទទួល ឬ “ក្រុមប្រឹក្សាជ្រើសរើស”]<br>
+                                [ឈ្មោះអង្គការ / ក្រុមហ៊ុន / ស្ថាប័នផ្តល់អាហារូបករណ៍]
+                            </p>
+                            <p class="cv-letter-subject"><strong>កម្មវត្ថុ៖</strong> ការដាក់ពាក្យសុំ [ឈ្មោះតួនាទី /
+                                អាហារូបករណ៍]</p>
+
+                            <p><span class="cv-letter-part">បើក</span>
+                                ខ្ញុំសូមគោរពដាក់ពាក្យសុំ [ឈ្មោះតួនាទី / អាហារូបករណ៍] ដែលបានប្រកាសតាម [ប្រភព]។
+                                ក្នុងនាមជានិស្សិតជំនាញ [ឈ្មោះជំនាញ] ខ្ញុំមានចំណាប់អារម្មណ៍យ៉ាងខ្លាំងចំពោះ [ប្រធានបទ]
+                                ដោយសារ [មូលហេតុខ្លីមួយ]។</p>
+
+                            <p><span class="cv-letter-part">ហេតុអ្វីខ្ញុំសម</span>
+                                កន្លងមក ខ្ញុំបាន [សកម្មភាព ១ + លទ្ធផលជាលេខ] និង [សកម្មភាព ២ + លទ្ធផលជាលេខ]។
+                                បទពិសោធន៍ទាំងនេះបានបណ្តុះជំនាញ [ជំនាញ] ដែលត្រូវនឹងតម្រូវការ
+                                [ឈ្មោះតម្រូវការក្នុងការប្រកាស]។</p>
+
+                            <p><span class="cv-letter-part">ហេតុអ្វីអ្នក</span>
+                                ខ្ញុំចង់ចូលរួមជាមួយ [ឈ្មោះស្ថាប័ន] ព្រោះ [អ្វីដែលអ្នកបានស្រាវជ្រាវ ដូចជា គម្រោង តម្លៃ
+                                ឬមុខវិជ្ជា]។
+                                គោលដៅរបស់ខ្ញុំគឺ [គោលដៅរយៈពេលវែង] ហើយខ្ញុំនឹង [វិធីដែលនឹងយកទៅអនុវត្តនៅកម្ពុជា
+                                ឬក្នុងក្រុមហ៊ុន]។</p>
+
+                            <p><span class="cv-letter-part">បិទ</span>
+                                ខ្ញុំសូមអរគុណចំពោះពេលវេលាដែលបានពិចារណាពាក្យសុំរបស់ខ្ញុំ។
+                                ខ្ញុំរីករាយនឹងផ្តល់ព័ត៌មានបន្ថែម ឬចូលរួមសម្ភាសន៍តាមពេលវេលាដែលសមស្រប។</p>
+
+                            <p class="cv-letter-sign">ដោយក្តីគោរព<br><strong>[ឈ្មោះពេញ និងហត្ថលេខា]</strong></p>
+                        </article>
+                    </div>
+                </div>
+
+                <!-- Tips -->
+                <div class="cv-block">
+                    <h3 class="cv-h3">គន្លឹះដែលធ្វើឱ្យសំបុត្រលេចធ្លោ</h3>
+                    <div class="cv-grid-3">
+                        <div class="cv-tip">
+                            <h4>ប្រើរឿងពិតមួយ</h4>
+                            <p>ជំនួសឱ្យការសរសេរថា “ខ្ញុំជាអ្នកដឹកនាំ” ត្រូវរៀបរាប់ពីពេលវេលាមួយដែលអ្នកបានដឹកនាំ
+                                ហើយអ្វីដែលបានកើតឡើង។</p>
+                        </div>
+                        <div class="cv-tip">
+                            <h4>ប្រើពាក្យគន្លឹះពីការប្រកាស</h4>
+                            <p>ប្រព័ន្ធត្រួតពិនិត្យស្វ័យប្រវត្តិ និងអ្នកអាន ស្វែងរកពាក្យដែលត្រូវនឹងតម្រូវការ។
+                                សូមប្រើពាក្យទាំងនោះដោយធម្មជាតិ។</p>
+                        </div>
+                        <div class="cv-tip">
+                            <h4>ភ្ជាប់ទៅអនាគត</h4>
+                            <p>សម្រាប់អាហារូបករណ៍ ត្រូវបង្ហាញផែនការក្រោយបញ្ចប់ការសិក្សា ហើយថាវាជួយសង្គមយ៉ាងដូចម្តេច។</p>
+                        </div>
+                        <div class="cv-tip">
+                            <h4>សំឡេងរបស់ខ្លួនឯង</h4>
+                            <p>សរសេរដោយភាសាសុភាព ច្បាស់លាស់ និងស្មោះត្រង់។ កុំចម្លងគំរូពីអ៊ីនធឺណិត ព្រោះអ្នកអានដឹងភ្លាម។
+                            </p>
+                        </div>
+                        <div class="cv-tip">
+                            <h4>មួយច្បាប់ ក្នុងមួយកន្លែង</h4>
+                            <p>កែឈ្មោះស្ថាប័ន តួនាទី និងហេតុផលឱ្យត្រូវគ្រប់ពេលផ្ញើ។ ឈ្មោះខុសគឺជាកំហុសដែលគេមិនអភ័យទោសឱ្យ។
+                            </p>
+                        </div>
+                        <div class="cv-tip">
+                            <h4>អានឮៗ មុនផ្ញើ</h4>
+                            <p>ការអានឮៗជួយឱ្យឃើញប្រយោគវែងពេក និងកំហុសអក្ខរាវិរុទ្ធ។ ឱ្យមិត្តភក្តិ
+                                ឬគ្រូអានម្តងទៀតក៏កាន់តែប្រសើរ។</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ MISTAKES ============ -->
+        <section class="cv-section" id="mistakes">
+            <div class="container">
+                <div class="cv-section-head">
+                    <h2>កំហុសដែលជួបញឹកញាប់ និងវិធីកែ</h2>
+                </div>
+                <div class="accordion accordion-gap">
+                    <details class="accordion-item" name="accordionExample" open>
+                        <summary class="accordion-header">
+                            តើធ្វើដូចម្តេចដើម្បីសរសេរប្រវត្តិរូបសង្ខេប (CV) ឱ្យមានភាពទាក់ទាញ និងវិជ្ជាជីវៈ?
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m2 5 6 6 6-6" />
+                            </svg>
+                        </summary>
+                        <div class="accordion-body">
+                            <p>ការសរសេរ CV ឱ្យបានល្អគឺជាជំហានដំបូងក្នុងការស្វែងរកការងារ។ អ្នកគួររៀបចំព័ត៌មានផ្ទាល់ខ្លួន
+                                ប្រវត្តិការសិក្សា បទពិសោធន៍ការងារ ជំនាញបច្ចេកទេស និងជំនាញទន់ (Soft Skills)
+                                ឱ្យមានរបៀបរៀបរយ និងងាយស្រួលអាន។ គួរប្រើពាក្យពេចន៍ខ្លីៗ ច្បាស់លាស់
+                                និងបង្ហាញពីសមត្ថភាពរបស់អ្នក។</p>
+                        </div>
+                    </details>
+                    <details class="accordion-item" name="accordionExample" open>
+                        <summary class="accordion-header">
+                            តើនិស្សិតដែលមិនទាន់មានបទពិសោធន៍ការងារអាចដាក់ពាក្យសុំការងារបានដែរឬទេ?
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m2 5 6 6 6-6" />
+                            </svg>
+                        </summary>
+                        <div class="accordion-body">
+                            <p>បាន! ទោះបីជាមិនទាន់មានបទពិសោធន៍ការងារក៏ដោយ អ្នកអាចបង្ហាញពីគម្រោងសិក្សា (Academic
+                                Projects) ការងារស្ម័គ្រចិត្ត (Volunteer Work) ការហាត់ការងារ (Internship)
+                                និងជំនាញផ្ទាល់ខ្លួន។ ចំណុចសំខាន់គឺត្រូវបង្ហាញពីឆន្ទៈក្នុងការរៀនសូត្រ ការទទួលខុសត្រូវ
+                                និងសមត្ថភាពក្នុងការអភិវឌ្ឍខ្លួន។</p>
+                        </div>
+                    </details>
+                    <details class="accordion-item" name="accordionExample">
+                        <summary class="accordion-header">
+                            តើការសម្ភាសន៍ការងារមានសារៈសំខាន់យ៉ាងដូចម្តេច?
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m2 5 6 6 6-6" />
+                            </svg>
+                        </summary>
+                        <div class="accordion-body">
+                            <p>ការសម្ភាសន៍ការងារគឺជាឱកាសសម្រាប់បេក្ខជនបង្ហាញពីសមត្ថភាព ចំណេះដឹង
+                                និងបុគ្គលិកលក្ខណៈរបស់ខ្លួនទៅកាន់និយោជក។ ការត្រៀមខ្លួនជាមុន ដូចជាការសិក្សាអំពីក្រុមហ៊ុន
+                                ការហាត់ឆ្លើយសំណួរ និងការស្លៀកពាក់ឱ្យបានសមរម្យ អាចជួយបង្កើនទំនុកចិត្ត
+                                និងឱកាសទទួលបានការងារ។</p>
+                        </div>
+                    </details>
+                    <details class="accordion-item" name="accordionExample">
+                        <summary class="accordion-header">
+                            តើជំនាញអ្វីខ្លះដែលនិស្សិតគួរមានមុនពេលចូលបម្រើការងារ?
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m2 5 6 6 6-6" />
+                            </svg>
+                        </summary>
+                        <div class="accordion-body">
+                            <p>និស្សិតគួរអភិវឌ្ឍជំនាញសំខាន់ៗដូចជា ការប្រាស្រ័យទាក់ទង (Communication Skills)
+                                ការធ្វើការជាក្រុម (Teamwork) ការដោះស្រាយបញ្ហា (Problem-Solving) ការគ្រប់គ្រងពេលវេលា
+                                (Time Management) និងជំនាញបច្ចេកទេស (Technical Skills)
+                                ដើម្បីត្រៀមខ្លួនសម្រាប់ទីផ្សារការងារ។</p>
+                        </div>
+                    </details>
+                    <details class="accordion-item" name="accordionExample">
+                        <summary class="accordion-header">
+                            មិនបានពិនិត្យកំហុសអក្ខរាវិរុទ្ធ និងឈ្មោះឯកសារ
+                            <svg class="accordion-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"
+                                fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="m2 5 6 6 6-6" />
+                            </svg>
+                        </summary>
+                        <div class="accordion-body">
+                            <p>ពិនិត្យម្តងទៀតអំពីឈ្មោះអ្នកទទួល ឈ្មោះក្រុមហ៊ុន និងឈ្មោះឯកសារ
+                                ព្រោះកំហុសតូចៗអាចធ្វើឱ្យអ្នកបាត់ឱកាស។</p>
+                        </div>
+                    </details>
+                </div>
+
+                <!-- CTA -->
+                <div class="cv-cta">
+                    <div>
+                        <h3>ត្រៀមខ្លួនដាក់ពាក្យហើយឬនៅ?</h3>
+                        <p>ទាញយកគំរូ CV ឥតគិតថ្លៃ ឬស្វែងរកឱកាសដែលសមនឹងអ្នក។</p>
+                    </div>
+                    <div class="d-flex flex-wrap gap-5">
+                        <a href="index.html#resources-section" class="btn-solid theme-warning rounded-pill px-6">
+                            <i class="fa-solid fa-download me-3"></i>ទាញយក CV Templates
+                        </a>
+                        <a href="index.html#featured-section" class="btn-outline theme-light rounded-pill px-6">
+                            ស្វែងរកការងារ & អាហារូបករណ៍
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="pt-12 pb-7" id="contact-section">
+        <div class="container">
+            <div class="row g-7">
+                <div class="lg:col-4">
+                    <a class="navbar-brand d-flex align-items-center cb-text-white mb-5" href="index.html">
+                        <img src="assets/img/logo 3.png" alt="CareerBridge" class="logo">
+                    </a>
+                    <p class="small cb-text-white mb-5 text-footer">
+                        CareerBridge គឺជាវេទិការស្វែងរកការងារ និងអាហារូបករណ៍ឥតគិតថ្លៃ
+                        រចនាឡើងយ៉ាងពិសេសសម្រាប់សិស្ស-និស្សិត និងអ្នកទើបបញ្ចប់ការសិក្សានៅកម្ពុជា។
+                    </p>
+                    <div class="d-flex gap-5">
+                        <a href="#" class="cb-text-white" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook fs-lg"></i></a>
+                        <a href="#" class="cb-text-white" aria-label="Telegram"><i
+                                class="fa-brands fa-telegram fs-lg"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-6 lg:col-2">
+                    <h5>តំណភ្ជាប់រហ័ស</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="index.html">ទំព័រដើម</a></li>
+                        <li class="mb-3"><a href="index.html#featured-section">ស្វែងរកការងារ</a></li>
+                        <li class="mb-3"><a href="index.html#featured-section">អាហារូបករណ៍</a></li>
+                        <li class="mb-3"><a href="index.html#resources-section">ធនធាន CV</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 lg:col-2">
+                    <h5>ប្រភេទការងារ</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#">Internships</a></li>
+                        <li class="mb-3"><a href="#">Part-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">Full-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">អាហារូបករណ៍ក្រៅប្រទេស</a></li>
+                    </ul>
+                </div>
+
+                <div class="lg:col-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <strong>#42 ផ្លូវ 606 សង្កាត់បឹងកក់ ២ ខណ្ឌទួលគោក រាជធានីភ្នំពេញ, Phnom Penh, Cambodia</strong>
+                    </p>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-phone"></i>
+                        <strong>+123 12345678</strong>
+                    </p>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <strong>Email : CareerBridge@gmail.com</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="footer-bottom text-center small">
+                <p class="mb-0">&copy; ២០២៦ CareerBridge KH. រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ
+                    រៀបចំឡើងសម្រាប់និស្សិតកម្ពុជាដែលទើបបញ្ចប់ការសិក្សា។</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+        import * as bootstrap from './assets/vendor/bootstrap/js/bootstrap.bundle.js';
+        window.bootstrap = bootstrap;
+    </script>
+
+</body>
+
+</html>
