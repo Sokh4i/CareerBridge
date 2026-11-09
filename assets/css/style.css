@@ -9,7 +9,13 @@
     --cb-gray-200: #e9ecef;
     --cb-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     --cb-shadow-hover: 0 15px 35px rgba(13, 110, 253, 0.12);
+
+      --stat-blue:  #0a66c2;
+      --stat-green: #0b8a3e;
+      --stat-gold:  #a67c00;
+      --stat-cyan:  #0a8fc0;
 }
+
 
 html {
     scrollbar-gutter: auto !important;
@@ -20,6 +26,7 @@ body {
     color: var(--cb-dark);
     background-color: #ffffff;
 }
+
 
 
 /* Hero Section  */
@@ -69,9 +76,16 @@ body {
     border: none !important;
     box-shadow: none !important;
     padding: 12px;
-    font-size: .95rem;
+    font-size: 0.95rem;
     background-color: transparent
 }
+.form-select {
+    border: none !important;
+    box-shadow: none !important;
+    font-size: 0.95rem;
+    background-color: transparent
+}
+
 
 .search-divider {
     border-right: 1px solid var(--cb-gray-200)
@@ -85,6 +99,15 @@ body {
     border-radius: 50px;
     text-decoration: none;
     font-size: .8rem
+}
+.pop{
+    flex-wrap:wrap;
+    font-size:.875rem;
+}
+.pop .tag-pill:hover{
+    background: var(--cb-primary);
+    color: #fff;
+    border-color: var(--cb-primary)
 }
 
 .btn-search {
@@ -141,3 +164,104 @@ body {
         padding: 50px 0
     }
 }
+
+
+/* Stat Card Styles */
+.stat-card {
+      border: 1px solid #e9ecef;
+      border-radius: 1.25rem;
+      background: #fff;
+    }
+    .stat-number {
+      font-family: "Inter", system-ui, sans-serif;
+      font-weight: 800;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+    .stat-label {
+      color: #5f6368;
+      font-size: 0.90rem;
+    }
+
+     /* Category Card Styling */
+        .category-card {
+            border: 1px solid var(--cb-gray-200);
+            border-radius: 16px;
+            padding: 24px;
+            background: #fff;
+            cursor: pointer;
+            height: 100%;
+        }
+
+        .category-card:hover {
+            border-color: var(--cb-primary);
+            transform: translateY(-5px);
+            box-shadow: var(--cb-shadow-hover);
+        }
+
+        .icon-wrapper {
+            width: 55px;
+            height: 55px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+        }
+
+
+        /* Job & Scholarship Cards */
+        .job-card {
+            border: 1px solid var(--cb-gray-200);
+            border-radius: 16px;
+            background: #ffffff;
+            overflow: hidden;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .job-card:hover {
+            border-color: rgba(13, 110, 253, 0.4);
+            box-shadow: var(--cb-shadow-hover);
+            transform: translateY(-4px);
+        }
+
+        .company-logo {
+            width: 52px;
+            height: 52px;
+            border-radius: 12px;
+            object-fit: cover;
+            border: 1px solid var(--cb-gray-200);
+        }
+
+        .badge-job-type {
+            font-size: 0.78rem;
+            padding: 5px 12px;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+         /* Career Resource Highlight */
+        .resource-card {
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            border: 1px solid var(--cb-gray-200);
+            border-radius: 16px;
+            padding: 24px;
+        }
+
+        .resource-card:hover {
+            box-shadow: var(--cb-shadow-hover);
+            border-color: var(--cb-primary);
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background: linear-gradient(135deg, #0d6efd 0%, #0a4ab2 100%);
+            border-radius: 24px;
+            color: #ffffff;
+            padding: 50px 30px;
+            position: relative;
+            overflow: hidden;
+        }

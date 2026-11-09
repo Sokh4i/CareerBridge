@@ -1,0 +1,132 @@
+:root {
+    --cb-primary: #0d6efd;
+    --cb-primary-dark: #0a58ca;
+    --cb-success: #198754;
+    --cb-warning: #ffc107;
+    --cb-light: #f8f9fa;
+    --cb-dark: #212529;
+    --cb-gray-100: #f1f3f5;
+    --cb-gray-200: #e9ecef;
+    --cb-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --cb-shadow-hover: 0 15px 35px rgba(13, 110, 253, 0.12);
+}
+
+html {
+    scrollbar-gutter: auto !important;
+}
+body {
+    font-family: 'Kantumruy Pro', 'Inter', sans-serif !important;
+    color: var(--cb-dark);
+    background-color: #ffffff;
+}
+.profile-cover {
+            height: 150px;
+            border-radius: 1.25rem 1.25rem 0 0;
+            background: linear-gradient(135deg, #0d6efd, #6ea8fe);
+        }
+
+        .profile-avatar {
+            width: 112px;
+            height: 112px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            background: #0a66c2;
+            color: #fff;
+            font-size: 2.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: -56px;
+            box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .15);
+        }
+
+        .profile-card {
+            border: 1px solid #e9ecef;
+            border-radius: 1.25rem;
+            background: #fff;
+        }
+
+        .profile-stat {
+            border: 1px solid #e9ecef;
+            border-radius: 1rem;
+            padding: 1rem;
+            text-align: center;
+            background: #fff;
+        }
+
+        .profile-stat b {
+            display: block;
+            font-family: "Inter", system-ui, sans-serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+        }
+
+        .progress-track {
+            height: 8px;
+            border-radius: 99px;
+            background: #e9ecef;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 80%;
+            background: #0b8a3e;
+        }
+
+        .timeline-item {
+            border-left: 2px solid #dbe4f0;
+            padding-left: 1.25rem;
+            padding-bottom: 1.5rem;
+            position: relative;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -7px;
+            top: 4px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #0a66c2;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            padding: .3rem .8rem;
+            margin: 0 .35rem .5rem 0;
+            border-radius: 99px;
+            background: #eef4ff;
+            color: #0a66c2;
+            font-size: .85rem;
+            font-weight: 500;
+        }
+
+        .status-pill {
+            display: inline-block;
+            padding: .2rem .7rem;
+            border-radius: 99px;
+            font-size: .8rem;
+            font-weight: 600;
+        }
+
+        .status-review {
+            background: #fff4d6;
+            color: #8a6500;
+        }
+
+        .status-interview {
+            background: #dcf5e5;
+            color: #0b6b32;
+        }
+
+        .status-sent {
+            background: #e3f1fb;
+            color: #0a6e9c;
+        }
