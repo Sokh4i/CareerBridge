@@ -1,6 +1,8 @@
 :root {
     --cb-primary: #0d6efd;
     --cb-primary-dark: #0a58ca;
+    --cb-main:#0D5291;
+    --cb-main-sec:#1364af;
     --cb-success: #198754;
     --cb-warning: #ffc107;
     --cb-light: #f8f9fa;
@@ -19,7 +21,6 @@ body {
     color: var(--cb-dark);
     background-color: #ffffff;
 }
-
 
 
 /* Helper text colors (v6 removed .text-white) */
@@ -62,7 +63,16 @@ body {
 
 .navbar .nav-link:hover,
 .navbar .nav-link.active {
-    color: var(--cb-primary);
+    color: var(--cb-main);
+}
+
+
+.navbar .active{
+    color: var(--cb-main) !important;
+    border-bottom: 2px solid var(--cb-main) !important;
+    border-radius: 0 !important;
+    width: 80% !important;
+    justify-content: center !important;
 }
 
 /* Menu  */
@@ -147,6 +157,40 @@ body {
     white-space: normal;
 }
 
+/* btn group  */
+.btn-outline{
+    border-color: var(--cb-main);
+}
+.text-main{
+    color: var(--cb-main);
+}
+.btn-outline:hover{
+    background-color: var(--cb-main);
+    color: var(--cb-light);
+}
+.btn-outline-theme{
+    border-color: var(--cb-main);
+}
+.btn-outline-active{
+    background-color: var(--cb-main);
+    color: var(--cb-light);
+}
+
+.btn-solid{
+    background-color: var(--cb-main);
+    border-color: var(--cb-main);
+}
+.btn-solid:hover{
+    color:var(--cb-light);
+    background: var(--cb-main-sec);
+    border-color:var(--cb-main-sec);
+}
+.btn-search{
+    background-color: var(--cb-main) !important;
+}
+.btn-search:hover{
+    background-color: var(--cb-main-sec) !important;
+}
 
 
 /* Footer */
