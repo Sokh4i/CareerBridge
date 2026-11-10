@@ -1,0 +1,60 @@
+/* ---------- Part-time page (loads after jobs.css) ---------- */
+
+/* Picture on top of each card */
+.pt-photo {
+  position: relative;
+  height: 190px;
+  border-radius: 1.1rem;
+  overflow: hidden;
+  background: #eef1f6;
+  display: grid;
+  place-items: center;
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.tone-food      .pt-photo { background: #fde1cf; }
+.tone-retail    .pt-photo { background: #fcdcec; }
+.tone-education .pt-photo { background: #d9ecff; }
+.tone-online    .pt-photo { background: #e3ddfb; }
+
+/* Icon shows behind the picture (visible until you add the real photo) */
+.pt-icon { font-size: 3rem; color: rgba(16, 35, 58, .35); }
+.pt-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Date pill + bookmark float over the picture */
+.pt-photo-top {
+  position: absolute;
+  top: .75rem;
+  left: .75rem;
+  right: .75rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pt-body { padding: 1rem 1rem .25rem; flex-grow: 1; }
+.pt-card .company-logo { background: #fff; border: 1px solid var(--line); }
+
+/* Modal header colors for the part-time categories */
+.apply-dialog.tone-food      .apply-head { background: #fde1cf; }
+.apply-dialog.tone-retail    .apply-head { background: #fcdcec; }
+.apply-dialog.tone-education .apply-head { background: #d9ecff; }
+.apply-dialog.tone-online    .apply-head { background: #e3ddfb; }
+
+/* Category filter (no JavaScript) */
+body:has(#cat-food:checked)      .job:not([data-cat="food"]),
+body:has(#cat-retail:checked)    .job:not([data-cat="retail"]),
+body:has(#cat-education:checked) .job:not([data-cat="education"]),
+body:has(#cat-online:checked)    .job:not([data-cat="online"]) {
+  display: none;
+}

@@ -1,0 +1,281 @@
+/* ---------- Colors & font (change these to rebrand) ---------- */
+:root {
+  --navy: #0f2a47;
+  --navy-light: #173a5e;
+  --lime: #c6f36b;
+  --blue: #2563eb;
+  --blue-soft: #e8efff;
+  --muted: #5b6b80;
+  --page-bg: #f6f8fb;
+  --hero-muted: #b8c7da;
+  --line: #e1e7ef;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Noto Sans Khmer', 'Segoe UI', Arial, sans-serif;
+  background: var(--page-bg);
+  color: #10233a;
+}
+a { text-decoration: none; }
+.muted { color: var(--muted); }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: var(--navy);
+  color: #fff;
+  border-radius: 0 0 40px 40px;
+  padding-bottom: 4rem;
+}
+.hero a { color: #fff; }
+
+.brand-mark {
+  background: var(--lime);
+  color: var(--navy);
+  width: 34px;
+  height: 34px;
+  border-radius: 9px;
+  display: inline-grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: .9rem;
+}
+
+.eyebrow {
+  color: var(--lime);
+  font-weight: 800;
+  font-size: .75rem;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.eyebrow-dark { color: var(--muted); }
+
+.hero-title {
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -.02em;
+  color: #fff;
+}
+.hero-lead { color: var(--hero-muted); font-size: 1.1rem; }
+.hero-lead.small { font-size: .95rem; }
+.panel-title { font-size: 1.5rem; font-weight: 800; color: #fff; }
+.section-title { font-size: 2rem; font-weight: 800; letter-spacing: -.01em; }
+
+.search-box {
+  background: #fff;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+.search-box .form-control {
+  background: transparent;
+  color: #10233a;
+  box-shadow: none;
+}
+
+.btn-navy {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+  font-weight: 700;
+}
+.btn-navy:hover { background: var(--blue); border-color: var(--blue); color: #fff; }
+
+.btn-ghost {
+  background: transparent;
+  border: 1.5px solid #fff;
+  color: #fff;
+  font-weight: 600;
+}
+.btn-ghost:hover { background: #fff; color: var(--navy); }
+
+.hero-panel {
+  background: var(--navy-light);
+  border-radius: 1.25rem;
+  padding: 2.5rem 1.75rem;
+  height: 250px;
+}
+.banner-size{
+  height: 400px;
+}
+
+/* ---------- Category buttons (Bootstrap 6 btn-check, recolored) ---------- */
+.filter,
+.filter:hover {
+  background: transparent;
+  border: 1.5px solid var(--muted);
+  color: var(--muted);
+  font-weight: 600;
+}
+.filter.btn-check:has(input:checked) {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: #fff;
+}
+
+/* ---------- Job cards (LuckyJob style) ---------- */
+.job-card {
+  background: #fff;
+  color: #10233a;
+  border: 1.5px solid var(--line);
+  border-radius: 1.5rem;
+  padding: .5rem;
+}
+
+/* Colored panel on top of each card */
+.job-panel {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  min-height: 250px;
+  padding: 1rem;
+  border-radius: 1.1rem;
+  background: #eef1f6;
+}
+.tone-it        .job-panel { background: #d9ecff; }
+.tone-marketing .job-panel { background: #fcdcec; }
+.tone-design    .job-panel { background: #e3ddfb; }
+.tone-business  .job-panel { background: #fde1cf; }
+
+.date-pill {
+  background: #fff;
+  border-radius: 99px;
+  padding: .35rem .85rem;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+/* Save (bookmark) button: pure CSS toggle */
+.bookmark {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #fff;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  font-size: .85rem;
+}
+.bookmark input { position: absolute; opacity: 0; pointer-events: none; }
+.bookmark .on { display: none; }
+.bookmark:has(input:checked) .on { display: inline; }
+.bookmark:has(input:checked) .off { display: none; }
+.bookmark:has(input:focus-visible) { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+.job-card .company { font-size: .85rem; color: #10233a; margin-bottom: .15rem; }
+.job-card .job-title { font-size: 1.45rem; font-weight: 600; line-height: 1.2; margin: 0; }
+
+/* Company logo circle */
+.company-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: .9rem;
+  flex: none;
+}
+.job-card .company-logo { background: #fff; }
+.logo-blue   { color: #2563eb; }
+.logo-pink   { color: #c0267a; }
+.logo-green  { color: #168a4a; }
+.logo-orange { color: #b86e00; }
+.logo-purple { color: #5b3fd0; }
+.logo-teal   { color: #0a7d96; }
+
+/* Tag pills */
+.tags { display: flex; flex-wrap: wrap; gap: .4rem; }
+.tag {
+  border: 1px solid rgba(16, 35, 58, .35);
+  border-radius: 99px;
+  padding: .2rem .7rem;
+  font-size: .75rem;
+  background: transparent;
+}
+
+.category-badge { background: var(--blue-soft); color: var(--blue); font-weight: 600; border-radius: 99px; }
+
+.job-footer { padding: .85rem 1rem .6rem; }
+.job-footer .pay { font-size: 1rem; }
+.job-footer .muted { font-size: .8rem; }
+
+.btn-apply {
+  background: #111;
+  border-color: #111;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 99px;
+  padding: .5rem 1.4rem;
+  font-size: .9rem;
+}
+.btn-apply:hover { background: var(--blue); border-color: var(--blue); color: #fff; }
+
+/* ---------- Filters ---------- */
+/* Category */
+body:has(#cat-it:checked)        .job:not([data-cat="it"]),
+body:has(#cat-marketing:checked) .job:not([data-cat="marketing"]),
+body:has(#cat-design:checked)    .job:not([data-cat="design"]),
+body:has(#cat-business:checked)  .job:not([data-cat="business"]) {
+  display: none;
+}
+
+/* Location */
+body:has(#location option[value="pp"]:checked)     .job:not([data-loc="pp"]),
+body:has(#location option[value="sr"]:checked)     .job:not([data-loc="sr"]),
+body:has(#location option[value="bb"]:checked)     .job:not([data-loc="bb"]),
+body:has(#location option[value="remote"]:checked) .job:not([data-loc="remote"]) {
+  display: none;
+}
+
+/* ---------- Apply modal ---------- */
+.apply-dialog {
+  border: 0;
+  border-radius: 1.5rem;
+  padding: 0;
+  width: min(540px, calc(100% - 2rem));
+  max-height: 90vh;
+  overflow: hidden;
+  color: #10233a;
+  background: #fff;
+  box-shadow: 0 20px 60px rgba(15, 42, 71, .35);
+}
+.apply-dialog[open] { display: flex; flex-direction: column; }
+.apply-dialog form { display: flex; flex-direction: column; min-height: 0; max-height: 90vh; }
+.apply-dialog::backdrop { background: rgba(15, 42, 71, .6); }
+
+.apply-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  background: #eef1f6;
+}
+.apply-dialog.tone-it        .apply-head { background: #d9ecff; }
+.apply-dialog.tone-marketing .apply-head { background: #fcdcec; }
+.apply-dialog.tone-design    .apply-head { background: #e3ddfb; }
+.apply-dialog.tone-business  .apply-head { background: #fde1cf; }
+.apply-head .company { font-size: .85rem; }
+.apply-head .job-title { font-size: 1.3rem; font-weight: 600; line-height: 1.2; margin: 0; }
+.apply-head .company-logo { background: #fff; }
+
+.apply-close {
+  border: 0;
+  background: #fff;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  font-size: 1.3rem;
+  line-height: 1;
+  cursor: pointer;
+  flex: none;
+}
+.apply-close:hover { background: #111; color: #fff; }
+
+.apply-body { padding: 1.25rem 1.5rem; overflow-y: auto; }
+.apply-foot {
+  display: flex;
+  justify-content: flex-end;
+  gap: .75rem;
+  padding: 1rem 1.5rem;
+  border-top: 1px solid var(--line);
+}

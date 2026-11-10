@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="km">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CareerBridge - ស្ពានតភ្ជាប់ឱកាសការងារ និងអាហារូបករណ៍សម្រាប់យុវជនកម្ពុជា</title>
+
+    <!-- Google Fonts (Kantumruy Pro & Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap 6 CSS (replace the files in assets/vendor/Bootstrap with the v6 dist) -->
+    <link rel="stylesheet" href="assets/vendor/Bootstrap/css/bootstrap.min.css">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- css  -->
+    <link rel="stylesheet" href="assets/css/navbar-footer.css">
+    <link rel="stylesheet" href="assets/css/profile.css">
+
+</head>
+
+<body>
+
+    <!-- Top Announcement Bar -->
+    <div class="top-bar py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <span class="badge theme-warning me-3">NEW</span>
+                <small>វេទិកាការងារ & អាហារូបករណ៍លេខ១ សម្រាប់និស្សិតកម្ពុជា 🎓</small>
+            </div>
+            <div class="d-none md:d-block">
+                <small><i class="fa-solid fa-graduation-cap me-1"></i> CareerBridge</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="navbar lg:navbar-expand sticky-top border-bottom">
+        <div class="container">
+            <!-- Brand Logo -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img class="logo" src="assets/img/Logo head.png" alt="CareerBridge">
+            </a>
+
+            <!-- Mobile Toggle (now opens a Drawer instead of Collapse) -->
+            <button class="btn-icon navbar-toggler border border-1" type="button" data-bs-toggle="drawer"
+                data-bs-target="#navbarMain" data-bs-theme="light" aria-controls="navbarMain" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" aria-hidden="true"></span>
+            </button>
+
+            <!-- Nav Links (Drawer on mobile, inline from lg up) -->
+            <dialog class="drawer drawer-end" tabindex="-1" id="navbarMain" aria-labelledby="navbarMainLabel"
+                data-bs-theme="light">
+                <div class="drawer-header">
+                    <h5 class="drawer-title" id="navbarMainLabel">CareerBridge</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+                </div>
+
+                <div class="drawer-body">
+                    <ul class="navbar-nav m-auto lg:mb-0 mb-3 lg:align-items-center ">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">ទំព័រដើម</a>
+                        </li>
+
+                        <!-- Jobs Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                ការងារ (Jobs) <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="#featured-section"><i
+                                        class="fa-solid fa-user-graduate me-3 fg-info hat"></i>ការងារហាត់ការ
+                                    (Internship)</a>
+                                <a class="menu-item" href="#featured-section"><i
+                                        class="fa-solid fa-clock me-3 fg-warning"></i>ការងារភាគម៉ោង (Part-time)</a>
+                                <a class="menu-item" href="#featured-section"><i
+                                        class="fa-solid fa-briefcase me-3 fg-success"></i>ការងារពេញម៉ោង
+                                    (Full-time)</a>
+
+                            </div>
+                        </li>
+
+                        <!-- Scholarships Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                អាហារូបករណ៍ <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="#featured-section"><i
+                                        class="fa-solid fa-flag me-3 fg-danger"></i>អាហារូបករណ៍ក្នុងប្រទេស (Local)</a>
+                                <a class="menu-item" href="#featured-section"><i
+                                        class="fa-solid fa-globe me-3 fg-primary"></i>អាហារូបករណ៍ក្រៅប្រទេស
+                                    (International)</a>
+
+                            </div>
+                        </li>
+
+                        <!-- Career Resources Menu -->
+                        <li class="nav-item">
+                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                                ឯកសារផ្សេងៗ <i class="fa-solid fa-chevron-down ms-1 small"></i>
+                            </button>
+                            <div class="menu" data-bs-theme="light">
+                                <a class="menu-item" href="#resources-section"><i
+                                        class="fa-solid fa-file-lines me-3 fg-primary"></i>គន្លឹះសរសេរ CV & Cover
+                                    Letter</a>
+                                <a class="menu-item" href="#resources-section"><i
+                                        class="fa-solid fa-download me-3 fg-success"></i>ទាញយក CV Templates
+                                    ឥតគិតថ្លៃ</a>
+                                <a class="menu-item" href="#resources-section"><i
+                                        class="fa-solid fa-comments me-3 fg-warning"></i>គន្លឹះសម្ភាសន៍ការងារ</a>
+
+                            </div>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-section">ទំនាក់ទំនង</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav-actions d-flex align-items-center gap-3">
+                        <!-- Notification Bell Menu -->
+                        <div class="position-relative d-flex align-items-center gap-3">
+                            <button type="button"
+                                class="btn-text theme-secondary btn-icon nav-noti-btn position-relative"
+                                id="notificationDropdown" data-bs-toggle="menu" data-bs-placement="bottom-end"
+                                title="ការជូនដំណឹង" aria-label="ការជូនដំណឹង">
+                                <i class="fa-regular fa-bell fs-lg"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge theme-danger rounded-pill shadow-sm"
+                                    id="notiBadge">
+                                    3
+                                    <span class="visually-hidden">unread notifications</span>
+                                </span>
+                            </button>
+
+                            <div class="menu noti-menu shadow-lg" aria-labelledby="notificationDropdown">
+                                <div
+                                    class="noti-header d-flex justify-content-between align-items-center bg-1 p-5 border-bottom">
+                                    <h6 class="m-0 fw-bold fg-1 fs-md">
+                                        <i class="fa-solid fa-bell fg-primary me-3"></i>ការជូនដំណឹង (Notifications)
+                                    </h6>
+                                </div>
+
+                                <div class="noti-list">
+                                    <!-- Alert 1: Application Sent -->
+                                    <a class="menu-item p-5 border-bottom unread d-flex align-items-start gap-5"
+                                        href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-success fg-emphasis-success rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-circle-check fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">ដាក់ពាក្យជោគជ័យ</strong>
+                                                <span class="fg-2 noti-time">10 នាទីមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                ការដាក់ពាក្យរបស់អ្នកសម្រាប់ <strong>Junior Web Developer</strong>
+                                                ត្រូវបានបញ្ជូនជោគជ័យ។
+                                            </p>
+                                        </div>
+                                    </a>
+
+                                    <!-- Alert 2: CV Status / Interview Alert -->
+                                    <a class="menu-item p-5 border-bottom unread d-flex align-items-start gap-5"
+                                        href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-primary fg-emphasis-primary rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-user-tie fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">កំពុងពិនិត្យ CV / ហៅសម្ភាសន៍</strong>
+                                                <span class="fg-2 noti-time">2 ម៉ោងមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                ធនាគារ <strong>ABA Bank</strong> បានពិនិត្យ CV របស់អ្នក
+                                                និងបានអញ្ជើញអ្នកចូលរួមសម្ភាសន៍។
+                                            </p>
+                                        </div>
+                                    </a>
+                                     <!-- Alert 3: Deadline Alert -->
+                                    <a class="menu-item p-5 unread d-flex align-items-start gap-5" href="#">
+                                        <div
+                                            class="noti-icon bg-subtle-warning fg-emphasis-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
+                                            <i class="fa-solid fa-triangle-exclamation fs-md"></i>
+                                        </div>
+                                        <div class="flex-grow-1 text-wrap">
+                                            <div class="d-flex justify-content-between align-items-center mb-1">
+                                                <strong class="fg-1 small">ជិតផុតកំណត់ដាក់ពាក្យ</strong>
+                                                <span class="fg-2 noti-time">1 ថ្ងៃមុន</span>
+                                            </div>
+                                            <p class="mb-0 fg-2 small lh-sm">
+                                                អាហារូបករណ៍ <strong>MEXT Japan Scholarship</strong>
+                                                នឹងផុតកំណត់ទទួលពាក្យក្នុងពេល 2 ថ្ងៃទៀត!
+                                            </p>
+                                        </div>
+                                    </a>
+                                </div>
+
+                                <div class="noti-footer text-center p-3 bg-1 border-top">
+                                    <a href="applications.html"
+                                        class="fg-primary fw-semibold text-decoration-none small">
+                                        មើលប្រវត្តិដាក់ពាក្យទាំងអស់ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- Userrrr -->
+                            <button type="button" class="btn-text theme-secondary btn-icon nav-user-btn"
+                                id="userDropdown" data-bs-toggle="menu" data-bs-placement="bottom-end" title="គណនី"
+                                aria-label="គណនី">
+                                <span class="avatar avatar-lg">
+                                    <img class="avatar-img" src="assets/img/Sokhai/profile/_MG_2053%20copy5.jpg"
+                                        alt="Profile">
+                                </span>
+                            </button>
+                            <!-- User list Menu  -->
+                            <div class="menu user-menu shadow-lg" aria-labelledby="userDropdown">
+                                <a class="menu-item" href="#"><i
+                                        class="fa-regular fa-user me-3 fg-primary"></i>ព័ត៌មានផ្ទាល់ខ្លួន</a>
+                                <a class="menu-item" href="#"><i
+                                        class="fa-solid fa-gear me-3 fg-secondary"></i>ការកំណត់</a>
+                                <hr class="menu-divider">
+                                <a class="menu-item" href="index.html"><i
+                                        class="fa-solid fa-right-from-bracket me-3 fg-danger"></i>ចាកចេញ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </dialog>
+        </div>
+    </nav>
+
+ <!-- Profile Page -->
+    <section class="py-12" data-bs-theme="light">
+        <div class="container py-5">
+
+            <!-- Profile header card -->
+            <div class="profile-card overflow-hidden mb-7">
+                <div class="profile-cover"></div>
+                <div class="px-7 pb-7">
+                    <div class="d-flex flex-column md:flex-row justify-content-between md:align-items-end">
+                        <div class="d-flex flex-column md:flex-row md:align-items-end gap-5">
+                            <div class="profile-avatar">ភប</div>
+                            <div class="pb-2">
+                                <h3 class="fw-bold mb-1">ភាង បូរាណវីរៈ</h3>
+                                <p class="fg-2 mb-1">និស្សិតជំនាញបច្ចេកវិទ្យាព័ត៌មាន | Web Developer</p>
+                                <small class="fg-2"><i class="fa-solid fa-location-dot me-1 fg-danger"></i>
+                                    ភ្នំពេញ, កម្ពុជា</small>
+                            </div>
+                        </div>
+                        <div class="mt-5 md:mt-0 d-flex gap-3">
+                            <button class="btn-outline theme-primary rounded-pill" data-bs-toggle="dialog"
+                                data-bs-target="#editProfileDialog">
+                                <i class="fa-solid fa-pen me-2"></i>កែប្រែប្រវត្តិរូប
+                            </button>
+                            <a href="#" class="btn-solid theme-primary rounded-pill">
+                                <i class="fa-solid fa-download me-2"></i>ទាញយក CV
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="row g-5 mb-7 text-center">
+                <div class="col-6 md:col-3">
+                    <div class="profile-stat">
+                        <b class="fg-primary">8</b>
+                        <small class="fg-2">ការដាក់ពាក្យ</small>
+                    </div>
+                </div>
+                <div class="col-6 md:col-3">
+                    <div class="profile-stat">
+                        <b class="fg-success">12</b>
+                        <small class="fg-2">ការងារបានរក្សាទុក</small>
+                    </div>
+                </div>
+                <div class="col-6 md:col-3">
+                    <div class="profile-stat">
+                        <b class="fg-warning">2</b>
+                        <small class="fg-2">ការសម្ភាសន៍</small>
+                    </div>
+                </div>
+                <div class="col-6 md:col-3">
+                    <div class="profile-stat">
+                        <b class="fg-info">5</b>
+                        <small class="fg-2">អាហារូបករណ៍តាមដាន</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-7">
+
+                <!-- Left column -->
+                <div class="lg:col-4">
+
+                    <!-- Completion -->
+                    <div class="profile-card p-7 mb-7">
+                        <div class="d-flex justify-content-between mb-3">
+                            <h6 class="fw-bold mb-0">ភាពពេញលេញនៃប្រវត្តិរូប</h6>
+                            <span class="fw-bold fg-success">80%</span>
+                        </div>
+                        <div class="progress-track mb-3">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <small class="fg-2">បន្ថែមសកម្មភាពស្ម័គ្រចិត្ត ដើម្បីឈានដល់ ១០០%</small>
+                    </div>
+
+                    <!-- Contact -->
+                    <div class="profile-card p-7 mb-7">
+                        <h6 class="fw-bold mb-5">ព័ត៌មានទំនាក់ទំនង</h6>
+                        <p class="small mb-3"><i class="fa-solid fa-envelope fg-primary me-2"></i>
+                            student@example.com</p>
+                        <p class="small mb-3"><i class="fa-solid fa-phone fg-primary me-2"></i> +855 12 345 678</p>
+                        <p class="small mb-3"><i class="fa-solid fa-cake-candles fg-primary me-2"></i> 24 កុម្ភៈ 2004
+                        </p>
+                        <p class="small mb-5"><i class="fa-solid fa-venus-mars fg-primary me-2"></i> ប្រុស</p>
+                        <div class="d-flex gap-5">
+                            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook fs-lg"></i></a>
+                            <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram fs-lg"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin fs-lg"></i></a>
+                        </div>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="profile-card p-7">
+                        <h6 class="fw-bold mb-5">ជំនាញ</h6>
+                        <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span><span
+                            class="skill-tag">Bootstrap</span><span class="skill-tag">JavaScript</span><span
+                            class="skill-tag">UI/UX</span><span class="skill-tag">Figma</span><span
+                            class="skill-tag">ភាសាអង់គ្លេស</span>
+                    </div>
+                </div>
+
+                <!-- Right column -->
+                <div class="lg:col-8">
+
+                    <!-- About -->
+                    <div class="profile-card p-7 mb-7">
+                        <h5 class="fw-bold mb-3">អំពីខ្ញុំ</h5>
+                        <p class="fg-2 mb-0">
+                            ខ្ញុំជានិស្សិតឆ្នាំចុងក្រោយជំនាញបច្ចេកវិទ្យាព័ត៌មាន
+                            មានចំណាប់អារម្មណ៍លើការអភិវឌ្ឍន៍គេហទំព័រ និងការរចនា UI/UX។
+                            ខ្ញុំកំពុងស្វែងរកឱកាស Internship ឬការងារដំបូង
+                            ដើម្បីអនុវត្តចំណេះដឹង និងរៀនសូត្របន្ថែមជាមួយក្រុមការងារអាជីព។
+                        </p>
+                    </div>
+
+                    <!-- Education -->
+                    <div class="profile-card p-7 mb-7">
+                        <h5 class="fw-bold mb-5">ការអប់រំ</h5>
+                        <div class="timeline-item">
+                            <h6 class="fw-bold mb-1">Bachelor of Information Technology</h6>
+                            <p class="fg-2 small mb-1">Royal University of Phnom Penh</p>
+                            <small class="fg-2">2022 - 2026</small>
+                        </div>
+                        <div class="timeline-item">
+                            <h6 class="fw-bold mb-1">វិញ្ញាបនបត្រមធ្យមសិក្សាទុតិយភូមិ</h6>
+                            <p class="fg-2 small mb-1">វិទ្យាល័យ ហ៊ុន សែន ភ្នំពេញ</p>
+                            <small class="fg-2">2019 - 2022</small>
+                        </div>
+                    </div>
+
+                    <!-- Experience -->
+                    <div class="profile-card p-7 mb-7">
+                        <h5 class="fw-bold mb-5">បទពិសោធន៍ និងគម្រោង</h5>
+                        <div class="timeline-item">
+                            <h6 class="fw-bold mb-1">Freelance Web Designer</h6>
+                            <p class="fg-2 small mb-1">រចនាគេហទំព័រសម្រាប់អាជីវកម្មខ្នាតតូច</p>
+                            <small class="fg-2">2025 - បច្ចុប្បន្ន</small>
+                        </div>
+                        <div class="timeline-item">
+                            <h6 class="fw-bold mb-1">គម្រោងសិក្សា: CareerBridge</h6>
+                            <p class="fg-2 small mb-1">
+                                បង្កើតវេទិកាស្វែងរកការងារ និងអាហារូបករណ៍ដោយប្រើ Bootstrap
+                            </p>
+                            <small class="fg-2">2026</small>
+                        </div>
+                        <div class="timeline-item">
+                            <h6 class="fw-bold mb-1">អ្នកស្ម័គ្រចិត្ត ក្លឹបបច្ចេកវិទ្យាសាកលវិទ្យាល័យ</h6>
+                            <p class="fg-2 small mb-1">រៀបចំសិក្ខាសាលាសរសេរកូដសម្រាប់និស្សិតថ្មី</p>
+                            <small class="fg-2">2024 - 2025</small>
+                        </div>
+                    </div>
+
+                    <!-- Applications -->
+                    <div class="profile-card p-7 mb-7">
+                        <div class="d-flex justify-content-between align-items-center mb-5">
+                            <h5 class="fw-bold mb-0">ការដាក់ពាក្យរបស់ខ្ញុំ</h5>
+                            <a href="#" class="small fw-bold fg-primary">មើលទាំងអស់</a>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center py-3 border-bottom">
+                            <div>
+                                <h6 class="fw-bold mb-0">Junior Frontend Developer</h6>
+                                <small class="fg-2">ABA Bank Tech Hub</small>
+                            </div>
+                            <span class="status-pill status-interview">បានអញ្ជើញសម្ភាសន៍</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center py-3 border-bottom">
+                            <div>
+                                <h6 class="fw-bold mb-0">Graphic &amp; UI/UX Designer</h6>
+                                <small class="fg-2">Digital Creative Agency</small>
+                            </div>
+                            <span class="status-pill status-review">កំពុងពិនិត្យ</span>
+                        </div>
+
+                        <div class="d-flex justify-content-between align-items-center py-3">
+                            <div>
+                                <h6 class="fw-bold mb-0">MEXT Overseas Scholarship 2027</h6>
+                                <small class="fg-2">រាជរដ្ឋាភិបាលជប៉ុន</small>
+                            </div>
+                            <span class="status-pill status-sent">បានដាក់ពាក្យរួចរាល់</span>
+                        </div>
+                    </div>
+
+                    <!-- Documents -->
+                    <div class="profile-card p-7">
+                        <h5 class="fw-bold mb-5">ឯកសាររបស់ខ្ញុំ</h5>
+
+                        <div class="d-flex justify-content-between align-items-center py-3 border-bottom">
+                            <span><i class="fa-solid fa-file-pdf fg-danger me-3"></i>CV_Boranvirak.pdf</span>
+                            <a href="#" class="small fw-bold fg-primary">ទាញយក</a>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center py-3">
+                            <span><i class="fa-solid fa-file-word fg-primary me-3"></i>Cover_Letter.docx</span>
+                            <a href="#" class="small fw-bold fg-primary">ទាញយក</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="pt-12 pb-7">
+        <div class="container">
+            <div class="row g-7">
+                <!-- Brand Info -->
+                <div class="lg:col-4">
+                    <a class="navbar-brand d-flex align-items-center cb-text-white mb-5" href="#">
+                        <img src="assets/img/logo 3.png" alt="CareerBridge" class="logo">
+                    </a>
+                    <p class="small cb-text-white mb-5 text-footer">
+                        CareerBridge គឺជាវេទិការស្វែងរកការងារ និងអាហារូបករណ៍ឥតគិតថ្លៃ
+                        រចនាឡើងយ៉ាងពិសេសសម្រាប់សិស្ស-និស្សិត និងអ្នកទើបបញ្ចប់ការសិក្សានៅកម្ពុជា។
+                    </p>
+                    <div class="d-flex gap-5">
+                        <a href="#" class="cb-text-white" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook fs-lg"></i></a>
+                        <a href="#" class="cb-text-white" aria-label="Telegram"><i
+                                class="fa-brands fa-telegram fs-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-6 lg:col-2">
+                    <h5>តំណភ្ជាប់រហ័ស</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#">ទំព័រដើម</a></li>
+                        <li class="mb-3"><a href="#featured-section">ស្វែងរកការងារ</a></li>
+                        <li class="mb-3"><a href="#featured-section">អាហារូបករណ៍</a></li>
+                        <li class="mb-3"><a href="#resources-section">ធនធាន CV</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories Links -->
+                <div class="col-6 lg:col-2">
+                    <h5>ប្រភេទការងារ</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#">Internships</a></li>
+                        <li class="mb-3"><a href="#">Part-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">Full-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">អាហារូបករណ៍ក្រៅប្រទេស</a></li>
+                    </ul>
+                </div>
+
+                <!-- Academic Assignment Credit -->
+                <div class="lg:col-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <strong>#42 ផ្លូវ 606 សង្កាត់បឹងកក់ ២ ខណ្ឌទួលគោក រាជធានីភ្នំពេញ, Phnom Penh, Cambodia</strong>
+                    </p>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-phone"></i>
+                        <strong>+123 12345678</strong>
+                    </p>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <strong>Email : CareerBridge@gmail.com</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="footer-bottom text-center small">
+                <p class="mb-0">&copy; ២០២៦ CareerBridge KH. រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ
+                    រៀបចំឡើងសម្រាប់និស្សិតកម្ពុជាដែលទើបបញ្ចប់ការសិក្សា។</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module">
+        import * as bootstrap from './assets/vendor/bootstrap/js/bootstrap.bundle.js';
+        window.bootstrap = bootstrap;
+    </script>
+
+
+
+</body>
+
+</html>
