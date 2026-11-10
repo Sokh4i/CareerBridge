@@ -13,7 +13,7 @@
 
 <body>
 
-     <!-- Top Announcement Bar -->
+    <!-- Top Announcement Bar -->
     <div class="top-bar py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <div>
@@ -53,7 +53,7 @@
                     <ul class="navbar-nav m-auto lg:mb-0 mb-3 lg:align-items-center ">
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">ទំព័រដើម</a>
+                            <a class="nav-link " aria-current="page" href="index.html">ទំព័រដើម</a>
                         </li>
 
                         <!-- Jobs Menu -->
@@ -76,7 +76,7 @@
 
                         <!-- Scholarships Menu -->
                         <li class="nav-item">
-                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                            <button class="nav-link active" type="button" data-bs-toggle="menu" aria-expanded="false">
                                 អាហារូបករណ៍ <i class="fa-solid fa-chevron-down ms-1 small"></i>
                             </button>
                             <div class="menu" data-bs-theme="light">
@@ -174,7 +174,7 @@
                                             </p>
                                         </div>
                                     </a>
-                                     <!-- Alert 3: Deadline Alert -->
+                                    <!-- Alert 3: Deadline Alert -->
                                     <a class="menu-item p-5 unread d-flex align-items-start gap-5" href="#">
                                         <div
                                             class="noti-icon bg-subtle-warning fg-emphasis-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
@@ -236,117 +236,456 @@
         <div class="container"><span class="eyebrow">អាហារូបករណ៍អន្តរជាតិ</span>
             <h1>ពង្រីកពិភពសិក្សារបស់អ្នកទៅកាន់អន្តរជាតិ</h1>
             <p>ស្វែងរកឱកាសទៅសិក្សានៅក្រៅប្រទេស និងទទួលបានបទពិសោធន៍ថ្មីៗពីជុំវិញពិភពលោក។</p>
-            <a href="index.html#choose" class="btn btn-outline-primary rounded-pill px-3 mt-2"><i
+            <a href="schorlarship.html#choose" class="btn btn-outline-primary rounded-pill px-3 mt-2"><i
                     class="fa-solid fa-arrow-left me-2"></i>ត្រឡប់ទៅជ្រើសរើស</a>
         </div>
     </header>
+
+
+
     <main class="section">
         <div class="container">
-            <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-2">
-                <div><span class="eyebrow">SCHOLARSHIP OPPORTUNITIES</span>
-                    <h2 class="section-title mb-1">ឱកាសអាហារូបករណ៍</h2>
-                    <p class="text-secondary mb-0">សូមអានព័ត៌មាន និងពិនិត្យលក្ខខណ្ឌមុនពេលដាក់ពាក្យ។</p>
+
+            <!-- MAJOR FILTER SECTION -->
+            <section class="major-section">
+
+                <h2 class="major-title">ស្វែងរកអាហារូបករណ៍តាមជំនាញ</h2>
+                <p class="major-description">
+                    ជ្រើសរើសជំនាញដែលអ្នកចាប់អារម្មណ៍ ដើម្បីមើលអាហារូបករណ៍
+                </p>
+
+                <div class="major-filter-panel">
+
+                    <!-- RADIO BUTTONS -->
+                    <input type="radio" name="major" id="major-all" checked>
+                    <input type="radio" name="major" id="major-it">
+                    <input type="radio" name="major" id="major-business">
+                    <input type="radio" name="major" id="major-engineering">
+                    <input type="radio" name="major" id="major-health">
+                    <input type="radio" name="major" id="major-law">
+                    <input type="radio" name="major" id="major-education">
+                    <input type="radio" name="major" id="major-tourism">
+                    <input type="radio" name="major" id="major-agriculture">
+                    <input type="radio" name="major" id="major-architecture">
+
+                    <!-- FILTER BUTTONS -->
+                    <div class="major-filter-options">
+                        <label for="major-all">ទាំងអស់</label>
+                        <label for="major-it">ព័ត៌មានវិទ្យា</label>
+                        <label for="major-business">ពាណិជ្ជកម្ម</label>
+                        <label for="major-engineering">វិស្វកម្ម</label>
+                        <label for="major-health">សុខាភិបាល</label>
+                        <label for="major-law">នីតិសាស្ត្រ</label>
+                        <label for="major-education">អប់រំ</label>
+                        <label for="major-tourism">ទេសចរណ៍</label>
+                        <label for="major-agriculture">កសិកម្ម</label>
+                        <label for="major-architecture">ស្ថាបត្យកម្ម</label>
+                    </div>
+
+                    <div class="major-results row g-4">
+
+                        <!-- INFORMATION TECHNOLOGY -->
+                        <div class="col-12  scholarship-item it">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                                </div>
+                                <h2>អាហារូបករណ៍ MEXT ផ្នែកព័ត៌មានវិទ្យា</h2>
+                                <div class="org">រដ្ឋាភិបាលប្រទេសជប៉ុន</div>
+                                <p class="mt-3">
+                                    ឱកាសសិក្សានៅប្រទេសជប៉ុន សម្រាប់និស្សិតដែលចាប់អារម្មណ៍លើ
+                                    បច្ចេកវិទ្យាព័ត៌មាន ការសរសេរកម្មវិធី និងវិទ្យាសាស្ត្រកុំព្យូទ័រ។
+                                </p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>ជប៉ុន 🇯🇵</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Information Technology</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
+                                        <strong>អាស្រ័យលើស្ថានទូត និងឆ្នាំដាក់ពាក្យ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
+                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="col-12  scholarship-item it">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-code"></i></div>
+                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                                </div>
+                                <h2>អាហារូបករណ៍ GKS ផ្នែកវិទ្យាសាស្ត្រកុំព្យូទ័រ</h2>
+                                <div class="org">រដ្ឋាភិបាលប្រទេសកូរ៉េខាងត្បូង</div>
+                                <p class="mt-3">
+                                    ឱកាសសិក្សានៅប្រទេសកូរ៉េខាងត្បូង ដើម្បីអភិវឌ្ឍជំនាញ
+                                    សរសេរកូដ បង្កើតកម្មវិធី និងបច្ចេកវិទ្យាឌីជីថល។
+                                </p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កូរ៉េខាងត្បូង 🇰🇷</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Computer Science</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
+                                        <strong>អាស្រ័យលើការប្រកាសប្រចាំឆ្នាំ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
+                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </article>
+                        </div>
+
+                        <!-- BUSINESS -->
+                        <div class="col-12  scholarship-item business">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                                </div>
+                                <h2>អាហារូបករណ៍ Australia Awards ផ្នែកគ្រប់គ្រងពាណិជ្ជកម្ម</h2>
+                                <div class="org">រដ្ឋាភិបាលប្រទេសអូស្ត្រាលី</div>
+                                <p class="mt-3">
+                                    ឱកាសសិក្សាថ្នាក់ឧត្តមសិក្សានៅប្រទេសអូស្ត្រាលី
+                                    សម្រាប់អ្នកដែលចង់អភិវឌ្ឍជំនាញគ្រប់គ្រងអាជីវកម្ម
+                                    ភាពជាអ្នកដឹកនាំ និងការអភិវឌ្ឍសេដ្ឋកិច្ច។
+                                </p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>អូស្ត្រាលី 🇦🇺</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>អនុបណ្ឌិត</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Business Management</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងការរស់នៅ</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
+                                        <strong>អាស្រ័យលើប្រទេស និងឆ្នាំដាក់ពាក្យ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
+                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </article>
+                        </div>
+
+                        <div class="col-12  scholarship-item business">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-calculator"></i></div>
+                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                                </div>
+                                <h2>អាហារូបករណ៍ CSC ផ្នែកគណនេយ្យ និងហិរញ្ញវត្ថុ</h2>
+                                <div class="org">China Scholarship Council</div>
+                                <p class="mt-3">
+                                    ឱកាសសិក្សានៅប្រទេសចិន សម្រាប់និស្សិតដែលចង់បង្កើនចំណេះដឹង
+                                    ផ្នែកគណនេយ្យ ហិរញ្ញវត្ថុ និងការគ្រប់គ្រងអាជីវកម្មអន្តរជាតិ។
+                                </p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>ចិន 🇨🇳</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Accounting & Finance</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
+                                        <strong>អាស្រ័យលើសាកលវិទ្យាល័យ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
+                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </article>
+                        </div>
+
+                        <!-- ENGINEERING -->
+                        <div class="col-12  scholarship-item engineering">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-gears"></i></div>
+                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                                </div>
+                                <h2>អាហារូបករណ៍ DAAD ផ្នែកវិស្វកម្ម</h2>
+                                <div class="org">DAAD - German Academic Exchange Service</div>
+                                <p class="mt-3">
+                                    ឱកាសសិក្សានៅប្រទេសអាល្លឺម៉ង់ សម្រាប់និស្សិតដែលចាប់អារម្មណ៍
+                                    លើវិស្វកម្ម មេកានិច អគ្គិសនី និងបច្ចេកវិទ្យាឧស្សាហកម្ម។
+                                </p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>អាល្លឺម៉ង់ 🇩🇪</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>អនុបណ្ឌិត / បណ្ឌិត</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Engineering</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ប្រាក់ឧបត្ថម្ភ និងជំនួយសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
+                                        <strong>អាស្រ័យលើកម្មវិធីសិក្សា</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
+                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </article>
+                        </div>
+
+                        <!-- HEALTH -->
+                        <div class="col-12 scholarship-item health">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                                </div>
+                                <h2>អាហារូបករណ៍ MEXT ផ្នែកវិទ្យាសាស្ត្រសុខាភិបាល</h2>
+                                <div class="org">រដ្ឋាភិបាលប្រទេសជប៉ុន</div>
+                                <p class="mt-3">
+                                    ឱកាសសិក្សាផ្នែកវេជ្ជសាស្ត្រ សុខាភិបាល និងវិទ្យាសាស្ត្រសុខភាព
+                                    ដើម្បីអភិវឌ្ឍសមត្ថភាពក្នុងការថែទាំ និងការពារសុខភាពប្រជាជន។
+                                </p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>ជប៉ុន 🇯🇵</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / ស្រាវជ្រាវ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Health Sciences</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
+                                        <strong>អាស្រ័យលើការប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
+                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </article>
+                        </div>
+
+                        <!-- LAW -->
+                        <div class="col-12  scholarship-item law">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                                </div>
+                                <h2>អាហារូបករណ៍ Fulbright ផ្នែកច្បាប់</h2>
+                                <div class="org">រដ្ឋាភិបាលសហរដ្ឋអាមេរិក</div>
+                                <p class="mt-3">
+                                    ឱកាសសិក្សានៅសហរដ្ឋអាមេរិក សម្រាប់និស្សិតដែលចង់ពង្រឹង
+                                    ចំណេះដឹងផ្នែកច្បាប់ សិទ្ធិមនុស្ស និងទំនាក់ទំនងអន្តរជាតិ។
+                                </p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>សហរដ្ឋអាមេរិក 🇺🇸</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>អនុបណ្ឌិត</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Law & Human Rights</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា និងការរស់នៅ</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
+                                        <strong>អាស្រ័យលើកម្មវិធី Fulbright ក្នុងប្រទេសកម្ពុជា</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
+                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </article>
+                        </div>
+
+                        <!-- EDUCATION -->
+                        <div class="col-12  scholarship-item education">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-book-open"></i></div>
+                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                                </div>
+                                <h2>អាហារូបករណ៍ Erasmus Mundus ផ្នែកអប់រំ</h2>
+                                <div class="org">សហភាពអឺរ៉ុប</div>
+                                <p class="mt-3">
+                                    ឱកាសសិក្សានៅសាកលវិទ្យាល័យអឺរ៉ុបច្រើនប្រទេស
+                                    សម្រាប់អ្នកចាប់អារម្មណ៍លើវិទ្យាសាស្ត្រអប់រំ
+                                    ការបង្រៀន និងការអភិវឌ្ឍការសិក្សា។
+                                </p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>បណ្តាប្រទេសអឺរ៉ុប 🇪🇺</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>អនុបណ្ឌិត</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Education</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>អាហារូបករណ៍ និងប្រាក់ឧបត្ថម្ភ</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
+                                        <strong>អាស្រ័យលើកម្មវិធីនីមួយៗ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
+                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </article>
+                        </div>
+
+                        <!-- TOURISM -->
+                        <div class="col-12  scholarship-item tourism">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-plane"></i></div>
+                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                                </div>
+                                <h2>អាហារូបករណ៍រដ្ឋាភិបាលតួកគី ផ្នែកទេសចរណ៍</h2>
+                                <div class="org">Türkiye Scholarships</div>
+                                <p class="mt-3">
+                                    ឱកាសសិក្សានៅប្រទេសតួកគី ផ្នែកគ្រប់គ្រងទេសចរណ៍
+                                    សណ្ឋាគារ និងបដិសណ្ឋារកិច្ច ដើម្បីអភិវឌ្ឍជំនាញ
+                                    ក្នុងវិស័យទេសចរណ៍អន្តរជាតិ។
+                                </p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>តួកគី 🇹🇷</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Tourism Management</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
+                                        <strong>អាស្រ័យលើការប្រកាសប្រចាំឆ្នាំ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
+                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </article>
+                        </div>
+
+                        <!-- AGRICULTURE -->
+                        <div class="col-12  scholarship-item agriculture">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-seedling"></i></div>
+                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                                </div>
+                                <h2>អាហារូបករណ៍ CSC ផ្នែកវិទ្យាសាស្ត្រកសិកម្ម</h2>
+                                <div class="org">China Scholarship Council</div>
+                                <p class="mt-3">
+                                    ឱកាសសិក្សានៅប្រទេសចិន ដើម្បីអភិវឌ្ឍចំណេះដឹង
+                                    ផ្នែកកសិកម្មទំនើប បច្ចេកវិទ្យាកសិកម្ម
+                                    និងសុវត្ថិភាពចំណីអាហារ។
+                                </p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>ចិន 🇨🇳</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Agricultural Science</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
+                                        <strong>អាស្រ័យលើសាកលវិទ្យាល័យ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
+                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </article>
+                        </div>
+
+                        <!-- ARCHITECTURE -->
+                        <div class="col-12 scholarship-item architecture">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                                </div>
+                                <h2>អាហារូបករណ៍ MEXT ផ្នែកស្ថាបត្យកម្ម</h2>
+                                <div class="org">រដ្ឋាភិបាលប្រទេសជប៉ុន</div>
+                                <p class="mt-3">
+                                    ឱកាសសិក្សានៅប្រទេសជប៉ុន សម្រាប់និស្សិតដែលមានចំណាប់អារម្មណ៍
+                                    លើការរចនាស្ថាបត្យកម្ម ការរៀបចំទីក្រុង
+                                    និងបច្ចេកវិទ្យាសំណង់ទំនើប។
+                                </p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>ជប៉ុន 🇯🇵</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Architecture</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
+                                        <strong>អាស្រ័យលើការប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
+                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
+                                </a>
+                            </article>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <article class="scholar-card">
-                        <div class="scholar-top">
-                            <div class="scholar-icon"><i class="fa-solid fa-earth-asia"></i></div><span
-                                class="open-pill">ឱកាសសិក្សា</span>
-                        </div>
-                        <h2>អាហារូបករណ៍សិក្សានៅប្រទេសជប៉ុន</h2>
-                        <div class="org">កម្មវិធីអាហារូបករណ៍អន្តរជាតិ</div>
-                        <p class="mt-3">ឱកាសសិក្សាសម្រាប់និស្សិតដែលចង់ស្វែងយល់ពីបច្ចេកវិទ្យា វប្បធម៌ និងការស្រាវជ្រាវ។
-                        </p>
-                        <div class="facts">
-                            <div><small>ប្រទេស</small><strong>ជប៉ុន</strong></div>
-                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
-                            <div><small>ជំនាញ</small><strong>វិស្វកម្ម / IT / វិទ្យាសាស្ត្រ</strong></div>
-                            <div><small>អត្ថប្រយោជន៍</small><strong>អាស្រ័យលើកម្មវិធី</strong></div>
-                            <div class="col-12">
-                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
-                        </div>
-                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
-                                class="fa-solid fa-arrow-right ms-1"></i></a>
-                    </article>
-                </div>
-                <div class="col-md-6">
-                    <article class="scholar-card">
-                        <div class="scholar-top">
-                            <div class="scholar-icon"><i class="fa-solid fa-building-columns"></i></div><span
-                                class="open-pill">ឱកាសសិក្សា</span>
-                        </div>
-                        <h2>អាហារូបករណ៍សិក្សានៅប្រទេសចិន</h2>
-                        <div class="org">កម្មវិធីសហប្រតិបត្តិការអប់រំ</div>
-                        <p class="mt-3">ឱកាសសិក្សាក្នុងវិស័យពាណិជ្ជកម្ម វិស្វកម្ម និងភាសា។</p>
-                        <div class="facts">
-                            <div><small>ប្រទេស</small><strong>ចិន</strong></div>
-                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
-                            <div><small>ជំនាញ</small><strong>ពាណិជ្ជកម្ម / វិស្វកម្ម</strong></div>
-                            <div><small>អត្ថប្រយោជន៍</small><strong>អាស្រ័យលើកម្មវិធី</strong></div>
-                            <div class="col-12">
-                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
-                        </div>
-                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
-                                class="fa-solid fa-arrow-right ms-1"></i></a>
-                    </article>
-                </div>
-                <div class="col-md-6">
-                    <article class="scholar-card">
-                        <div class="scholar-top">
-                            <div class="scholar-icon"><i class="fa-solid fa-microchip"></i></div><span
-                                class="open-pill">ឱកាសសិក្សា</span>
-                        </div>
-                        <h2>អាហារូបករណ៍សិក្សានៅប្រទេសកូរ៉េ</h2>
-                        <div class="org">កម្មវិធីអាហារូបករណ៍កូរ៉េ</div>
-                        <p class="mt-3">សម្រាប់និស្សិតដែលមានគោលដៅសិក្សាផ្នែកបច្ចេកវិទ្យា សិល្បៈ និងវិទ្យាសាស្ត្រ។</p>
-                        <div class="facts">
-                            <div><small>ប្រទេស</small><strong>កូរ៉េខាងត្បូង</strong></div>
-                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
-                            <div><small>ជំនាញ</small><strong>IT / វិទ្យាសាស្ត្រ / សិល្បៈ</strong></div>
-                            <div><small>អត្ថប្រយោជន៍</small><strong>អាស្រ័យលើកម្មវិធី</strong></div>
-                            <div class="col-12">
-                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
-                        </div>
-                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
-                                class="fa-solid fa-arrow-right ms-1"></i></a>
-                    </article>
-                </div>
-                <div class="col-md-6">
-                    <article class="scholar-card">
-                        <div class="scholar-top">
-                            <div class="scholar-icon"><i class="fa-solid fa-landmark"></i></div><span
-                                class="open-pill">ឱកាសសិក្សា</span>
-                        </div>
-                        <h2>អាហារូបករណ៍សិក្សានៅប្រទេសអូស្ត្រាលី</h2>
-                        <div class="org">កម្មវិធីអាហារូបករណ៍អន្តរជាតិ</div>
-                        <p class="mt-3">ឱកាសបន្តការសិក្សានៅសាកលវិទ្យាល័យ និងអភិវឌ្ឍបទពិសោធន៍អន្តរជាតិ។</p>
-                        <div class="facts">
-                            <div><small>ប្រទេស</small><strong>អូស្ត្រាលី</strong></div>
-                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
-                            <div><small>ជំនាញ</small><strong>គ្រប់ជំនាញ</strong></div>
-                            <div><small>អត្ថប្រយោជន៍</small><strong>អាស្រ័យលើកម្មវិធី</strong></div>
-                            <div class="col-12">
-                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
-                        </div>
-                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
-                                class="fa-solid fa-arrow-right ms-1"></i></a>
-                    </article>
-                </div>
-            </div>
-            <p class="note mt-4"><i class="fa-solid fa-circle-info me-1"></i>ចំណាំ៖
-                ព័ត៌មានខាងលើជាគំរូសម្រាប់គម្រោងសិក្សា។
-                សូមពិនិត្យគេហទំព័រផ្លូវការរបស់ស្ថាប័នផ្តល់អាហារូបករណ៍សម្រាប់ព័ត៌មានពិត និងកាលកំណត់ថ្មីៗ។</p>
+            </section>
         </div>
     </main>
+    <!-- Footer -->
+    <footer class="pt-12 pb-7">
+        <div class="container">
+            <div class="row g-7">
+                <!-- Brand Info -->
+                <div class="lg:col-4">
+                    <a class="navbar-brand d-flex align-items-center cb-text-white mb-5" href="#">
+                        <img src="assets/img/logo 3.png" alt="CareerBridge" class="logo">
+                    </a>
+                    <p class="small cb-text-white mb-5 text-footer">
+                        CareerBridge គឺជាវេទិការស្វែងរកការងារ និងអាហារូបករណ៍ឥតគិតថ្លៃ
+                        រចនាឡើងយ៉ាងពិសេសសម្រាប់សិស្ស-និស្សិត និងអ្នកទើបបញ្ចប់ការសិក្សានៅកម្ពុជា។
+                    </p>
+                    <div class="d-flex gap-5">
+                        <a href="#" class="cb-text-white" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook fs-lg"></i></a>
+                        <a href="#" class="cb-text-white" aria-label="Telegram"><i
+                                class="fa-brands fa-telegram fs-lg"></i></a>
+                    </div>
+                </div>
 
-    <footer class="footer">
-        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
-            <a class="brand" href="index.html">Career<span>Bridge</span></a><small>© 2026 CareerBridge ·
-                គម្រោងសិក្សា</small>
+                <!-- Quick Links -->
+                <div class="col-6 lg:col-2">
+                    <h5>តំណភ្ជាប់រហ័ស</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#">ទំព័រដើម</a></li>
+                        <li class="mb-3"><a href="#featured-section">ស្វែងរកការងារ</a></li>
+                        <li class="mb-3"><a href="#featured-section">អាហារូបករណ៍</a></li>
+                        <li class="mb-3"><a href="#resources-section">ធនធាន CV</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories Links -->
+                <div class="col-6 lg:col-2">
+                    <h5>ប្រភេទការងារ</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#">Internships</a></li>
+                        <li class="mb-3"><a href="#">Part-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">Full-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">អាហារូបករណ៍ក្រៅប្រទេស</a></li>
+                    </ul>
+                </div>
+
+                <!-- Academic Assignment Credit -->
+                <div class="lg:col-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <strong>#42 ផ្លូវ 606 សង្កាត់បឹងកក់ ២ ខណ្ឌទួលគោក រាជធានីភ្នំពេញ, Phnom Penh,
+                            Cambodia</strong>
+                    </p>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-phone"></i>
+                        <strong>+123 12345678</strong>
+                    </p>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <strong>Email : CareerBridge@gmail.com</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="footer-bottom text-center small">
+                <p class="mb-0">&copy; ២០២៦ CareerBridge KH. រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ
+                    រៀបចំឡើងសម្រាប់និស្សិតកម្ពុជាដែលទើបបញ្ចប់ការសិក្សា។</p>
+            </div>
         </div>
     </footer>
+
+
+    <script type="module">
+        import * as bootstrap from './assets/vendor/bootstrap/js/bootstrap.bundle.js';
+        window.bootstrap = bootstrap;
+    </script>
 </body>
 
 </html>

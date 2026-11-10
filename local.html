@@ -13,7 +13,7 @@
 </head>
 
 <body>
- <!-- Top Announcement Bar -->
+    <!-- Top Announcement Bar -->
     <div class="top-bar py-3">
         <div class="container d-flex justify-content-between align-items-center">
             <div>
@@ -53,7 +53,7 @@
                     <ul class="navbar-nav m-auto lg:mb-0 mb-3 lg:align-items-center ">
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">ទំព័រដើម</a>
+                            <a class="nav-link " aria-current="page" href="index.html">ទំព័រដើម</a>
                         </li>
 
                         <!-- Jobs Menu -->
@@ -76,7 +76,7 @@
 
                         <!-- Scholarships Menu -->
                         <li class="nav-item">
-                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                            <button class="nav-link active" type="button" data-bs-toggle="menu" aria-expanded="false">
                                 អាហារូបករណ៍ <i class="fa-solid fa-chevron-down ms-1 small"></i>
                             </button>
                             <div class="menu" data-bs-theme="light">
@@ -174,7 +174,7 @@
                                             </p>
                                         </div>
                                     </a>
-                                     <!-- Alert 3: Deadline Alert -->
+                                    <!-- Alert 3: Deadline Alert -->
                                     <a class="menu-item p-5 unread d-flex align-items-start gap-5" href="#">
                                         <div
                                             class="noti-icon bg-subtle-warning fg-emphasis-warning rounded-circle d-flex align-items-center justify-content-center flex-shrink-0">
@@ -236,117 +236,407 @@
         <div class="container"><span class="eyebrow">អាហារូបករណ៍ក្នុងស្រុក</span>
             <h1>សិក្សានៅកម្ពុជា ចាប់ផ្តើមអនាគតរបស់អ្នកនៅទីនេះ</h1>
             <p>ស្វែងរកជំនួយសិក្សា និងឱកាសអាហារូបករណ៍នៅតាមសាកលវិទ្យាល័យ និងស្ថាប័នក្នុងប្រទេសកម្ពុជា។</p>
-            <a href="index.html#choose" class="btn btn-outline-primary rounded-pill px-3 mt-2"><i
+            <a href="schorlarship.html#choose" class="btn btn-outline-primary rounded-pill px-3 mt-2"><i
                     class="fa-solid fa-arrow-left me-2"></i>ត្រឡប់ទៅជ្រើសរើស</a>
         </div>
     </header>
+
+
     <main class="section">
         <div class="container">
-            <div class="d-flex flex-wrap justify-content-between align-items-end mb-4 gap-2">
-                <div><span class="eyebrow">SCHOLARSHIP OPPORTUNITIES</span>
-                    <h2 class="section-title mb-1">ឱកាសអាហារូបករណ៍</h2>
-                    <p class="text-secondary mb-0">សូមអានព័ត៌មាន និងពិនិត្យលក្ខខណ្ឌមុនពេលដាក់ពាក្យ។</p>
+
+            <!-- MAJOR FILTER SECTION -->
+            <section class="major-section">
+
+                <h2 class="major-title">ស្វែងរកអាហារូបករណ៍តាមជំនាញ</h2>
+                <p class="major-description">
+                    ជ្រើសរើសជំនាញដែលអ្នកចាប់អារម្មណ៍ ដើម្បីមើលអាហារូបករណ៍
+                </p>
+
+                <div class="major-filter-panel">
+
+                    <!-- RADIO BUTTONS -->
+                    <input type="radio" name="major" id="major-all" checked>
+                    <input type="radio" name="major" id="major-it">
+                    <input type="radio" name="major" id="major-business">
+                    <input type="radio" name="major" id="major-engineering">
+                    <input type="radio" name="major" id="major-health">
+                    <input type="radio" name="major" id="major-law">
+                    <input type="radio" name="major" id="major-education">
+                    <input type="radio" name="major" id="major-tourism">
+                    <input type="radio" name="major" id="major-agriculture">
+                    <input type="radio" name="major" id="major-architecture">
+
+                    <!-- FILTER BUTTONS -->
+                    <div class="major-filter-options">
+                        <label for="major-all">ទាំងអស់</label>
+                        <label for="major-it">ព័ត៌មានវិទ្យា</label>
+                        <label for="major-business">ពាណិជ្ជកម្ម</label>
+                        <label for="major-engineering">វិស្វកម្ម</label>
+                        <label for="major-health">សុខាភិបាល</label>
+                        <label for="major-law">នីតិសាស្ត្រ</label>
+                        <label for="major-education">អប់រំ</label>
+                        <label for="major-tourism">ទេសចរណ៍</label>
+                        <label for="major-agriculture">កសិកម្ម</label>
+                        <label for="major-architecture">ស្ថាបត្យកម្ម</label>
+                    </div>
+
+                    <div class="major-results row g-4">
+
+                        <!-- INFORMATION TECHNOLOGY -->
+                        <div class="col-12 scholarship-item it">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                                    <span class="open-pill">ឱកាសសិក្សា</span>
+                                </div>
+                                <h2>អាហារូបករណ៍បច្ចេកវិទ្យាព័ត៌មាន</h2>
+                                <div class="org">សាកលវិទ្យាល័យក្នុងប្រទេសកម្ពុជា</div>
+                                <p class="mt-3">អាហារូបករណ៍សម្រាប់និស្សិតដែលចាប់អារម្មណ៍លើបច្ចេកវិទ្យា ការសរសេរកម្មវិធី
+                                    និងការអភិវឌ្ឍប្រព័ន្ធឌីជីថល។</p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>ព័ត៌មានវិទ្យា</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </article>
+                        </div>
+
+                        <div class="col-12 scholarship-item it">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-code"></i></div>
+                                    <span class="open-pill">ឱកាសសិក្សា</span>
+                                </div>
+                                <h2>អាហារូបករណ៍វិទ្យាសាស្ត្រកុំព្យូទ័រ</h2>
+                                <div class="org">សាកលវិទ្យាល័យក្នុងប្រទេសកម្ពុជា</div>
+                                <p class="mt-3">ឱកាសសិក្សាផ្នែក Computer Science ដើម្បីអភិវឌ្ឍសមត្ថភាពសរសេរកូដ
+                                    បង្កើតកម្មវិធី និងគ្រប់គ្រងទិន្នន័យ។</p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Computer Science</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </article>
+                        </div>
+
+                        <!-- BUSINESS -->
+                        <div class="col-12 scholarship-item business">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                    <span class="open-pill">ឱកាសសិក្សា</span>
+                                </div>
+                                <h2>អាហារូបករណ៍គ្រប់គ្រងពាណិជ្ជកម្ម</h2>
+                                <div class="org">សាកលវិទ្យាល័យក្នុងប្រទេសកម្ពុជា</div>
+                                <p class="mt-3">ជំនួយសិក្សាសម្រាប់និស្សិតដែលចង់អភិវឌ្ឍចំណេះដឹងផ្នែកគ្រប់គ្រងអាជីវកម្ម
+                                    ទីផ្សារ និងភាពជាអ្នកដឹកនាំ។</p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Business Management</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </article>
+                        </div>
+
+                        <div class="col-12 scholarship-item business">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-calculator"></i></div>
+                                    <span class="open-pill">ឱកាសសិក្សា</span>
+                                </div>
+                                <h2>អាហារូបករណ៍គណនេយ្យ និងហិរញ្ញវត្ថុ</h2>
+                                <div class="org">សាកលវិទ្យាល័យក្នុងប្រទេសកម្ពុជា</div>
+                                <p class="mt-3">ឱកាសសម្រាប់និស្សិតដែលចង់សិក្សាពីការគ្រប់គ្រងហិរញ្ញវត្ថុ គណនេយ្យ
+                                    និងការវិភាគរបាយការណ៍ហិរញ្ញវត្ថុ។</p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>Accounting & Finance</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </article>
+                        </div>
+
+                        <!-- ENGINEERING -->
+                        <div class="col-12 scholarship-item engineering">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-gears"></i></div>
+                                    <span class="open-pill">ឱកាសសិក្សា</span>
+                                </div>
+                                <h2>អាហារូបករណ៍វិស្វកម្ម</h2>
+                                <div class="org">សាកលវិទ្យាល័យក្នុងប្រទេសកម្ពុជា</div>
+                                <p class="mt-3">ជំនួយសិក្សាសម្រាប់និស្សិតដែលមានចំណាប់អារម្មណ៍លើការរចនា សាងសង់
+                                    និងអភិវឌ្ឍបច្ចេកវិទ្យាវិស្វកម្ម។</p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>វិស្វកម្ម</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </article>
+                        </div>
+
+                        <!-- HEALTH -->
+                        <div class="col-12 scholarship-item health">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-heart-pulse"></i></div>
+                                    <span class="open-pill">ឱកាសសិក្សា</span>
+                                </div>
+                                <h2>អាហារូបករណ៍វិទ្យាសាស្ត្រសុខាភិបាល</h2>
+                                <div class="org">សាកលវិទ្យាល័យវិទ្យាសាស្ត្រសុខាភិបាល</div>
+                                <p class="mt-3">ឱកាសសិក្សាសម្រាប់និស្សិតដែលចង់បម្រើវិស័យសុខាភិបាល
+                                    និងអភិវឌ្ឍសមត្ថភាពថែទាំសុខភាពសហគមន៍។</p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>សុខាភិបាល</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </article>
+                        </div>
+
+                        <!-- LAW -->
+                        <div class="col-12 scholarship-item law">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                                    <span class="open-pill">ឱកាសសិក្សា</span>
+                                </div>
+                                <h2>អាហារូបករណ៍នីតិសាស្ត្រ</h2>
+                                <div class="org">សាកលវិទ្យាល័យក្នុងប្រទេសកម្ពុជា</div>
+                                <p class="mt-3">ជំនួយសិក្សាសម្រាប់និស្សិតដែលចង់សិក្សាអំពីច្បាប់ សិទ្ធិមនុស្ស
+                                    និងប្រព័ន្ធយុត្តិធម៌។</p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>នីតិសាស្ត្រ</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </article>
+                        </div>
+
+                        <!-- EDUCATION -->
+                        <div class="col-12 scholarship-item education">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-book-open"></i></div>
+                                    <span class="open-pill">ឱកាសសិក្សា</span>
+                                </div>
+                                <h2>អាហារូបករណ៍វិទ្យាសាស្ត្រអប់រំ</h2>
+                                <div class="org">សាកលវិទ្យាល័យក្នុងប្រទេសកម្ពុជា</div>
+                                <p class="mt-3">ឱកាសសម្រាប់និស្សិតដែលមានបំណងក្លាយជាគ្រូបង្រៀន
+                                    និងចូលរួមអភិវឌ្ឍវិស័យអប់រំ។</p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>អប់រំ</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </article>
+                        </div>
+
+                        <!-- TOURISM -->
+                        <div class="col-12 scholarship-item tourism">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-plane"></i></div>
+                                    <span class="open-pill">ឱកាសសិក្សា</span>
+                                </div>
+                                <h2>អាហារូបករណ៍គ្រប់គ្រងទេសចរណ៍</h2>
+                                <div class="org">សាកលវិទ្យាល័យ និងវិទ្យាស្ថានទេសចរណ៍</div>
+                                <p class="mt-3">ជំនួយសិក្សាសម្រាប់និស្សិតដែលចាប់អារម្មណ៍លើការគ្រប់គ្រងសណ្ឋាគារ ទេសចរណ៍
+                                    និងបដិសណ្ឋារកិច្ច។</p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>ទេសចរណ៍</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </article>
+                        </div>
+
+                        <!-- AGRICULTURE -->
+                        <div class="col-12 scholarship-item agriculture">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-seedling"></i></div>
+                                    <span class="open-pill">ឱកាសសិក្សា</span>
+                                </div>
+                                <h2>អាហារូបករណ៍វិទ្យាសាស្ត្រកសិកម្ម</h2>
+                                <div class="org">សាកលវិទ្យាល័យភូមិន្ទកសិកម្ម</div>
+                                <p class="mt-3">ឱកាសសិក្សាផ្នែកកសិកម្ម ដើម្បីអភិវឌ្ឍចំណេះដឹងអំពីការដាំដុះ
+                                    បច្ចេកវិទ្យាកសិកម្ម និងសុវត្ថិភាពចំណីអាហារ។</p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>កសិកម្ម</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </article>
+                        </div>
+
+                        <!-- ARCHITECTURE -->
+                        <div class="col-12 scholarship-item architecture">
+                            <article class="scholar-card">
+                                <div class="scholar-top">
+                                    <div class="scholar-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                                    <span class="open-pill">ឱកាសសិក្សា</span>
+                                </div>
+                                <h2>អាហារូបករណ៍ស្ថាបត្យកម្ម</h2>
+                                <div class="org">សាកលវិទ្យាល័យក្នុងប្រទេសកម្ពុជា</div>
+                                <p class="mt-3">ជំនួយសិក្សាសម្រាប់និស្សិតដែលមានគំនិតច្នៃប្រឌិត
+                                    និងចង់អភិវឌ្ឍជំនាញរចនាអគារ និងប្លង់សំណង់។</p>
+                                <div class="facts">
+                                    <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
+                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
+                                    <div><small>ជំនាញ</small><strong>ស្ថាបត្យកម្ម</strong></div>
+                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
+                                    <div class="col-12">
+                                        <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong>
+                                    </div>
+                                </div>
+                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
+                                        class="fa-solid fa-arrow-right ms-1"></i></a>
+                            </article>
+                        </div>
+
+                    </div>
                 </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <article class="scholar-card">
-                        <div class="scholar-top">
-                            <div class="scholar-icon"><i class="fa-solid fa-graduation-cap"></i></div><span
-                                class="open-pill">ឱកាសសិក្សា</span>
-                        </div>
-                        <h2>អាហារូបករណ៍ថ្នាក់បរិញ្ញាបត្រ</h2>
-                        <div class="org">សាកលវិទ្យាល័យក្នុងប្រទេសកម្ពុជា</div>
-                        <p class="mt-3">ជំនួយសិក្សាសម្រាប់និស្សិតដែលមានលទ្ធផលសិក្សាល្អ
-                            និងចង់បន្តការសិក្សាថ្នាក់ឧត្តមសិក្សា។</p>
-                        <div class="facts">
-                            <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
-                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
-                            <div><small>ជំនាញ</small><strong>គ្រប់ជំនាញ</strong></div>
-                            <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
-                            <div class="col-12">
-                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
-                        </div>
-                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
-                                class="fa-solid fa-arrow-right ms-1"></i></a>
-                    </article>
-                </div>
-                <div class="col-md-6">
-                    <article class="scholar-card">
-                        <div class="scholar-top">
-                            <div class="scholar-icon"><i class="fa-solid fa-laptop-code"></i></div><span
-                                class="open-pill">ឱកាសសិក្សា</span>
-                        </div>
-                        <h2>អាហារូបករណ៍បច្ចេកវិទ្យា</h2>
-                        <div class="org">កម្មវិធីគាំទ្រនិស្សិតកម្ពុជា</div>
-                        <p class="mt-3">ផ្តោតលើជំនាញកុំព្យូទ័រ បច្ចេកវិទ្យាព័ត៌មាន និងការអភិវឌ្ឍកម្មវិធី។</p>
-                        <div class="facts">
-                            <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
-                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
-                            <div><small>ជំនាញ</small><strong>IT / Computer Science</strong></div>
-                            <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា</strong></div>
-                            <div class="col-12">
-                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
-                        </div>
-                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
-                                class="fa-solid fa-arrow-right ms-1"></i></a>
-                    </article>
-                </div>
-                <div class="col-md-6">
-                    <article class="scholar-card">
-                        <div class="scholar-top">
-                            <div class="scholar-icon"><i class="fa-solid fa-flask"></i></div><span
-                                class="open-pill">ឱកាសសិក្សា</span>
-                        </div>
-                        <h2>ជំនួយសិក្សាវិទ្យាសាស្ត្រ</h2>
-                        <div class="org">កម្មវិធីអភិវឌ្ឍធនធានមនុស្ស</div>
-                        <p class="mt-3">ឱកាសសម្រាប់និស្សិតដែលចាប់អារម្មណ៍លើវិទ្យាសាស្ត្រ សុខាភិបាល និងវិស្វកម្ម។</p>
-                        <div class="facts">
-                            <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
-                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ</strong></div>
-                            <div><small>ជំនាញ</small><strong>វិទ្យាសាស្ត្រ / វិស្វកម្ម</strong></div>
-                            <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយមួយផ្នែក</strong></div>
-                            <div class="col-12">
-                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
-                        </div>
-                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
-                                class="fa-solid fa-arrow-right ms-1"></i></a>
-                    </article>
-                </div>
-                <div class="col-md-6">
-                    <article class="scholar-card">
-                        <div class="scholar-top">
-                            <div class="scholar-icon"><i class="fa-solid fa-book-open"></i></div><span
-                                class="open-pill">ឱកាសសិក្សា</span>
-                        </div>
-                        <h2>អាហារូបករណ៍និស្សិតឆ្នើម</h2>
-                        <div class="org">មូលនិធិអប់រំក្នុងស្រុក</div>
-                        <p class="mt-3">គាំទ្រនិស្សិតដែលមានសមត្ថភាព និងមានការចូលរួមក្នុងសកម្មភាពសង្គម។</p>
-                        <div class="facts">
-                            <div><small>ប្រទេស</small><strong>កម្ពុជា</strong></div>
-                            <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
-                            <div><small>ជំនាញ</small><strong>គ្រប់ជំនាញ</strong></div>
-                            <div><small>អត្ថប្រយោជន៍</small><strong>អាស្រ័យលើកម្មវិធី</strong></div>
-                            <div class="col-12">
-                                <small>កាលបរិច្ឆេទផុតកំណត់</small><strong>សូមពិនិត្យប្រកាសផ្លូវការ</strong></div>
-                        </div>
-                        <a href="apply.html" class="btn btn-primary rounded-pill px-4">ដាក់ពាក្យ <i
-                                class="fa-solid fa-arrow-right ms-1"></i></a>
-                    </article>
-                </div>
-            </div>
-            <p class="note mt-4"><i class="fa-solid fa-circle-info me-1"></i>ចំណាំ៖
-                ព័ត៌មានខាងលើជាគំរូសម្រាប់គម្រោងសិក្សា។
-                សូមពិនិត្យគេហទំព័រផ្លូវការរបស់ស្ថាប័នផ្តល់អាហារូបករណ៍សម្រាប់ព័ត៌មានពិត និងកាលកំណត់ថ្មីៗ។</p>
+            </section>
+
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
-            <a class="brand" href="index.html">Career<span>Bridge</span></a><small>© 2026 CareerBridge ·
-                គម្រោងសិក្សា</small>
+    <!-- Footer -->
+    <footer class="pt-12 pb-7">
+        <div class="container">
+            <div class="row g-7">
+                <!-- Brand Info -->
+                <div class="lg:col-4">
+                    <a class="navbar-brand d-flex align-items-center cb-text-white mb-5" href="#">
+                        <img src="assets/img/logo 3.png" alt="CareerBridge" class="logo">
+                    </a>
+                    <p class="small cb-text-white mb-5 text-footer">
+                        CareerBridge គឺជាវេទិការស្វែងរកការងារ និងអាហារូបករណ៍ឥតគិតថ្លៃ
+                        រចនាឡើងយ៉ាងពិសេសសម្រាប់សិស្ស-និស្សិត និងអ្នកទើបបញ្ចប់ការសិក្សានៅកម្ពុជា។
+                    </p>
+                    <div class="d-flex gap-5">
+                        <a href="#" class="cb-text-white" aria-label="Facebook"><i
+                                class="fa-brands fa-facebook fs-lg"></i></a>
+                        <a href="#" class="cb-text-white" aria-label="Telegram"><i
+                                class="fa-brands fa-telegram fs-lg"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-12 lg:col-2">
+                    <h5>តំណភ្ជាប់រហ័ស</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#">ទំព័រដើម</a></li>
+                        <li class="mb-3"><a href="#featured-section">ស្វែងរកការងារ</a></li>
+                        <li class="mb-3"><a href="#featured-section">អាហារូបករណ៍</a></li>
+                        <li class="mb-3"><a href="#resources-section">ធនធាន CV</a></li>
+                    </ul>
+                </div>
+
+                <!-- Categories Links -->
+                <div class="col-12 lg:col-2">
+                    <h5>ប្រភេទការងារ</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-3"><a href="#">Internships</a></li>
+                        <li class="mb-3"><a href="#">Part-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">Full-Time Jobs</a></li>
+                        <li class="mb-3"><a href="#">អាហារូបករណ៍ក្រៅប្រទេស</a></li>
+                    </ul>
+                </div>
+
+                <!-- Academic Assignment Credit -->
+                <div class="lg:col-4">
+                    <h5>ទំនាក់ទំនង</h5>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <strong>#42 ផ្លូវ 606 សង្កាត់បឹងកក់ ២ ខណ្ឌទួលគោក រាជធានីភ្នំពេញ, Phnom Penh, Cambodia</strong>
+                    </p>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-phone"></i>
+                        <strong>+123 12345678</strong>
+                    </p>
+                    <p class="small cb-text-white-75 mb-3">
+                        <i class="fa-solid fa-envelope"></i>
+                        <strong>Email : CareerBridge@gmail.com</strong>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="footer-bottom text-center small">
+                <p class="mb-0">&copy; ២០២៦ CareerBridge KH. រក្សាសិទ្ធិគ្រប់យ៉ាងដោយ
+                    រៀបចំឡើងសម្រាប់និស្សិតកម្ពុជាដែលទើបបញ្ចប់ការសិក្សា។</p>
+            </div>
         </div>
     </footer>
+
+
+    <script type="module">
+        import * as bootstrap from './assets/vendor/bootstrap/js/bootstrap.bundle.js';
+        window.bootstrap = bootstrap;
+    </script>
 </body>
 
 </html>
