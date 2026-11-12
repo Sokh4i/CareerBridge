@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css");
+
 :root {
     --cb-primary: #0d6efd;
     --cb-primary-dark: #0a58ca;
@@ -10,6 +12,7 @@
     --cb-gray-200: #e9ecef;
     --cb-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     --cb-shadow-hover: 0 15px 35px rgba(13, 110, 253, 0.12);
+    --cb-danger: #dc3545;
 
       --stat-blue:  #0a66c2;
       --stat-green: #0b8a3e;
@@ -106,9 +109,9 @@ body {
     font-size:.875rem;
 }
 .pop .tag-pill:hover{
-    background: var(--cb-primary);
+    background: var(--cb-main);
     color: #fff;
-    border-color: var(--cb-primary)
+    border-color: var(--cb-main)
 }
 
 .btn-search {
@@ -195,7 +198,7 @@ body {
         }
 
         .category-card:hover {
-            border-color: var(--cb-primary);
+            border-color: var(--cb-main);
             transform: translateY(-5px);
             box-shadow: var(--cb-shadow-hover);
         }
@@ -225,7 +228,7 @@ body {
         }
 
         .job-card:hover {
-            border-color: rgba(13, 110, 253, 0.4);
+            border-color: var(--cb-main);
             box-shadow: var(--cb-shadow-hover);
             transform: translateY(-4px);
         }
@@ -254,9 +257,9 @@ body {
 
         .resource-card:hover {
             box-shadow: var(--cb-shadow-hover);
-            border-color: var(--cb-primary);
+            border-color: var(--cb-main);
         }
-
+        
         /* CTA Banner */
         .cta-banner {
             background: linear-gradient(135deg, #0d6efd 0%, #0a4ab2 100%);
@@ -266,3 +269,15 @@ body {
             position: relative;
             overflow: hidden;
         }
+.feedback-card {
+    border: 1px solid var(--cb-gray-200);
+    border-radius: 16px;
+    padding: 24px;
+    background: #ffffff;
+    height: 100%;
+}
+.feedback-card:hover {
+    border-color: var(--cb-main);
+    box-shadow: var(--cb-shadow-hover);
+    transform: translateY(-4px);
+}

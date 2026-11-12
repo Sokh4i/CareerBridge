@@ -20,7 +20,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <!-- css  -->
     <link rel="stylesheet" href="assets/css/navbar-footer.css">
-
+    <!-- Hover Css  -->
+     <link rel="stylesheet" href="assets/css/hover.css">
 </head>
 
 <body>
@@ -65,19 +66,19 @@
                     <ul class="navbar-nav m-auto lg:mb-0 mb-3 lg:align-items-center ">
 
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">ទំព័រដើម</a>
+                            <a class="nav-link active" aria-current="page" href="Home-Page.html">ទំព័រដើម</a>
                         </li>
 
                         <!-- Jobs Menu -->
                         <li class="nav-item">
-                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                            <button class="nav-link hvr-underline-from-center" type="button" data-bs-toggle="menu" aria-expanded="false">
                                 ការងារ (Jobs) <i class="fa-solid fa-chevron-down ms-1 small"></i>
                             </button>
                             <div class="menu" data-bs-theme="light">
-                                <a class="menu-item" href="#featured-section"><i
+                                <a class="menu-item" href="Internship.html"><i
                                         class="fa-solid fa-user-graduate me-3 fg-info hat"></i>ការងារហាត់ការ
                                     (Internship)</a>
-                                <a class="menu-item" href="#featured-section"><i
+                                <a class="menu-item" href="part-time-Jobs.html"><i
                                         class="fa-solid fa-clock me-3 fg-warning"></i>ការងារភាគម៉ោង (Part-time)</a>
                                 <a class="menu-item" href="#featured-section"><i
                                         class="fa-solid fa-briefcase me-3 fg-success"></i>ការងារពេញម៉ោង
@@ -88,13 +89,13 @@
 
                         <!-- Scholarships Menu -->
                         <li class="nav-item">
-                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                            <button class="nav-link hvr-underline-from-center" type="button" data-bs-toggle="menu" aria-expanded="false">
                                 អាហារូបករណ៍ <i class="fa-solid fa-chevron-down ms-1 small"></i>
                             </button>
                             <div class="menu" data-bs-theme="light">
-                                <a class="menu-item" href="#featured-section"><i
+                                <a class="menu-item" href="local.html"><i
                                         class="fa-solid fa-flag me-3 fg-danger"></i>អាហារូបករណ៍ក្នុងប្រទេស (Local)</a>
-                                <a class="menu-item" href="#featured-section"><i
+                                <a class="menu-item" href="international.html"><i
                                         class="fa-solid fa-globe me-3 fg-primary"></i>អាហារូបករណ៍ក្រៅប្រទេស
                                     (International)</a>
 
@@ -103,13 +104,12 @@
 
                         <!-- Career Resources Menu -->
                         <li class="nav-item">
-                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                            <button class="nav-link hvr-underline-from-center" type="button" data-bs-toggle="menu" aria-expanded="false">
                                 ឯកសារផ្សេងៗ <i class="fa-solid fa-chevron-down ms-1 small"></i>
                             </button>
                             <div class="menu" data-bs-theme="light">
-                                <a class="menu-item" href="#resources-section"><i
-                                        class="fa-solid fa-file-lines me-3 fg-primary"></i>គន្លឹះសរសេរ CV & Cover
-                                    Letter</a>
+                                <a class="menu-item" href="Cv-Cover-letter.html"><i
+                                        class="fa-solid fa-file-lines me-3 fg-primary"></i>គន្លឹះសរសេរ CV & ពាក្យសុំការងារ</a>
                                 <a class="menu-item" href="#resources-section"><i
                                         class="fa-solid fa-download me-3 fg-success"></i>ទាញយក CV Templates
                                     ឥតគិតថ្លៃ</a>
@@ -120,7 +120,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">ទំនាក់ទំនង</a>
+                            <a class="nav-link hvr-underline-from-center" href="contact.html">ទំនាក់ទំនង</a>
                         </li>
                     </ul>
 
@@ -131,7 +131,7 @@
                                 class="btn-text theme-secondary btn-icon nav-noti-btn position-relative"
                                 id="notificationDropdown" data-bs-toggle="menu" data-bs-placement="bottom-end"
                                 title="ការជូនដំណឹង" aria-label="ការជូនដំណឹង">
-                                <i class="fa-regular fa-bell fs-lg"></i>
+                                <i class="fa-regular fa-bell fs-lg" style="color: var(--cb-main);"></i>
                                 <span
                                     class="position-absolute top-0 start-100 translate-middle badge theme-danger rounded-pill shadow-sm"
                                     id="notiBadge">
@@ -144,7 +144,7 @@
                                 <div
                                     class="noti-header d-flex justify-content-between align-items-center bg-1 p-5 border-bottom">
                                     <h6 class="m-0 fw-bold fg-1 fs-md">
-                                        <i class="fa-solid fa-bell fg-primary me-3"></i>ការជូនដំណឹង (Notifications)
+                                        <i class="fa-solid fa-bell fg-primary me-3" style="color: var(--cb-main);"></i>ការជូនដំណឹង (Notifications)
                                     </h6>
                                 </div>
 
@@ -207,7 +207,7 @@
 
                                 <div class="noti-footer text-center p-3 bg-1 border-top">
                                     <a href="applications.html"
-                                        class="fg-primary fw-semibold text-decoration-none small">
+                                        class="fg-primary fw-semibold text-decoration-none small" style="color: var(--cb-main);">
                                         មើលប្រវត្តិដាក់ពាក្យទាំងអស់ <i class="fa-solid fa-arrow-right ms-1"></i>
                                     </a>
                                 </div>
@@ -224,10 +224,10 @@
                             </button>
                             <!-- User list Menu  -->
                             <div class="menu user-menu shadow-lg" aria-labelledby="userDropdown">
-                                <a class="menu-item" href="#"><i
+                                <a class="menu-item" href="profile.html"><i
                                         class="fa-regular fa-user me-3 fg-primary"></i>ព័ត៌មានផ្ទាល់ខ្លួន</a>
                                 <a class="menu-item" href="#"><i
-                                        class="fa-solid fa-gear me-3 fg-secondary"></i>ការកំណត់</a>
+                                        class="bi bi-moon me-3 " style="color: var(--cb-dark);"></i>ការកំណត់</a>
                                 <hr class="menu-divider">
                                 <a class="menu-item" href="index.html"><i
                                         class="fa-solid fa-right-from-bracket me-3 fg-danger"></i>ចាកចេញ</a>
@@ -264,10 +264,10 @@
                 <div class="col-6 lg:col-2">
                     <h5>តំណភ្ជាប់រហ័ស</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-3"><a href="#">ទំព័រដើម</a></li>
-                        <li class="mb-3"><a href="#featured-section">ស្វែងរកការងារ</a></li>
-                        <li class="mb-3"><a href="#featured-section">អាហារូបករណ៍</a></li>
-                        <li class="mb-3"><a href="#resources-section">ធនធាន CV</a></li>
+                        <li class="mb-3"><a href="Home-Page.html">ទំព័រដើម</a></li>
+                        <li class="mb-3"><a href="Internship.html">ស្វែងរកការងារ</a></li>
+                        <li class="mb-3"><a href="local.html">អាហារូបករណ៍</a></li>
+                        <li class="mb-3"><a href="Cv-Cover-letter.html">ធនធាន CV</a></li>
                     </ul>
                 </div>
 
@@ -275,10 +275,10 @@
                 <div class="col-6 lg:col-2">
                     <h5>ប្រភេទការងារ</h5>
                     <ul class="list-unstyled">
-                        <li class="mb-3"><a href="#">Internships</a></li>
-                        <li class="mb-3"><a href="#">Part-Time Jobs</a></li>
+                        <li class="mb-3"><a href="Internships.html">Internships</a></li>
+                        <li class="mb-3"><a href="part-time-jobs.html">Part-Time Jobs</a></li>
                         <li class="mb-3"><a href="#">Full-Time Jobs</a></li>
-                        <li class="mb-3"><a href="#">អាហារូបករណ៍ក្រៅប្រទេស</a></li>
+                        <li class="mb-3"><a href="international.html">អាហារូបករណ៍ក្រៅប្រទេស</a></li>
                     </ul>
                 </div>
 
