@@ -62,12 +62,9 @@ main input:focus-visible {
 
 /* ---------- Hero ---------- */
 .cv-hero {
-    background:
-        linear-gradient(180deg, var(--cv-blue-soft) 0%, #fff 100%);
+    background: var(--cv-bg);
     padding: 3rem 0 4.5rem;
     border-bottom: 1px solid var(--cv-line);
-
-
 }
 
 .cv-breadcrumb {
@@ -97,88 +94,15 @@ main input:focus-visible {
     margin-bottom: 2rem;
 }
 
-.cv-glance {
-    background: var(--cv-ink);
-    color: #e7ecf5;
-    border-radius: 20px;
-    padding: 2rem;
-    box-shadow: 0 24px 48px -24px rgba(20, 33, 61, 0.55);
-}
-
-.cv-glance-title {
-    color: #fff;
-    font-size: 1.15rem;
-    margin-bottom: 1.25rem;
-}
-
-.cv-glance-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    gap: 1.1rem;
-}
-
-.cv-glance-list li {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-    font-size: 0.95rem;
-}
-
-.cv-glance-list i {
-    flex: 0 0 2.4rem;
-    height: 2.4rem;
-    display: grid;
-    place-items: center;
-    background: rgba(242, 169, 0, 0.18);
-    color: var(--cv-amber);
-    border-radius: 10px;
-}
-
-.cv-glance-list strong {
-    color: #fff;
-}
-
-/* ---------- In-page nav ---------- */
-.cv-subnav {
-    position: sticky;
-    top: 0;
-    z-index: 5;
-    background: rgba(255, 255, 255, 0.94);
-    backdrop-filter: blur(8px);
-    border-bottom: 1px solid var(--cv-line);
-}
-
-.cv-subnav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0.35rem 0;
-    display: flex;
-    gap: 0.35rem;
-    overflow-x: auto;
-    white-space: nowrap;
-    scrollbar-width: thin;
-}
-
-.cv-subnav-list a {
-    display: block;
-    padding: 0.45rem 1rem;
-    border-radius: 999px;
-    color: var(--cv-text);
+.cv-hero .btn-hero {
+    background-color: var(--cv-blue);
+    color: var(--cv-paper);
     text-decoration: none;
-    font-size: 0.92rem;
-    font-weight: 500;
-}
-
-.cv-subnav-list a:hover {
-    background: var(--cv-blue-soft);
-    color: var(--cv-blue);
 }
 
 /* ---------- Sections ---------- */
 .cv-section {
-    padding: 5rem 0;
+    padding: 2rem 0;
     background: #fff;
 }
 
@@ -187,8 +111,7 @@ main input:focus-visible {
 }
 
 .cv-section-head {
-    max-width: 760px;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
 }
 
 .cv-section-head h2 {
@@ -196,13 +119,8 @@ main input:focus-visible {
     margin-bottom: 0.9rem;
 }
 
-.cv-block {
-    margin-top: 4.5rem;
-}
-
 .cv-h3 {
-    font-size: 1.35rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
 }
 
 .cv-lead {
@@ -235,11 +153,6 @@ main input:focus-visible {
     font-weight: 700;
     font-size: 12px;
     margin: 0;
-}
-
-.cv-paper .cv-kingdom u {
-    text-decoration-thickness: 1px;
-    text-underline-offset: 2px;
 }
 
 .cv-paper .cv-title {
@@ -369,127 +282,19 @@ main input:focus-visible {
     }
 }
 
-/* ---------- Step list ---------- */
-.cv-steps {
-    list-style: none;
-    counter-reset: cv-step;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    gap: 1.25rem;
+
+.cv-card {
+    padding-left: 40px;
 }
 
-.cv-steps li {
-    counter-increment: cv-step;
-    position: relative;
-    padding-left: 3.4rem;
-}
-
-.cv-steps li::before {
-    content: counter(cv-step);
-    position: absolute;
-    left: 0;
-    top: 0.15rem;
-    width: 2.2rem;
-    height: 2.2rem;
-    display: grid;
-    place-items: center;
-    background: var(--cv-blue);
-    color: #fff;
-    border-radius: 50%;
-    font-weight: 700;
-    font-size: 0.95rem;
-}
-
-.cv-steps h4 {
-    font-size: 1.05rem;
-    margin: 0 0 0.25rem;
-}
-
-.cv-steps p {
-    margin: 0;
-}
-
-.cv-steps.is-compact {
-    gap: 1rem;
-}
-
-/* ---------- Compare ---------- */
-.cv-compare {
-    height: 100%;
-    border-radius: var(--cv-radius);
-    padding: 1.5rem 1.6rem;
-    border: 1px solid transparent;
-}
-
-.cv-compare ul {
-    margin: 0.9rem 0 0;
-    padding-left: 1.2rem;
-}
-
-.cv-compare li+li {
-    margin-top: 0.55rem;
-}
-
-.cv-compare-label {
-    font-weight: 700;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.cv-compare.is-weak {
-    background: var(--cv-bad-soft);
-    border-color: #f5c6c1;
-}
-
-.cv-compare.is-weak .cv-compare-label {
-    color: var(--cv-bad);
-}
-
-.cv-compare.is-strong {
-    background: var(--cv-good-soft);
-    border-color: #b7e0c8;
-}
-
-.cv-compare.is-strong .cv-compare-label {
-    color: var(--cv-good);
-}
-
-.cv-verbs {
-    margin-top: 1.75rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 0.6rem;
-}
-
-.cv-verbs-title {
-    font-weight: 600;
-    color: var(--cv-ink);
-    margin-right: 0.4rem;
-}
-
-.cv-chip {
-    background: #fff;
-    border: 1px solid var(--cv-line);
-    border-radius: 999px;
-    padding: 0.1rem 0.95rem;
-    font-size: 0.92rem;
-}
-
-/* ---------- Fact grid (format) ---------- */
-.cv-grid-4 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 1.25rem;
-}
+/* ---------- Fact (format) ---------- */
 
 .cv-fact {
     padding: 1.5rem;
     border-radius: var(--cv-radius);
     border: 1px solid var(--cv-line);
     background: #fff;
+    height: 100%;
 }
 
 .cv-fact i {
@@ -508,71 +313,14 @@ main input:focus-visible {
     font-size: 0.95rem;
 }
 
-/* ---------- Checklist ---------- */
-.cv-checklist {
-    background: var(--cv-blue-soft);
-    border-radius: 20px;
-    padding: 2rem;
-}
-
-.cv-checklist ul {
-    list-style: none;
-    padding: 0;
+.cv-fact ul {
     margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 0.75rem 2rem;
+    padding-left: 1.2rem;
+    font-size: 0.95rem;
 }
 
-.cv-checklist label {
-    display: flex;
-    gap: 0.8rem;
-    align-items: flex-start;
-    cursor: pointer;
-}
-
-.cv-checklist input[type="checkbox"] {
-    flex: 0 0 1.15rem;
-    width: 1.15rem;
-    height: 1.15rem;
-    margin-top: 0.55rem;
-    accent-color: var(--cv-blue);
-}
-
-.cv-checklist input:checked+*,
-.cv-checklist label:has(input:checked) {
-    color: var(--cv-muted);
-    text-decoration: line-through;
-}
-
-/* ---------- Letter ---------- */
-.cv-type {
-    height: 100%;
-    background: #fff;
-    border: 1px solid var(--cv-line);
-    border-top: 4px solid var(--cv-blue);
-    border-radius: var(--cv-radius);
-    padding: 1.5rem 1.6rem;
-}
-
-.cv-type:hover {
-    border-top-color: var(--cv-amber);
-}
-
-.cv-type h3 {
-    font-size: 1.15rem;
-    display: flex;
-    gap: 0.7rem;
-    align-items: center;
-    margin-bottom: 0.6rem;
-}
-
-.cv-type h3 i {
-    color: var(--cv-blue);
-}
-
-.cv-type p {
-    margin: 0;
+.cv-fact li+li {
+    margin-top: 0.4rem;
 }
 
 .cv-letter {
@@ -587,56 +335,236 @@ main input:focus-visible {
 .cv-letter p {
     margin-bottom: 1.1rem;
 }
-
-.cv-letter-meta {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 0.5rem 1rem;
-    color: var(--cv-muted);
-    font-size: 0.88rem;
-    padding-bottom: 1rem;
-    margin-bottom: 1.25rem;
-    border-bottom: 1px dashed var(--cv-line);
-}
-
-.cv-letter-part {
-    display: inline-block;
-    margin-right: 0.5rem;
-    padding: 0 0.7rem;
-    background: var(--cv-amber-soft);
-    color: #8a5d00;
-    font-weight: 600;
-    font-size: 0.82rem;
-    border-radius: 999px;
-}
-
 .cv-letter-sign {
     margin: 1.5rem 0 0 !important;
 }
 
-/* ---------- Tips ---------- */
-.cv-grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 1.25rem;
-}
-
-.cv-tip {
+/* ---------- News cards ---------- */
+.cv-news-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
     background: #fff;
     border: 1px solid var(--cv-line);
-    border-radius: var(--cv-radius);
-    padding: 1.4rem 1.5rem;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-.cv-tip h4 {
-    font-size: 1.05rem;
-    margin-bottom: 0.4rem;
+.cv-news-card:hover,
+.cv-news-card:focus-within {
+    border-color: var(--cv-blue);
+    box-shadow: 0 16px 32px -20px rgba(20, 33, 61, 0.35);
 }
 
-.cv-tip p {
-    margin: 0;
+/* Thumbnail (icon on a colour block; swap for <img> when you have photos) */
+.cv-news-thumb {
+    position: relative;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    height: 260px;
+}
+
+.cv-news-tag {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    padding: 0.05rem 0.85rem;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--cv-ink);
+    font-size: 0.82rem;
+    font-weight: 600;
+    border-radius: 999px;
+}
+
+/* If you use real photos instead */
+.cv-news-thumb img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cv-news-body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1.4rem 1.5rem 1.5rem;
+}
+
+.cv-news-title {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+}
+
+.cv-news-title a {
+    color: var(--cv-ink);
+    text-decoration: none;
+}
+
+.cv-news-title a:hover {
+    color: var(--cv-blue);
+}
+
+.cv-news-excerpt {
     font-size: 0.95rem;
+    margin-bottom: 1.1rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* pushes "read more" to the bottom so all cards line up */
+.cv-news-link {
+    margin-top: auto;
+    align-self: flex-start;
+    color: var(--cv-blue);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.cv-news-link i {
+    margin-left: 0.35rem;
+    font-size: 0.8rem;
+    transition: transform 0.15s;
+}
+
+.cv-news-link:hover i {
+    transform: translateX(4px);
+}
+
+/* ---------- Buttons that open dialogs (look like the old links) ---------- */
+button.cv-news-thumb {
+    width: 100%;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.cv-news-open,
+button.cv-news-link {
+    background: none;
+    border: 0;
+    padding: 0;
+    font: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.cv-news-open {
+    color: var(--cv-ink);
+    font-weight: 700;
+}
+
+.cv-news-open:hover {
+    color: var(--cv-blue);
+}
+
+.cv-news-thumb:focus-visible,
+.cv-news-open:focus-visible,
+.cv-news-link:focus-visible {
+    outline: 3px solid var(--cv-amber);
+    outline-offset: 3px;
+    border-radius: 6px;
+}
+
+/* ---------- Dialog content ---------- */
+.cv-news-dialog {
+    font-family: "Kantumruy Pro", "Inter", system-ui, sans-serif;
+    color: var(--cv-text);
+    line-height: 1.85;
+}
+
+.cv-news-dialog .dialog-title {
+    color: var(--cv-ink);
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 25px !important;
+}
+
+.cv-news-dialog .cv-news-meta {
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cv-news-tag.is-inline {
+    position: static;
+    background: var(--cv-blue-soft);
+    color: var(--cv-blue);
+}
+
+.cv-news-sub {
+    font-size: 1.05rem;
+    margin: 1.5rem 0 0.5rem;
+    color: var(--cv-ink);
+}
+
+.cv-news-list {
+    padding-left: 1.2rem;
+    margin: 0.75rem 0 0;
+}
+
+.cv-news-list li+li {
+    margin-top: 0.5rem;
+}
+
+.cv-news-steps {
+    list-style: none;
+    counter-reset: news-step;
+    padding: 0;
+    margin: 1.25rem 0 0;
+    display: grid;
+    gap: 1.1rem;
+}
+
+.cv-news-steps li {
+    counter-increment: news-step;
+    position: relative;
+    padding-left: 3rem;
+}
+
+.cv-news-steps li::before {
+    content: counter(news-step);
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--cv-blue);
+    color: #fff;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.cv-news-steps h4 {
+    font-size: 1.02rem;
+    margin: 0 0 0.2rem;
+    color: var(--cv-ink);
+}
+
+.cv-news-steps p {
+    margin: 0;
+}
+
+.cv-news-note {
+    margin-top: 1.25rem;
+    padding: 0.9rem 1.1rem;
+    background: var(--cv-amber-soft);
+    border-radius: 10px;
+}
+
+/* footer buttons sit at the end */
+.cv-news-dialog .dialog-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 0.75rem;
 }
 
 /* ---------- FAQ ---------- */
@@ -656,7 +584,7 @@ main input:focus-visible {
 
 /* ---------- CTA ---------- */
 .cv-cta {
-    margin-top: 4rem;
+    margin-top: 2rem;
     background: var(--cv-ink);
     color: #dfe6f2;
     border-radius: 24px;
@@ -666,6 +594,7 @@ main input:focus-visible {
     gap: 1.5rem 2.5rem;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 3rem;
 }
 
 .cv-cta h3 {
