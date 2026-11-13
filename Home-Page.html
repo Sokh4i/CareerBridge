@@ -21,6 +21,8 @@
     <!-- css  -->
     <link rel="stylesheet" href="assets/css/navbar-footer.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Hover Css  -->
+     <link rel="stylesheet" href="assets/css/hover.css">
 </head>
 
 <body>
@@ -70,7 +72,7 @@
 
                         <!-- Jobs Menu -->
                         <li class="nav-item">
-                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                            <button class="nav-link hvr-underline-from-center" type="button" data-bs-toggle="menu" aria-expanded="false">
                                 ការងារ (Jobs) <i class="fa-solid fa-chevron-down ms-1 small"></i>
                             </button>
                             <div class="menu" data-bs-theme="light">
@@ -88,7 +90,7 @@
 
                         <!-- Scholarships Menu -->
                         <li class="nav-item">
-                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                            <button class="nav-link hvr-underline-from-center" type="button" data-bs-toggle="menu" aria-expanded="false">
                                 អាហារូបករណ៍ <i class="fa-solid fa-chevron-down ms-1 small"></i>
                             </button>
                             <div class="menu" data-bs-theme="light">
@@ -103,13 +105,12 @@
 
                         <!-- Career Resources Menu -->
                         <li class="nav-item">
-                            <button class="nav-link" type="button" data-bs-toggle="menu" aria-expanded="false">
+                            <button class="nav-link hvr-underline-from-center" type="button" data-bs-toggle="menu" aria-expanded="false">
                                 ឯកសារផ្សេងៗ <i class="fa-solid fa-chevron-down ms-1 small"></i>
                             </button>
                             <div class="menu" data-bs-theme="light">
                                 <a class="menu-item" href="Cv-Cover-letter.html"><i
-                                        class="fa-solid fa-file-lines me-3 fg-primary"></i>គន្លឹះសរសេរ CV & Cover
-                                    Letter</a>
+                                        class="fa-solid fa-file-lines me-3 fg-primary"></i>គន្លឹះសរសេរ CV & ពាក្យការងារ</a>
                                 <a class="menu-item" href="#"><i
                                         class="fa-solid fa-download me-3 fg-success"></i>ទាញយក CV Templates
                                     ឥតគិតថ្លៃ</a>
@@ -120,7 +121,7 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">ទំនាក់ទំនង</a>
+                            <a class="nav-link hvr-underline-from-center" href="contact.html">ទំនាក់ទំនង</a>
                         </li>
                     </ul>
 
@@ -224,7 +225,7 @@
                             </button>
                             <!-- User list Menu  -->
                             <div class="menu user-menu shadow-lg" aria-labelledby="userDropdown">
-                                <a class="menu-item" href="#"><i
+                                <a class="menu-item" href="Profile.html"><i
                                         class="fa-regular fa-user me-3 fg-primary"></i>ព័ត៌មានផ្ទាល់ខ្លួន</a>
                                 <a class="menu-item" href="#"><i
                                         class="fa-solid fa-gear me-3 fg-secondary"></i>ការកំណត់</a>
@@ -248,7 +249,7 @@
                     <span class="hero-badge mb-3"><span class="me-2"
                             aria-hidden="true">🚀</span>ស្ពានចម្លងទៅកាន់ពិភពការងារដំបូងរបស់អ្នក</span>
                     <h1 class="hero-title mb-3">ភ្ជាប់និស្សិតកម្ពុជា ទៅកាន់ <span
-                            class="text-primary-cb">ឱកាសការងារ</span> &amp; <span
+                            class="text-primary-cb" style="color: var(--cb-main);">ឱកាសការងារ</span> &amp; <span
                             class="text-success-cb">អាហារូបករណ៍</span></h1>
                     <p class="text-muted-cb mb-4">CareerBridge ជួយសម្រួលដល់សិស្ស-និស្សិត និងអ្នកទើបបញ្ចប់ការសិក្សា
                         ក្នុងការស្វែងរកការងារ Internship, Part-time, Full-time និងអាហារូបករណ៍សិក្សាទាំងក្នុង
@@ -259,14 +260,14 @@
                             <div class="row g-2 align-items-center">
                                 <div class="md:col-4 col-12 search-divider">
                                     <div class="d-flex align-items-center">
-                                        <span class="ms-2" aria-hidden="true">🔍</span>
+                                        <span class="ms-2" aria-hidden="true"><i class="bi bi-search"></i></span>
                                         <input type="text" id="searchInput" class="form-control search-input"
                                             placeholder="ឈ្មោះការងារ ជំនាញ ឬក្រុមហ៊ុន..." data-bs-theme="light">
                                     </div>
                                 </div>
                                 <div class="md:col-3 col-12 search-divider">
                                     <div class="d-flex align-items-center">
-                                        <span class="ms-2" aria-hidden="true">📚</span>
+                                        <span class="ms-2" aria-hidden="true"><i class="bi bi-journals" style="color: var(--cb-success);"></i></span>
                                         <select class="form-control search-input" id="categorySelect"
                                             data-bs-theme="light">
                                             <option class="form-select" value="">គ្រប់ប្រភេទ</option>
@@ -279,7 +280,7 @@
                                 </div>
                                 <div class="md:col-3 col-12 search-divider">
                                     <div class="d-flex align-items-center">
-                                        <span class="ms-2" aria-hidden="true">📍</span>
+                                        <span class="ms-2" aria-hidden="true"><i class="bi bi-geo-fill" style="color: var(--cb-danger);"></i></span>
                                         <select class="form-control search-input" id="locationSelect"
                                             data-bs-theme="light">
                                             <option class="form-select" value="">គ្រប់ទីតាំង</option>
@@ -305,20 +306,20 @@
                 </div>
 
 
-                <div class="lg:col-5 col-12 text-center">
+               <div class="lg:col-5 col-12 text-center">
                     <div style="position:relative">
-                        <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20800%20533%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22g%22%20x1%3D%220%22%20y1%3D%220%22%20x2%3D%221%22%20y2%3D%221%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%230d6efd%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%236ea8fe%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect%20width%3D%22800%22%20height%3D%22533%22%20fill%3D%22url%28%23g%29%22/%3E%3Ccircle%20cx%3D%22640%22%20cy%3D%22110%22%20r%3D%2290%22%20fill%3D%22%23fff%22%20opacity%3D%22.15%22/%3E%3Ccircle%20cx%3D%22120%22%20cy%3D%22450%22%20r%3D%22130%22%20fill%3D%22%23fff%22%20opacity%3D%22.12%22/%3E%3Cpath%20d%3D%22M400%20150%20230%20230l170%2080%20170-80z%22%20fill%3D%22%23fff%22/%3E%3Cpath%20d%3D%22M290%20275v80c0%2030%2050%2055%20110%2055s110-25%20110-55v-80l-110%2052z%22%20fill%3D%22%23fff%22%20opacity%3D%22.9%22/%3E%3Cpath%20d%3D%22M570%20230v110%22%20stroke%3D%22%23ffc107%22%20stroke-width%3D%228%22/%3E%3Ccircle%20cx%3D%22570%22%20cy%3D%22350%22%20r%3D%2214%22%20fill%3D%22%23ffc107%22/%3E%3C/svg%3E"
+                        <img src="assets/img/Sokhai/index/Banner Index.jpg"
                             alt="Students Working" class="img-fluid rounded-4 border border-4 border-white"
                             style="box-shadow:0 1rem 3rem rgba(0,0,0,.18)">
                         <div class="float-badge" style="top:24px;left:12px">
-                            <div class="float-icon bg-success"><span class="" aria-hidden="true">✔️</span></div>
+                            <div class="float-icon bg-success"><span class="" aria-hidden="true"><i class="fa-solid fa-check"></i></span></div>
                             <div class="text-start">
                                 <h6 class="mb-0 fw-bold">1,250+</h6><small
                                     class="text-muted-cb">សិស្សទទួលបានការងារ</small>
                             </div>
                         </div>
                         <div class="float-badge" style="bottom:24px;right:12px">
-                            <div class="float-icon bg-primary"><span class="" aria-hidden="true">🏢</span></div>
+                            <div class="float-icon bg-primary"><span class="" aria-hidden="true"><i class="fa-solid fa-building"></i></span></div>
                             <div class="text-start">
                                 <h6 class="mb-0 fw-bold">350+</h6><small class="text-muted-cb">ក្រុមហ៊ុនដៃគូ</small>
                             </div>
@@ -367,7 +368,7 @@
     <section class="py-12 bg-1" data-bs-theme="light" id="categories-section">
         <div class="container py-7">
             <div class="text-center max-width-md mx-auto mb-12">
-                <span class="fg-primary fw-bold text-uppercase small">Categories</span>
+                <span class="fg-primary fw-bold text-uppercase small" style="color: var(--cb-main);">Categories</span>
                 <h2 class="fw-bold mt-1">ស្វែងរកតាមប្រភេទទូទៅ</h2>
                 <p class="fg-2">ជ្រើសរើសផ្នែកដែលសមស្របទៅនឹងគោលដៅសិក្សា និងអាជីពរបស់អ្នក</p>
             </div>
@@ -433,20 +434,20 @@
     </section>
 
     <!-- Featured Opportunities (Jobs & Scholarships) -->
-    <section class="py-12" id="featured-section" data-bs-theme="light">
+     <section class="py-12" id="featured-section" data-bs-theme="light">
         <div class="container py-5">
             <div class="d-flex flex-column md:flex-row justify-content-between md:align-items-center mb-7">
                 <div>
-                    <span class="fg-primary fw-bold text-uppercase small">Hot Opportunities</span>
+                    <span class="fg-primary fw-bold text-uppercase small" style="color: var(--cb-main);">Hot Opportunities</span>
                     <h2 class="fw-bold mt-1">ឱកាសការងារ និងអាហារូបករណ៍លេចធ្លោ</h2>
                 </div>
                 <div class="mt-5 md:mt-0">
                     <div class="btn-group" role="group">
-                        <button type="button" class="btn-outline theme-primary active"
+                        <button type="button" class="btn-outline btn-outline-theme theme-primary btn-outline-active"
                             onclick="filterCards('all', this)">ទាំងអស់</button>
-                        <button type="button" class="btn-outline theme-primary"
+                        <button type="button" class="btn-outline theme-primary text-main"
                             onclick="filterCards('job', this)">ការងារ</button>
-                        <button type="button" class="btn-outline theme-primary"
+                        <button type="button" class="btn-outline theme-primary text-main"
                             onclick="filterCards('scholarship', this)">អាហារូបករណ៍</button>
                     </div>
                 </div>
@@ -460,7 +461,7 @@
                     <div class="job-card p-7">
                         <div>
                             <div class="d-flex justify-content-between align-items-start mb-5">
-                                <img src=""
+                                <img src="assets/img/Sokhai/index/ABA bank logo.jpg"
                                     alt="Tech Corp" class="company-logo">
                                 <span class="badge-job-type badge-internship">Internship</span>
                             </div>
@@ -482,7 +483,7 @@
                             <div class="d-flex justify-content-between align-items-center fg-2 small mb-5">
                                 <span><i class="fa-regular fa-calendar me-1"></i> ផុតកំណត់: 15 Nov 2026</span>
                             </div>
-                            <button class="btn-outline theme-primary w-100 rounded-5 fw-medium " 
+                            <button class="btn-outline theme-primary w-100 rounded-5 fw-medium text-main"
                                 onclick="openJobModal('Junior Frontend Developer', 'ABA Bank Tech Hub', '$200 - $350 / ខែ', 'ភ្នំពេញ', 'រចនា និងអភិវឌ្ឍន៍ UI គេហទំព័រដោយប្រើប្រាស់ HTML, CSS, Bootstrap និង JavaScript')">
                                 មើលលម្អិត & ដាក់ពាក្យ
                             </button>
@@ -495,7 +496,7 @@
                     <div class="job-card p-7">
                         <div>
                             <div class="d-flex justify-content-between align-items-start mb-5">
-                                <img src=""
+                                <img src="assets/img/Sokhai/index/JP Flag.jpg"
                                     alt="Uni Logo" class="company-logo">
                                 <span class="badge-job-type badge-scholarship">Fully Funded</span>
                             </div>
@@ -516,7 +517,7 @@
                             <div class="d-flex justify-content-between align-items-center fg-2 small mb-5">
                                 <span><i class="fa-regular fa-calendar me-1"></i> ផុតកំណត់: 30 Dec 2026</span>
                             </div>
-                            <button class="btn-outline theme-primary w-100 rounded-5 fw-medium" 
+                            <button class="btn-outline theme-primary w-100 rounded-5 fw-medium text-main" 
                                 onclick="openJobModal('MEXT Overseas Scholarship 2027', 'រាជរដ្ឋាភិបាលជប៉ុន', 'ថ្លៃសិក្សា ១០០% + ប្រាក់ឧបត្ថម្ភប្រចាំខែ', 'ប្រទេសជប៉ុន', 'អាហារូបករណ៍សិក្សាថ្នាក់បរិញ្ញាបត្រលើជំនាញបច្ចេកវិទ្យា និងវិទ្យាសាស្ត្រ')">
                                 មើលលម្អិត & ដាក់ពាក្យ
                             </button>
@@ -529,13 +530,12 @@
                     <div class="job-card p-7">
                         <div>
                             <div class="d-flex justify-content-between align-items-start mb-5">
-                                <img src=""
+                                <img src="assets/img/Sokhai/index/Brown logo.jpg"
                                     alt="Design Studio" class="company-logo">
                                 <span class="badge-job-type badge-fulltime">Full-Time</span>
                             </div>
                             <h5 class="fw-bold mb-1">Graphic & UI/UX Designer</h5>
-                            <p class="fg-2 small mb-3"><i class="fa-regular fa-building me-1"></i> Digital
-                                Creative Agency</p>
+                            <p class="fg-2 small mb-3"><i class="fa-regular fa-building me-1"></i> BROWN Coffee</p>
                             <p class="fg-2 small mb-5"><i class="fa-solid fa-location-dot me-1 fg-danger"></i>
                                 ភ្នំពេញ (Phnom Penh)</p>
 
@@ -550,14 +550,13 @@
                             <div class="d-flex justify-content-between align-items-center fg-2 small mb-5">
                                 <span><i class="fa-regular fa-calendar me-1"></i> ផុតកំណត់: 20 Nov 2026</span>
                             </div>
-                            <button class="btn-outline theme-primary w-100 rounded-5 fw-medium" 
+                            <button class="btn-outline theme-primary w-100 rounded-5 fw-medium text-main"
                                 onclick="openJobModal('Graphic & UI/UX Designer', 'Digital Creative Agency', '$400 - $650 / ខែ', 'ភ្នំពេញ', 'រចនារូបភាព Social Media និងចំណុចប្រទាក់កម្មវិធីទូរស័ព្ទ (Mobile UI)')">
                                 មើលលម្អិត & ដាក់ពាក្យ
                             </button>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -623,7 +622,7 @@
     <section class="py-12" data-bs-theme="light">
         <div class="container py-5">
             <div class="text-center max-width-md mx-auto mb-12">
-                <span class="fg-primary fw-bold text-uppercase small">Success Stories</span>
+                <span class="fg-primary fw-bold text-uppercase small" style="color: var(--cb-main);">Success Stories</span>
                 <h2 class="fw-bold mt-1">បទពិសោធន៍ជោគជ័យពីសិស្ស-និស្សិត</h2>
                 <p class="fg-2">ស្តាប់ការរៀបរាប់ពីរ៉ាម៉ាំងរៀមច្បងដែលទទួលបានការងារ និងអាហារូបករណ៍តាមរយៈ
                     CareerBridge</p>
@@ -631,12 +630,12 @@
 
             <div class="row g-7">
                 <div class="md:col-4">
-                    <div class="card border-0 shadow-sm p-7 rounded-9 h-100">
+                    <div class="feedback-card card border-0 shadow-sm p-7 rounded-9 h-100">
                         <div class="d-flex align-items-center gap-5 mb-5">
-                            <img src=""
-                                class="rounded-circle" width="50" height="50" alt="Student">
+                            <img src="assets/img/Sokhai/index/pfp p3.jpg"
+                                class="rounded-circle object-fit-cover" width="50" height="50" alt="Student">
                             <div>
-                                <h6 class="fw-bold mb-0">សុខ ចាន់ដារ៉ា</h6>
+                                <h6 class="fw-bold mb-0">អ៊ី ឡុងម៉ាស់</h6>
                                 <small class="fg-2">Web Developer @ Tech Company</small>
                             </div>
                         </div>
@@ -652,10 +651,10 @@
                 </div>
 
                 <div class="md:col-4">
-                    <div class="card border-0 shadow-sm p-7 rounded-9 h-100">
+                    <div class="feedback-card card border-0 shadow-sm p-7 rounded-9 h-100">
                         <div class="d-flex align-items-center gap-5 mb-5">
-                            <img src=""
-                                class="rounded-circle" width="50" height="50" alt="Student">
+                            <img src="assets/img/Sokhai/index/pfp p1.jpg"
+                                class="rounded-circle object-fit-cover" width="50" height="50" alt="Student">
                             <div>
                                 <h6 class="fw-bold mb-0">លី ម៉េងហុង</h6>
                                 <small class="fg-2">MEXT Scholarship Winner 2026</small>
@@ -672,10 +671,10 @@
                 </div>
 
                 <div class="md:col-4">
-                    <div class="card border-0 shadow-sm p-7 rounded-9 h-100">
+                    <div class="feedback-card card border-0 shadow-sm p-7 rounded-9 h-100">
                         <div class="d-flex align-items-center gap-5 mb-5">
-                            <img src=""
-                                class="rounded-circle" width="50" height="50" alt="Student">
+                            <img src="assets/img/Sokhai/index/pfp p2.jpg"
+                                class="rounded-circle object-fit-cover" width="50" height="50" alt="Student">
                             <div>
                                 <h6 class="fw-bold mb-0">គឹម សុភ័ក្ត្រ</h6>
                                 <small class="fg-2">Marketing Officer @ Bank</small>
