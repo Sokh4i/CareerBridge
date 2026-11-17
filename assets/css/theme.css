@@ -1,0 +1,68 @@
+/* Dark mode overrides for CareerBridge. Activated by <html data-theme="dark"> (see assets/JS/theme.js) */
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --cb-light: #1a2433;
+  --cb-dark: #e6edf5;
+  --cb-gray-100: #1a2433;
+  --cb-gray-200: #263244;
+  --cb-main: #5aa9f0;
+  --cb-main-sec: #3d8fd9;
+  --cb-shadow: 0 10px 30px rgba(0, 0, 0, .4);
+  --cb-surface: #172131;
+  --cb-bg: #0e1622;
+  --cb-border: #2a3649;
+  --cb-muted: #9fb0c4;
+}
+html[data-theme="dark"] body { background-color: var(--cb-bg) !important; color: var(--cb-dark); }
+html[data-theme="dark"] .navbar { background-color: rgba(14, 22, 34, .92) !important; border-color: var(--cb-border) !important; }
+html[data-theme="dark"] .navbar .nav-link { color: #c3d0df; }
+html[data-theme="dark"] .navbar .nav-link:hover,
+html[data-theme="dark"] .navbar .nav-link.active { color: var(--cb-main) !important; }
+html[data-theme="dark"] .navbar .active { border-bottom-color: var(--cb-main) !important; }
+html[data-theme="dark"] .hat { color: #c3d0df; }
+html[data-theme="dark"] .navbar-brand .logo { filter: brightness(1.15); }
+html[data-theme="dark"] .menu, html[data-theme="dark"] .drawer, html[data-theme="dark"] dialog {
+  background-color: var(--cb-surface); color: var(--cb-dark); border-color: var(--cb-border);
+}
+html[data-theme="dark"] .menu-item { color: var(--cb-dark); }
+html[data-theme="dark"] .menu-item:hover { background-color: #24476b; color: #fff; }
+html[data-theme="dark"] .card, html[data-theme="dark"] .profile-card, html[data-theme="dark"] .profile-stat,
+html[data-theme="dark"] .bg-white, html[data-theme="dark"] .bg-light {
+  background-color: var(--cb-surface) !important; color: var(--cb-dark); border-color: var(--cb-border) !important;
+}
+html[data-theme="dark"] .border, html[data-theme="dark"] .border-bottom, html[data-theme="dark"] .border-top { border-color: var(--cb-border) !important; }
+html[data-theme="dark"] .text-muted, html[data-theme="dark"] .fg-2 { color: var(--cb-muted) !important; }
+html[data-theme="dark"] input, html[data-theme="dark"] select, html[data-theme="dark"] textarea {
+  background-color: #111b29; color: var(--cb-dark); border-color: var(--cb-border);
+}
+html[data-theme="dark"] section { background-color: transparent; }
+html[data-theme="dark"] .profile-avatar { border-color: var(--cb-surface); }
+html[data-theme="dark"] h1, html[data-theme="dark"] h2, html[data-theme="dark"] h3,
+html[data-theme="dark"] h4, html[data-theme="dark"] h5, html[data-theme="dark"] h6 { color: #f1f5fa; }
+
+/* ---- Home page & shared components ---- */
+html[data-theme="dark"] .hero-section { background: linear-gradient(135deg, #0e1a2b, #12233a) !important; }
+html[data-theme="dark"] .hero-badge { background: rgba(90,169,240,.15) !important; color: #8cc4f5 !important; }
+html[data-theme="dark"] .hero-title { color: #f1f5fa !important; }
+html[data-theme="dark"] .search-box,
+html[data-theme="dark"] .tag-pill,
+html[data-theme="dark"] .float-badge,
+html[data-theme="dark"] .stat-card,
+html[data-theme="dark"] .category-card,
+html[data-theme="dark"] .job-card,
+html[data-theme="dark"] .resource-card,
+html[data-theme="dark"] .feedback-card {
+  background: var(--cb-surface) !important; color: var(--cb-dark) !important; border-color: var(--cb-border) !important;
+}
+html[data-theme="dark"] .search-box input,
+html[data-theme="dark"] .search-box select { background: transparent !important; color: var(--cb-dark) !important; }
+html[data-theme="dark"] .tag-pill { color: #c3d0df !important; }
+html[data-theme="dark"] .stat-label,
+html[data-theme="dark"] .float-badge *,
+html[data-theme="dark"] .job-card p,
+html[data-theme="dark"] .resource-card p,
+html[data-theme="dark"] .category-card p { color: var(--cb-muted) !important; }
+html[data-theme="dark"] .bg-1, html[data-theme="dark"] .bg-2 { background-color: #101a29 !important; }
+html[data-theme="dark"] .fg-1 { color: #e6edf5 !important; }
+html[data-theme="dark"] .noti-header, html[data-theme="dark"] .noti-footer { background-color: #101a29 !important; }
+html[data-theme="dark"] footer { filter: none; }
