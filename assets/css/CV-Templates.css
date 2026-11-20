@@ -16,6 +16,7 @@
     --tp-bg: #f5f8fc;
     --tp-amber: #f2a900;
     --tp-radius: 16px;
+    --tp-paper: #ffffff;
 }
 
 .tp-page {
@@ -57,22 +58,40 @@ html {
 
 /* ---------- Hero ---------- */
 .tp-hero {
-    background: linear-gradient(180deg, var(--tp-main-soft) 0%, #fff 100%);
+    position: relative;
+    background-image: url(../img/Virak/banner/CV-Template.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     border-bottom: 1px solid var(--tp-line);
-    padding: 3rem 0 5rem;
+    padding: 3rem 0 3rem;
     overflow: hidden;
+}
+
+.blur {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.255);
+    backdrop-filter: blur(1px);
+}
+
+.tp-hero > .container {
+    position: relative;
+    z-index: 1;
 }
 
 .tp-breadcrumb {
     display: flex;
     flex-wrap: wrap;
     gap: 0.6rem;
-    color: var(--tp-muted);
+    color: var(--tp-paper);
     margin-bottom: 2.5rem;
 }
 
 .tp-breadcrumb a {
-    color: var(--cb-main);
+    color: var(--tp-paper);
     text-decoration: none;
 }
 
@@ -83,13 +102,19 @@ html {
 .tp-title {
     font-size: clamp(2rem, 4.6vw, 3.2rem);
     margin-bottom: 1.1rem;
-    color: var(--cb-main) !important;
+    color: var(--tp-paper) !important;
 }
 
 .tp-lead {
     font-size: 1.1rem;
     max-width: 56ch;
     margin-bottom: 2rem;
+    color: var(--tp-paper);
+}
+
+.tp-hero .btn-outline {
+    color: var(--tp-paper);
+    border-color: var(--tp-paper);
 }
 
 .tp-perks {
@@ -100,11 +125,11 @@ html {
     flex-wrap: wrap;
     gap: 0.4rem 1.6rem;
     font-weight: 500;
-    color: var(--tp-ink);
+    color: var(--tp-paper);
 }
 
 .tp-perks i {
-    color: var(--cb-main);
+    color: var(--tp-paper);
     margin-right: 0.4rem;
 }
 
@@ -211,40 +236,6 @@ html {
     display: flex;
     flex-direction: column;
     gap: 0.4rem;
-}
-
-/* ---------- Hero stack ---------- */
-.tp-stack {
-    position: relative;
-    height: 440px;
-    max-width: 520px;
-    margin-inline: auto;
-}
-
-.tp-stack .tp-sheet {
-    position: absolute;
-    width: 52%;
-    box-shadow: 0 24px 40px -22px rgba(11, 42, 74, 0.55);
-    border: 1px solid var(--tp-line);
-}
-
-.tp-stack-a {
-    left: 0;
-    top: 40px;
-    transform: rotate(-5deg);
-}
-
-.tp-stack-b {
-    right: 0;
-    top: 0;
-    transform: rotate(4deg);
-}
-
-.tp-stack-c {
-    left: 24%;
-    top: 120px;
-    transform: rotate(-1deg);
-    z-index: 2;
 }
 
 /* ---------- Sections ---------- */
