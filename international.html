@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="km">
+<html lang="km" data-bs-theme="light">
 
 <head>
     <meta charset="utf-8">
@@ -236,8 +236,253 @@
         <div class="container"><span class="eyebrow">អាហារូបករណ៍អន្តរជាតិ</span>
             <h1>ពង្រីកពិភពសិក្សារបស់អ្នកទៅកាន់អន្តរជាតិ</h1>
             <p>ស្វែងរកឱកាសទៅសិក្សានៅក្រៅប្រទេស និងទទួលបានបទពិសោធន៍ថ្មីៗពីជុំវិញពិភពលោក។</p>
+
+            <!-- Metrics -->
+            <div class="metrics">
+                <div class="metric-item">
+                    <div class="metric-number">៥០+</div>
+                    <div class="metric-label">កម្មវិធីបើកទទួលពាក្យ</div>
+                </div>
+
+                <div class="metric-item">
+                    <div class="metric-number">១០០%</div>
+                    <div class="metric-label">អាហារូបករណ៍ពេញថ្លៃ</div>
+                </div>
+
+                <div class="metric-item">
+                    <div class="metric-number">១៥+</div>
+                    <div class="metric-label">ប្រទេសដៃគូអន្តរជាតិ</div>
+                </div>
+
+                <div class="metric-item">
+                    <div class="metric-number green">ឥតគិតថ្លៃ</div>
+                    <div class="metric-label">ការប្រឹក្សា & ឯកសារ</div>
+                </div>
+            </div>
+
             <a href="schorlarship.html#choose" class="btn btn-outline-primary rounded-pill px-3 mt-2"><i
                     class="fa-solid fa-arrow-left me-2"></i>ត្រឡប់ទៅជ្រើសរើស</a>
+
+            <!-- ======>> Trigger Button <<====== -->
+            <button type="button" class="btn-solid theme-warning rounded-pill fw-bold" data-bs-toggle="dialog"
+                data-bs-target="#exampleDialog">
+                មើលលក្ខខណ្ឌទូទៅ & Checklist ឯកសារតម្រូវ
+            </button>
+
+            <!-- ======>> Bootstrap 6 Dialog <<====== -->
+            <dialog class="dialog dialog-scrollable" id="exampleDialog">
+
+                <!-- Header -->
+                <div class="dialog-header" style="background:#102b50;color:#fff;">
+                    <div>
+                        <span id="modalCountryBadge"
+                            class="inline-block text-[11px] font-bold bg-blue-500/30 text-blue-200 px-2.5 py-0.5 rounded-full mb-1.5 border border-blue-400/30">
+                            📋 លក្ខខណ្ឌ & ឯកសារតម្រូវ
+                        </span>
+                        <h1 class="dialog-title" id="modalTitle">
+                            ផ្ទាំងព័ត៌មានលក្ខខណ្ឌដាក់ពាក្យអាហារូបករណ៍
+                        </h1>
+                        <p id="modalSubtitle" class="text-xs text-slate-300 mt-0.5 mb-0">
+                            សូមពិនិត្យឯកសារដែលត្រូវរៀបចំឱ្យបានគ្រប់ជ្រុងជ្រោយ មុនកាលបរិច្ឆេទផុតកំណត់
+                        </p>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="dialog" aria-label="Close"
+                        style="filter: invert(1) grayscale(100%) brightness(200%);"></button>
+                </div>
+
+                <!-- Body (scrollable) -->
+                <div class="dialog-body">
+
+                    <!-- Tabs -->
+                    <div class="flex border-b border-slate-200 bg-slate-50 text-xs font-bold text-slate-600 mb-4">
+                        <button type="button" onclick="switchTab('checklist')" id="tabBtnChecklist"
+                            class="py-3 px-4 border-b-2 border-blue-600 text-blue-600 transition cursor-pointer">
+                            <i class="fa-solid fa-list-check me-1.5"></i> ឯកសារ & Checklist
+                        </button>
+                        <button type="button" onclick="switchTab('criteria')" id="tabBtnCriteria"
+                            class="py-3 px-4 border-b-2 border-transparent hover:text-blue-600 transition cursor-pointer">
+                            <i class="fa-solid fa-user-graduate me-1.5"></i> លក្ខខណ្ឌជ្រើសរើស
+                        </button>
+                        <button type="button" onclick="switchTab('timeline')" id="tabBtnTimeline"
+                            class="py-3 px-4 border-b-2 border-transparent hover:text-blue-600 transition cursor-pointer">
+                            <i class="fa-solid fa-calendar-days me-1.5"></i> កាលវិភាគដាក់ពាក្យ
+                        </button>
+                    </div>
+
+                    <!-- Tab 1: Checklist -->
+                    <div id="tabContentChecklist" class="space-y-4">
+                        <!-- Progress Bar -->
+                        <div class="bg-blue-50 border border-blue-100 rounded-xl p-3.5 mb-4">
+                            <div class="flex items-center justify-between text-xs font-bold text-slate-700 mb-1.5">
+                                <span>វឌ្ឍនភាពនៃការត្រៀមឯកសារ:</span>
+                                <span id="checklistProgressText" class="text-blue-600">0% (០/៧)</span>
+                            </div>
+                            <div class="w-full h-2 bg-slate-200 rounded-full overflow-hidden">
+                                <div id="checklistProgressBar"
+                                    class="h-full bg-blue-600 rounded-full transition-all duration-300 w-0"></div>
+                            </div>
+                        </div>
+
+                        <div class="text-xs font-semibold text-slate-500 mb-1">
+                            សូមចុចធីកលើប្រអប់ឯកសារដែលអ្នកបានរៀបចំរួចរាល់៖
+                        </div>
+
+                        <div class="space-y-2.5" id="checklistContainer">
+                            <label
+                                class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateProgress()"
+                                    class="mt-0.5 w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block">១. លិខិតឆ្លងដែន (Passport)</span>
+                                    <span class="text-slate-500 text-[11px]">មានសុពលភាពយ៉ាងតិច ៦
+                                        ខែឡើងទៅគិតចាប់ពីកាលបរិច្ឆេទធ្វើដំណើរ។</span>
+                                </div>
+                            </label>
+
+                            <label
+                                class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateProgress()"
+                                    class="mt-0.5 w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block">២. ព្រឹត្តិបត្រពិន្ទុ & សញ្ញាបត្រ
+                                        (Academic Transcripts & Certificates)</span>
+                                    <span class="text-slate-500 text-[11px]">បកប្រែជាភាសាអង់គ្លេស
+                                        និងមានការបញ្ជាក់ត្រាផ្លូវការពីក្រសួង ឬស្ថាប័នពាក់ព័ន្ធ។</span>
+                                </div>
+                            </label>
+
+                            <label
+                                class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateProgress()"
+                                    class="mt-0.5 w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block">៣. វិញ្ញាបនបត្រភាសា (IELTS / TOEFL /
+                                        TOPIK / JLPT)</span>
+                                    <span
+                                        class="text-slate-500 text-[11px]">ពិន្ទុអប្បបរមាតាមការកំណត់របស់អាហារូបករណ៍នីមួយៗ
+                                        (IELTS ≥ 6.0 - 6.5)។</span>
+                                </div>
+                            </label>
+
+                            <label
+                                class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateProgress()"
+                                    class="mt-0.5 w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block">៤. សំបុត្រលើកទឹកចិត្ត (Motivation
+                                        Letter / Statement of Purpose)</span>
+                                    <span class="text-slate-500 text-[11px]">បញ្ជាក់ពីចំណាប់អារម្មណ៍ គោលបំណងស្រាវជ្រាវ
+                                        និងផែនការចូលរួមអភិវឌ្ឍន៍សង្គម។</span>
+                                </div>
+                            </label>
+
+                            <label
+                                class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateProgress()"
+                                    class="mt-0.5 w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block">៥. លិខិតឧទ្ទេសនាម ២ ច្បាប់
+                                        (Recommendation Letters)</span>
+                                    <span class="text-slate-500 text-[11px]">ទទួលបានពីសាស្ត្រាចារ្យ
+                                        ឬប្រធានស្ថាប័នការងារផ្ទាល់ដែលស្គាល់ពីសមត្ថភាពអ្នក។</span>
+                                </div>
+                            </label>
+
+                            <label
+                                class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateProgress()"
+                                    class="mt-0.5 w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block">៦. ប្រវត្តិរូបសង្ខេបស្តង់ដារអន្តរជាតិ
+                                        (Curriculum Vitae / Europass)</span>
+                                    <span class="text-slate-500 text-[11px]">បង្ហាញពីបទពិសោធន៍សិក្សា ស្នាដៃការងារ
+                                        និងសកម្មភាពសង្គមច្បាស់លាស់។</span>
+                                </div>
+                            </label>
+
+                            <label
+                                class="flex items-start gap-3 p-3 rounded-xl border border-slate-200 hover:bg-slate-50 cursor-pointer transition">
+                                <input type="checkbox" onchange="updateProgress()"
+                                    class="mt-0.5 w-4 h-4 text-blue-600 rounded border-slate-300 focus:ring-blue-500 cursor-pointer">
+                                <div class="text-xs">
+                                    <span class="font-bold text-slate-800 block">៧. លិខិតពិនិត្យសុខភាព (Medical
+                                        Examination Certificate)</span>
+                                    <span class="text-slate-500 text-[11px]">ចេញដោយមន្ទីរពេទ្យទទួលស្គាល់ផ្លូវការ
+                                        បញ្ជាក់ពីស្ថានភាពគ្មានជំងឺឆ្លងកាចសាហាវ។</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <!-- Tab 2: Criteria -->
+                    <div id="tabContentCriteria" class="space-y-4 hidden text-xs">
+                        <div class="bg-slate-50 border border-slate-200 rounded-xl p-4">
+                            <h4 class="font-bold text-slate-800 text-sm mb-2">
+                                <i class="fa-solid fa-check-circle text-emerald-500 me-1"></i>
+                                លក្ខខណ្ឌទូទៅរបស់បេក្ខជន
+                            </h4>
+                            <ul class="list-disc pl-5 space-y-1.5 text-slate-600">
+                                <li>ជាពលរដ្ឋកម្ពុជាដែលមានសញ្ជាតិខ្មែរស្របច្បាប់។</li>
+                                <li>មានកម្រិតមធ្យមភាគពិន្ទុ GPA ចាប់ពី <strong>3.00 / 4.00</strong>
+                                    ឡើងទៅសម្រាប់ថ្នាក់អនុបណ្ឌិត។</li>
+                                <li>មានអាយុមិនលើសពី ៣៥ ឆ្នាំសម្រាប់ថ្នាក់អនុបណ្ឌិត និងមិនលើសពី ៤០
+                                    ឆ្នាំសម្រាប់ថ្នាក់បណ្ឌិត។</li>
+                                <li>មានស្មារតីទទួលខុសត្រូវ
+                                    និងប្តេជ្ញាចិត្តត្រឡប់មកបម្រើការងារនៅប្រទេសកំណើតវិញក្រោយបញ្ចប់ការសិក្សា។</li>
+                            </ul>
+                        </div>
+
+                        <div class="bg-amber-50 border border-amber-200 text-amber-900 rounded-xl p-4">
+                            <div class="font-bold flex items-center gap-1.5 mb-1 text-sm">
+                                <i class="fa-solid fa-triangle-exclamation text-amber-500"></i>
+                                ចំណាំសំខាន់សម្រាប់បេក្ខជន
+                            </div>
+                            <p class="text-[11px] leading-relaxed mb-0">
+                                កម្មវិធីនីមួយៗអាចមានកាលបរិច្ឆេទ និងទម្រង់បែបបទខុសៗគ្នា។
+                                សូមទាញយកឯកសារណែនាំផ្លូវការរបស់ស្ថានទូត
+                                ឬគេហទំព័រសាកលវិទ្យាល័យដើម្បីពិនិត្យលម្អិតបន្ថែម។
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Tab 3: Timeline -->
+                    <div id="tabContentTimeline" class="space-y-3 hidden text-xs">
+                        <div class="relative pl-6 pb-4 border-l-2 border-blue-500">
+                            <div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-blue-500"></div>
+                            <div class="font-bold text-slate-800">ដំណាក់កាលទី ១: រៀបចំឯកសារ & ដាក់ពាក្យតាម Online</div>
+                            <div class="text-slate-500 text-[11px]">ខែមករា - ខែមេសា (ប្រចាំឆ្នាំ)</div>
+                        </div>
+                        <div class="relative pl-6 pb-4 border-l-2 border-blue-500">
+                            <div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-blue-500"></div>
+                            <div class="font-bold text-slate-800">ដំណាក់កាលទី ២: ពិនិត្យឯកសារ & ប្រឡងសរសេរ /
+                                សម្ភាសន៍ផ្ទាល់</div>
+                            <div class="text-slate-500 text-[11px]">ខែឧសភា - ខែកក្កដា</div>
+                        </div>
+                        <div class="relative pl-6 pb-4 border-l-2 border-emerald-500">
+                            <div class="absolute -left-1.5 top-0 w-3 h-3 rounded-full bg-emerald-500"></div>
+                            <div class="font-bold text-emerald-700">ដំណាក់កាលទី ៣: ប្រកាសលទ្ធផលជាប់ស្ថាពរ &
+                                ស្នើសុំទិដ្ឋាការ (Visa)</div>
+                            <div class="text-slate-500 text-[11px]">ខែសីហា - ខែកញ្ញា</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+                <div class="dialog-footer">
+                    <button type="button" onclick="downloadChecklist()" class="btn-solid theme-secondary me-auto">
+                        <i class="fa-solid fa-download"></i> ទាញយក PDF Checklist
+                    </button>
+                    <button type="button" class="btn-solid theme-secondary" data-bs-dismiss="dialog">
+                        បិទ
+                    </button>
+                    <a href="#" class="btn-solid theme-primary">
+                        ដាក់ពាក្យឥឡូវនេះ
+                    </a>
+                </div>
+
+            </dialog>
+
         </div>
     </header>
 
@@ -284,326 +529,327 @@
 
                     <div class="major-results row g-4">
 
-                        <!-- INFORMATION TECHNOLOGY -->
-                        <div class="col-12  scholarship-item it">
-                            <article class="scholar-card">
-                                <div class="scholar-top">
-                                    <div class="scholar-icon"><i class="fa-solid fa-laptop-code"></i></div>
-                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                        <!-- ========== INFORMATION TECHNOLOGY ========== -->
+                        <div class="col-12 col-md-6 col-lg-4 scholarship-item it">
+                            <div class="card scholar-compact h-100">
+                                <div class="scholar-banner bn-blue">
+                                    <span class="scholar-flag jp"></span>
+                                    <span class="scholar-chip">អាហារូបករណ៍អន្តរជាតិ</span>
                                 </div>
-                                <h2>អាហារូបករណ៍ MEXT ផ្នែកព័ត៌មានវិទ្យា</h2>
-                                <div class="org">រដ្ឋាភិបាលប្រទេសជប៉ុន</div>
-                                <p class="mt-3">
-                                    ឱកាសសិក្សានៅប្រទេសជប៉ុន សម្រាប់និស្សិតដែលចាប់អារម្មណ៍លើ
-                                    បច្ចេកវិទ្យាព័ត៌មាន ការសរសេរកម្មវិធី និងវិទ្យាសាស្ត្រកុំព្យូទ័រ។
-                                </p>
-                                <div class="facts">
-                                    <div><small>ប្រទេស</small><strong>ជប៉ុន 🇯🇵</strong></div>
-                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
-                                    <div><small>ជំនាញ</small><strong>Information Technology</strong></div>
-                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
-                                    <div class="col-12">
-                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
-                                        <strong>អាស្រ័យលើស្ថានទូត និងឆ្នាំដាក់ពាក្យ</strong>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="mb-0">អាហារូបករណ៍ MEXT ផ្នែកព័ត៌មានវិទ្យា</h5>
+                                    <small class="fg-3">រដ្ឋាភិបាលប្រទេសជប៉ុន</small>
+                                    <p class="card-text fg-2 mt-2 mb-2 scholar-desc">
+                                        សិក្សានៅជប៉ុន ផ្នែកបច្ចេកវិទ្យាព័ត៌មាន ការសរសេរកម្មវិធី
+                                        និងវិទ្យាសាស្ត្រកុំព្យូទ័រ។
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="scholar-tag tag-blue">បរិញ្ញាបត្រ / អនុបណ្ឌិត</span>
+                                        <span class="scholar-tag tag-green">Information Technology</span>
+                                    </div>
+                                    <small class="fg-3"><i class="fa-solid fa-calendar-days me-1"></i> អាស្រ័យលើស្ថានទូត
+                                        និងឆ្នាំដាក់ពាក្យ</small>
+                                    <div class="d-flex gap-2 mt-auto pt-3">
+                                        <button type="button" class="btn-solid theme-secondary flex-fill"
+                                            data-bs-toggle="dialog" data-bs-target="#exampleDialog">មើលលក្ខខណ្ឌ</button>
+                                        <a href="apply.html" class="btn-solid theme-primary flex-fill">ដាក់ពាក្យ <i
+                                                class="fa-solid fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </div>
-                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
-                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
-                            </article>
+                            </div>
                         </div>
 
-                        <div class="col-12  scholarship-item it">
-                            <article class="scholar-card">
-                                <div class="scholar-top">
-                                    <div class="scholar-icon"><i class="fa-solid fa-code"></i></div>
-                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                        <div class="col-12 col-md-6 col-lg-4 scholarship-item it">
+                            <div class="card scholar-compact h-100">
+                                <div class="scholar-banner bn-blue">
+                                    <span class="scholar-flag kore"></span>
+                                    <span class="scholar-chip">Fully Funded</span>
                                 </div>
-                                <h2>អាហារូបករណ៍ GKS ផ្នែកវិទ្យាសាស្ត្រកុំព្យូទ័រ</h2>
-                                <div class="org">រដ្ឋាភិបាលប្រទេសកូរ៉េខាងត្បូង</div>
-                                <p class="mt-3">
-                                    ឱកាសសិក្សានៅប្រទេសកូរ៉េខាងត្បូង ដើម្បីអភិវឌ្ឍជំនាញ
-                                    សរសេរកូដ បង្កើតកម្មវិធី និងបច្ចេកវិទ្យាឌីជីថល។
-                                </p>
-                                <div class="facts">
-                                    <div><small>ប្រទេស</small><strong>កូរ៉េខាងត្បូង 🇰🇷</strong></div>
-                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
-                                    <div><small>ជំនាញ</small><strong>Computer Science</strong></div>
-                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
-                                    <div class="col-12">
-                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
-                                        <strong>អាស្រ័យលើការប្រកាសប្រចាំឆ្នាំ</strong>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="mb-0">អាហារូបករណ៍ GKS ផ្នែកវិទ្យាសាស្ត្រកុំព្យូទ័រ</h5>
+                                    <small class="fg-3">រដ្ឋាភិបាលប្រទេសកូរ៉េខាងត្បូង</small>
+                                    <p class="card-text fg-2 mt-2 mb-2 scholar-desc">
+                                        សិក្សានៅកូរ៉េខាងត្បូង ដើម្បីអភិវឌ្ឍជំនាញសរសេរកូដ និងបច្ចេកវិទ្យាឌីជីថល។
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="scholar-tag tag-blue">បរិញ្ញាបត្រ / អនុបណ្ឌិត</span>
+                                        <span class="scholar-tag tag-green">Computer Science</span>
+                                    </div>
+                                    <small class="fg-3"><i class="fa-solid fa-calendar-days me-1"></i>
+                                        ប្រកាសជារៀងរាល់ឆ្នាំ</small>
+                                    <div class="d-flex gap-2 mt-auto pt-3">
+                                        <button type="button" class="btn-solid theme-secondary flex-fill"
+                                            data-bs-toggle="dialog" data-bs-target="#exampleDialog">មើលលក្ខខណ្ឌ</button>
+                                        <a href="apply.html" class="btn-solid theme-primary flex-fill">ដាក់ពាក្យ <i
+                                                class="fa-solid fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </div>
-                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
-                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
-                            </article>
+                            </div>
                         </div>
 
-                        <!-- BUSINESS -->
-                        <div class="col-12  scholarship-item business">
-                            <article class="scholar-card">
-                                <div class="scholar-top">
-                                    <div class="scholar-icon"><i class="fa-solid fa-briefcase"></i></div>
-                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                        <!-- ========== BUSINESS ========== -->
+                        <div class="col-12 col-md-6 col-lg-4 scholarship-item business">
+                            <div class="card scholar-compact h-100">
+                                <div class="scholar-banner bn-teal">
+                                    <span class="scholar-flag au"></span>
+                                    <span class="scholar-chip">អាហារូបករណ៍អន្តរជាតិ</span>
                                 </div>
-                                <h2>អាហារូបករណ៍ Australia Awards ផ្នែកគ្រប់គ្រងពាណិជ្ជកម្ម</h2>
-                                <div class="org">រដ្ឋាភិបាលប្រទេសអូស្ត្រាលី</div>
-                                <p class="mt-3">
-                                    ឱកាសសិក្សាថ្នាក់ឧត្តមសិក្សានៅប្រទេសអូស្ត្រាលី
-                                    សម្រាប់អ្នកដែលចង់អភិវឌ្ឍជំនាញគ្រប់គ្រងអាជីវកម្ម
-                                    ភាពជាអ្នកដឹកនាំ និងការអភិវឌ្ឍសេដ្ឋកិច្ច។
-                                </p>
-                                <div class="facts">
-                                    <div><small>ប្រទេស</small><strong>អូស្ត្រាលី 🇦🇺</strong></div>
-                                    <div><small>កម្រិតសិក្សា</small><strong>អនុបណ្ឌិត</strong></div>
-                                    <div><small>ជំនាញ</small><strong>Business Management</strong></div>
-                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងការរស់នៅ</strong></div>
-                                    <div class="col-12">
-                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
-                                        <strong>អាស្រ័យលើប្រទេស និងឆ្នាំដាក់ពាក្យ</strong>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="mb-0">អាហារូបករណ៍ Australia Awards ផ្នែកគ្រប់គ្រងពាណិជ្ជកម្ម</h5>
+                                    <small class="fg-3">រដ្ឋាភិបាលប្រទេសអូស្ត្រាលី</small>
+                                    <p class="card-text fg-2 mt-2 mb-2 scholar-desc">
+                                        សិក្សាថ្នាក់ឧត្តមសិក្សានៅអូស្ត្រាលី ដើម្បីអភិវឌ្ឍជំនាញគ្រប់គ្រងអាជីវកម្ម
+                                        និងភាពជាអ្នកដឹកនាំ។
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="scholar-tag tag-blue">អនុបណ្ឌិត</span>
+                                        <span class="scholar-tag tag-green">Business Management</span>
+                                    </div>
+                                    <small class="fg-3"><i class="fa-solid fa-calendar-days me-1"></i> អាស្រ័យលើប្រទេស
+                                        និងឆ្នាំដាក់ពាក្យ</small>
+                                    <div class="d-flex gap-2 mt-auto pt-3">
+                                        <button type="button" class="btn-solid theme-secondary flex-fill"
+                                            data-bs-toggle="dialog" data-bs-target="#exampleDialog">មើលលក្ខខណ្ឌ</button>
+                                        <a href="apply.html" class="btn-solid theme-primary flex-fill">ដាក់ពាក្យ <i
+                                                class="fa-solid fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </div>
-                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
-                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
-                            </article>
+                            </div>
                         </div>
 
-                        <div class="col-12  scholarship-item business">
-                            <article class="scholar-card">
-                                <div class="scholar-top">
-                                    <div class="scholar-icon"><i class="fa-solid fa-calculator"></i></div>
-                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                        <div class="col-12 col-md-6 col-lg-4 scholarship-item business">
+                            <div class="card scholar-compact h-100">
+                                <div class="scholar-banner bn-purple">
+                                    <span class="scholar-flag ch"></span>
+                                    <span class="scholar-chip">អាហារូបករណ៍អន្តរជាតិ</span>
                                 </div>
-                                <h2>អាហារូបករណ៍ CSC ផ្នែកគណនេយ្យ និងហិរញ្ញវត្ថុ</h2>
-                                <div class="org">China Scholarship Council</div>
-                                <p class="mt-3">
-                                    ឱកាសសិក្សានៅប្រទេសចិន សម្រាប់និស្សិតដែលចង់បង្កើនចំណេះដឹង
-                                    ផ្នែកគណនេយ្យ ហិរញ្ញវត្ថុ និងការគ្រប់គ្រងអាជីវកម្មអន្តរជាតិ។
-                                </p>
-                                <div class="facts">
-                                    <div><small>ប្រទេស</small><strong>ចិន 🇨🇳</strong></div>
-                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
-                                    <div><small>ជំនាញ</small><strong>Accounting & Finance</strong></div>
-                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
-                                    <div class="col-12">
-                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
-                                        <strong>អាស្រ័យលើសាកលវិទ្យាល័យ</strong>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="mb-0">អាហារូបករណ៍ CSC ផ្នែកគណនេយ្យ និងហិរញ្ញវត្ថុ</h5>
+                                    <small class="fg-3">China Scholarship Council</small>
+                                    <p class="card-text fg-2 mt-2 mb-2 scholar-desc">
+                                        សិក្សានៅចិន ដើម្បីបង្កើនចំណេះដឹងផ្នែកគណនេយ្យ ហិរញ្ញវត្ថុ
+                                        និងការគ្រប់គ្រងអាជីវកម្ម។
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="scholar-tag tag-blue">បរិញ្ញាបត្រ / អនុបណ្ឌិត</span>
+                                        <span class="scholar-tag tag-green">Accounting &amp; Finance</span>
+                                    </div>
+                                    <small class="fg-3"><i class="fa-solid fa-calendar-days me-1"></i>
+                                        អាស្រ័យលើសាកលវិទ្យាល័យ</small>
+                                    <div class="d-flex gap-2 mt-auto pt-3">
+                                        <button type="button" class="btn-solid theme-secondary flex-fill"
+                                            data-bs-toggle="dialog" data-bs-target="#exampleDialog">មើលលក្ខខណ្ឌ</button>
+                                        <a href="apply.html" class="btn-solid theme-primary flex-fill">ដាក់ពាក្យ <i
+                                                class="fa-solid fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </div>
-                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
-                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
-                            </article>
+                            </div>
                         </div>
 
-                        <!-- ENGINEERING -->
-                        <div class="col-12  scholarship-item engineering">
-                            <article class="scholar-card">
-                                <div class="scholar-top">
-                                    <div class="scholar-icon"><i class="fa-solid fa-gears"></i></div>
-                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                        <!-- ========== ENGINEERING ========== -->
+                        <div class="col-12 col-md-6 col-lg-4 scholarship-item engineering">
+                            <div class="card scholar-compact h-100">
+                                <div class="scholar-banner bn-orange">
+                                    <span class="scholar-flag gm"></span>
+                                    <span class="scholar-chip">អាហារូបករណ៍អន្តរជាតិ</span>
                                 </div>
-                                <h2>អាហារូបករណ៍ DAAD ផ្នែកវិស្វកម្ម</h2>
-                                <div class="org">DAAD - German Academic Exchange Service</div>
-                                <p class="mt-3">
-                                    ឱកាសសិក្សានៅប្រទេសអាល្លឺម៉ង់ សម្រាប់និស្សិតដែលចាប់អារម្មណ៍
-                                    លើវិស្វកម្ម មេកានិច អគ្គិសនី និងបច្ចេកវិទ្យាឧស្សាហកម្ម។
-                                </p>
-                                <div class="facts">
-                                    <div><small>ប្រទេស</small><strong>អាល្លឺម៉ង់ 🇩🇪</strong></div>
-                                    <div><small>កម្រិតសិក្សា</small><strong>អនុបណ្ឌិត / បណ្ឌិត</strong></div>
-                                    <div><small>ជំនាញ</small><strong>Engineering</strong></div>
-                                    <div><small>អត្ថប្រយោជន៍</small><strong>ប្រាក់ឧបត្ថម្ភ និងជំនួយសិក្សា</strong></div>
-                                    <div class="col-12">
-                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
-                                        <strong>អាស្រ័យលើកម្មវិធីសិក្សា</strong>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="mb-0">អាហារូបករណ៍ DAAD ផ្នែកវិស្វកម្ម</h5>
+                                    <small class="fg-3">DAAD - German Academic Exchange Service</small>
+                                    <p class="card-text fg-2 mt-2 mb-2 scholar-desc">
+                                        សិក្សានៅអាល្លឺម៉ង់ ផ្នែកវិស្វកម្ម មេកានិច អគ្គិសនី និងបច្ចេកវិទ្យាឧស្សាហកម្ម។
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="scholar-tag tag-blue">អនុបណ្ឌិត / បណ្ឌិត</span>
+                                        <span class="scholar-tag tag-green">Engineering</span>
+                                    </div>
+                                    <small class="fg-3"><i class="fa-solid fa-calendar-days me-1"></i>
+                                        អាស្រ័យលើកម្មវិធីសិក្សា</small>
+                                    <div class="d-flex gap-2 mt-auto pt-3">
+                                        <button type="button" class="btn-solid theme-secondary flex-fill"
+                                            data-bs-toggle="dialog" data-bs-target="#exampleDialog">មើលលក្ខខណ្ឌ</button>
+                                        <a href="apply.html" class="btn-solid theme-primary flex-fill">ដាក់ពាក្យ <i
+                                                class="fa-solid fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </div>
-                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
-                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
-                            </article>
+                            </div>
                         </div>
 
-                        <!-- HEALTH -->
-                        <div class="col-12 scholarship-item health">
-                            <article class="scholar-card">
-                                <div class="scholar-top">
-                                    <div class="scholar-icon"><i class="fa-solid fa-heart-pulse"></i></div>
-                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                        <!-- ========== HEALTH ========== -->
+                        <div class="col-12 col-md-6 col-lg-4 scholarship-item health">
+                            <div class="card scholar-compact h-100">
+                                <div class="scholar-banner bn-red">
+                                    <span class="scholar-flag jp"></span>
+                                    <span class="scholar-chip">អាហារូបករណ៍អន្តរជាតិ</span>
                                 </div>
-                                <h2>អាហារូបករណ៍ MEXT ផ្នែកវិទ្យាសាស្ត្រសុខាភិបាល</h2>
-                                <div class="org">រដ្ឋាភិបាលប្រទេសជប៉ុន</div>
-                                <p class="mt-3">
-                                    ឱកាសសិក្សាផ្នែកវេជ្ជសាស្ត្រ សុខាភិបាល និងវិទ្យាសាស្ត្រសុខភាព
-                                    ដើម្បីអភិវឌ្ឍសមត្ថភាពក្នុងការថែទាំ និងការពារសុខភាពប្រជាជន។
-                                </p>
-                                <div class="facts">
-                                    <div><small>ប្រទេស</small><strong>ជប៉ុន 🇯🇵</strong></div>
-                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / ស្រាវជ្រាវ</strong></div>
-                                    <div><small>ជំនាញ</small><strong>Health Sciences</strong></div>
-                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
-                                    <div class="col-12">
-                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
-                                        <strong>អាស្រ័យលើការប្រកាសផ្លូវការ</strong>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="mb-0">អាហារូបករណ៍ MEXT ផ្នែកវិទ្យាសាស្ត្រសុខាភិបាល</h5>
+                                    <small class="fg-3">រដ្ឋាភិបាលប្រទេសជប៉ុន</small>
+                                    <p class="card-text fg-2 mt-2 mb-2 scholar-desc">
+                                        សិក្សាផ្នែកវេជ្ជសាស្ត្រ សុខាភិបាល និងវិទ្យាសាស្ត្រសុខភាព ដើម្បីថែទាំ
+                                        និងការពារសុខភាពប្រជាជន។
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="scholar-tag tag-blue">បរិញ្ញាបត្រ / ស្រាវជ្រាវ</span>
+                                        <span class="scholar-tag tag-green">Health Sciences</span>
+                                    </div>
+                                    <small class="fg-3"><i class="fa-solid fa-calendar-days me-1"></i>
+                                        អាស្រ័យលើការប្រកាសផ្លូវការ</small>
+                                    <div class="d-flex gap-2 mt-auto pt-3">
+                                        <button type="button" class="btn-solid theme-secondary flex-fill"
+                                            data-bs-toggle="dialog" data-bs-target="#exampleDialog">មើលលក្ខខណ្ឌ</button>
+                                        <a href="apply.html" class="btn-solid theme-primary flex-fill">ដាក់ពាក្យ <i
+                                                class="fa-solid fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </div>
-                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
-                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
-                            </article>
+                            </div>
                         </div>
 
-                        <!-- LAW -->
-                        <div class="col-12  scholarship-item law">
-                            <article class="scholar-card">
-                                <div class="scholar-top">
-                                    <div class="scholar-icon"><i class="fa-solid fa-scale-balanced"></i></div>
-                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                        <!-- ========== LAW ========== -->
+                        <div class="col-12 col-md-6 col-lg-4 scholarship-item law">
+                            <div class="card scholar-compact h-100">
+                                <div class="scholar-banner bn-indigo">
+                                    <span class="scholar-flag us"></span>
+                                    <span class="scholar-chip">អាហារូបករណ៍អន្តរជាតិ</span>
                                 </div>
-                                <h2>អាហារូបករណ៍ Fulbright ផ្នែកច្បាប់</h2>
-                                <div class="org">រដ្ឋាភិបាលសហរដ្ឋអាមេរិក</div>
-                                <p class="mt-3">
-                                    ឱកាសសិក្សានៅសហរដ្ឋអាមេរិក សម្រាប់និស្សិតដែលចង់ពង្រឹង
-                                    ចំណេះដឹងផ្នែកច្បាប់ សិទ្ធិមនុស្ស និងទំនាក់ទំនងអន្តរជាតិ។
-                                </p>
-                                <div class="facts">
-                                    <div><small>ប្រទេស</small><strong>សហរដ្ឋអាមេរិក 🇺🇸</strong></div>
-                                    <div><small>កម្រិតសិក្សា</small><strong>អនុបណ្ឌិត</strong></div>
-                                    <div><small>ជំនាញ</small><strong>Law & Human Rights</strong></div>
-                                    <div><small>អត្ថប្រយោជន៍</small><strong>ជំនួយថ្លៃសិក្សា និងការរស់នៅ</strong></div>
-                                    <div class="col-12">
-                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
-                                        <strong>អាស្រ័យលើកម្មវិធី Fulbright ក្នុងប្រទេសកម្ពុជា</strong>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="mb-0">អាហារូបករណ៍ Fulbright ផ្នែកច្បាប់</h5>
+                                    <small class="fg-3">រដ្ឋាភិបាលសហរដ្ឋអាមេរិក</small>
+                                    <p class="card-text fg-2 mt-2 mb-2 scholar-desc">
+                                        សិក្សានៅអាមេរិក ដើម្បីពង្រឹងចំណេះដឹងផ្នែកច្បាប់ សិទ្ធិមនុស្ស
+                                        និងទំនាក់ទំនងអន្តរជាតិ។
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="scholar-tag tag-blue">អនុបណ្ឌិត</span>
+                                        <span class="scholar-tag tag-green">Law &amp; Human Rights</span>
+                                    </div>
+                                    <small class="fg-3"><i class="fa-solid fa-calendar-days me-1"></i> អាស្រ័យលើកម្មវិធី
+                                        Fulbright ក្នុងកម្ពុជា</small>
+                                    <div class="d-flex gap-2 mt-auto pt-3">
+                                        <button type="button" class="btn-solid theme-secondary flex-fill"
+                                            data-bs-toggle="dialog" data-bs-target="#exampleDialog">មើលលក្ខខណ្ឌ</button>
+                                        <a href="apply.html" class="btn-solid theme-primary flex-fill">ដាក់ពាក្យ <i
+                                                class="fa-solid fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </div>
-                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
-                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
-                            </article>
+                            </div>
                         </div>
 
-                        <!-- EDUCATION -->
-                        <div class="col-12  scholarship-item education">
-                            <article class="scholar-card">
-                                <div class="scholar-top">
-                                    <div class="scholar-icon"><i class="fa-solid fa-book-open"></i></div>
-                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                        <!-- ========== EDUCATION ========== -->
+                        <div class="col-12 col-md-6 col-lg-4 scholarship-item education">
+                            <div class="card scholar-compact h-100">
+                                <div class="scholar-banner bn-green">
+                                    <span class="scholar-flag eu"></span>
+                                    <span class="scholar-chip">អាហារូបករណ៍អន្តរជាតិ</span>
                                 </div>
-                                <h2>អាហារូបករណ៍ Erasmus Mundus ផ្នែកអប់រំ</h2>
-                                <div class="org">សហភាពអឺរ៉ុប</div>
-                                <p class="mt-3">
-                                    ឱកាសសិក្សានៅសាកលវិទ្យាល័យអឺរ៉ុបច្រើនប្រទេស
-                                    សម្រាប់អ្នកចាប់អារម្មណ៍លើវិទ្យាសាស្ត្រអប់រំ
-                                    ការបង្រៀន និងការអភិវឌ្ឍការសិក្សា។
-                                </p>
-                                <div class="facts">
-                                    <div><small>ប្រទេស</small><strong>បណ្តាប្រទេសអឺរ៉ុប 🇪🇺</strong></div>
-                                    <div><small>កម្រិតសិក្សា</small><strong>អនុបណ្ឌិត</strong></div>
-                                    <div><small>ជំនាញ</small><strong>Education</strong></div>
-                                    <div><small>អត្ថប្រយោជន៍</small><strong>អាហារូបករណ៍ និងប្រាក់ឧបត្ថម្ភ</strong></div>
-                                    <div class="col-12">
-                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
-                                        <strong>អាស្រ័យលើកម្មវិធីនីមួយៗ</strong>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="mb-0">អាហារូបករណ៍ Erasmus Mundus ផ្នែកអប់រំ</h5>
+                                    <small class="fg-3">សហភាពអឺរ៉ុប</small>
+                                    <p class="card-text fg-2 mt-2 mb-2 scholar-desc">
+                                        សិក្សានៅសាកលវិទ្យាល័យអឺរ៉ុបច្រើនប្រទេស ផ្នែកវិទ្យាសាស្ត្រអប់រំ និងការបង្រៀន។
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="scholar-tag tag-blue">អនុបណ្ឌិត</span>
+                                        <span class="scholar-tag tag-green">Education</span>
+                                    </div>
+                                    <small class="fg-3"><i class="fa-solid fa-calendar-days me-1"></i>
+                                        អាស្រ័យលើកម្មវិធីនីមួយៗ</small>
+                                    <div class="d-flex gap-2 mt-auto pt-3">
+                                        <button type="button" class="btn-solid theme-secondary flex-fill"
+                                            data-bs-toggle="dialog" data-bs-target="#exampleDialog">មើលលក្ខខណ្ឌ</button>
+                                        <a href="apply.html" class="btn-solid theme-primary flex-fill">ដាក់ពាក្យ <i
+                                                class="fa-solid fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </div>
-                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
-                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
-                            </article>
+                            </div>
                         </div>
 
-                        <!-- TOURISM -->
-                        <div class="col-12  scholarship-item tourism">
-                            <article class="scholar-card">
-                                <div class="scholar-top">
-                                    <div class="scholar-icon"><i class="fa-solid fa-plane"></i></div>
-                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                        <!-- ========== TOURISM ========== -->
+                        <div class="col-12 col-md-6 col-lg-4 scholarship-item tourism">
+                            <div class="card scholar-compact h-100">
+                                <div class="scholar-banner bn-cyan">
+                                    <span class="scholar-flag tr"></span>
+                                    <span class="scholar-chip">អាហារូបករណ៍អន្តរជាតិ</span>
                                 </div>
-                                <h2>អាហារូបករណ៍រដ្ឋាភិបាលតួកគី ផ្នែកទេសចរណ៍</h2>
-                                <div class="org">Türkiye Scholarships</div>
-                                <p class="mt-3">
-                                    ឱកាសសិក្សានៅប្រទេសតួកគី ផ្នែកគ្រប់គ្រងទេសចរណ៍
-                                    សណ្ឋាគារ និងបដិសណ្ឋារកិច្ច ដើម្បីអភិវឌ្ឍជំនាញ
-                                    ក្នុងវិស័យទេសចរណ៍អន្តរជាតិ។
-                                </p>
-                                <div class="facts">
-                                    <div><small>ប្រទេស</small><strong>តួកគី 🇹🇷</strong></div>
-                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
-                                    <div><small>ជំនាញ</small><strong>Tourism Management</strong></div>
-                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
-                                    <div class="col-12">
-                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
-                                        <strong>អាស្រ័យលើការប្រកាសប្រចាំឆ្នាំ</strong>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="mb-0">អាហារូបករណ៍រដ្ឋាភិបាលតួកគី ផ្នែកទេសចរណ៍</h5>
+                                    <small class="fg-3">Türkiye Scholarships</small>
+                                    <p class="card-text fg-2 mt-2 mb-2 scholar-desc">
+                                        សិក្សាផ្នែកគ្រប់គ្រងទេសចរណ៍ សណ្ឋាគារ និងបដិសណ្ឋារកិច្ចនៅប្រទេសតួកគី។
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="scholar-tag tag-blue">បរិញ្ញាបត្រ / អនុបណ្ឌិត</span>
+                                        <span class="scholar-tag tag-green">Tourism Management</span>
+                                    </div>
+                                    <small class="fg-3"><i class="fa-solid fa-calendar-days me-1"></i>
+                                        អាស្រ័យលើការប្រកាសប្រចាំឆ្នាំ</small>
+                                    <div class="d-flex gap-2 mt-auto pt-3">
+                                        <button type="button" class="btn-solid theme-secondary flex-fill"
+                                            data-bs-toggle="dialog" data-bs-target="#exampleDialog">មើលលក្ខខណ្ឌ</button>
+                                        <a href="apply.html" class="btn-solid theme-primary flex-fill">ដាក់ពាក្យ <i
+                                                class="fa-solid fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </div>
-                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
-                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
-                            </article>
+                            </div>
                         </div>
 
-                        <!-- AGRICULTURE -->
-                        <div class="col-12  scholarship-item agriculture">
-                            <article class="scholar-card">
-                                <div class="scholar-top">
-                                    <div class="scholar-icon"><i class="fa-solid fa-seedling"></i></div>
-                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                        <!-- ========== AGRICULTURE ========== -->
+                        <div class="col-12 col-md-6 col-lg-4 scholarship-item agriculture">
+                            <div class="card scholar-compact h-100">
+                                <div class="scholar-banner bn-lime">
+                                    <span class="scholar-flag ch">🇨🇳</span>
+                                    <span class="scholar-chip">អាហារូបករណ៍អន្តរជាតិ</span>
                                 </div>
-                                <h2>អាហារូបករណ៍ CSC ផ្នែកវិទ្យាសាស្ត្រកសិកម្ម</h2>
-                                <div class="org">China Scholarship Council</div>
-                                <p class="mt-3">
-                                    ឱកាសសិក្សានៅប្រទេសចិន ដើម្បីអភិវឌ្ឍចំណេះដឹង
-                                    ផ្នែកកសិកម្មទំនើប បច្ចេកវិទ្យាកសិកម្ម
-                                    និងសុវត្ថិភាពចំណីអាហារ។
-                                </p>
-                                <div class="facts">
-                                    <div><small>ប្រទេស</small><strong>ចិន 🇨🇳</strong></div>
-                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
-                                    <div><small>ជំនាញ</small><strong>Agricultural Science</strong></div>
-                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
-                                    <div class="col-12">
-                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
-                                        <strong>អាស្រ័យលើសាកលវិទ្យាល័យ</strong>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="mb-0">អាហារូបករណ៍ CSC ផ្នែកវិទ្យាសាស្ត្រកសិកម្ម</h5>
+                                    <small class="fg-3">China Scholarship Council</small>
+                                    <p class="card-text fg-2 mt-2 mb-2 scholar-desc">
+                                        សិក្សានៅចិន ផ្នែកកសិកម្មទំនើប បច្ចេកវិទ្យាកសិកម្ម និងសុវត្ថិភាពចំណីអាហារ។
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="scholar-tag tag-blue">បរិញ្ញាបត្រ / អនុបណ្ឌិត</span>
+                                        <span class="scholar-tag tag-green">Agricultural Science</span>
+                                    </div>
+                                    <small class="fg-3"><i class="fa-solid fa-calendar-days me-1"></i>
+                                        អាស្រ័យលើសាកលវិទ្យាល័យ</small>
+                                    <div class="d-flex gap-2 mt-auto pt-3">
+                                        <button type="button" class="btn-solid theme-secondary flex-fill"
+                                            data-bs-toggle="dialog" data-bs-target="#exampleDialog">មើលលក្ខខណ្ឌ</button>
+                                        <a href="apply.html" class="btn-solid theme-primary flex-fill">ដាក់ពាក្យ <i
+                                                class="fa-solid fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </div>
-                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
-                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
-                            </article>
+                            </div>
                         </div>
 
-                        <!-- ARCHITECTURE -->
-                        <div class="col-12 scholarship-item architecture">
-                            <article class="scholar-card">
-                                <div class="scholar-top">
-                                    <div class="scholar-icon"><i class="fa-solid fa-compass-drafting"></i></div>
-                                    <span class="open-pill">អាហារូបករណ៍អន្តរជាតិ</span>
+                        <!-- ========== ARCHITECTURE ========== -->
+                        <div class="col-12 col-md-6 col-lg-4 scholarship-item architecture">
+                            <div class="card scholar-compact h-100">
+                                <div class="scholar-banner bn-slate">
+                                    <span class="scholar-flag jp"></span>
+                                    <span class="scholar-chip">អាហារូបករណ៍អន្តរជាតិ</span>
                                 </div>
-                                <h2>អាហារូបករណ៍ MEXT ផ្នែកស្ថាបត្យកម្ម</h2>
-                                <div class="org">រដ្ឋាភិបាលប្រទេសជប៉ុន</div>
-                                <p class="mt-3">
-                                    ឱកាសសិក្សានៅប្រទេសជប៉ុន សម្រាប់និស្សិតដែលមានចំណាប់អារម្មណ៍
-                                    លើការរចនាស្ថាបត្យកម្ម ការរៀបចំទីក្រុង
-                                    និងបច្ចេកវិទ្យាសំណង់ទំនើប។
-                                </p>
-                                <div class="facts">
-                                    <div><small>ប្រទេស</small><strong>ជប៉ុន 🇯🇵</strong></div>
-                                    <div><small>កម្រិតសិក្សា</small><strong>បរិញ្ញាបត្រ / អនុបណ្ឌិត</strong></div>
-                                    <div><small>ជំនាញ</small><strong>Architecture</strong></div>
-                                    <div><small>អត្ថប្រយោជន៍</small><strong>ថ្លៃសិក្សា និងប្រាក់ឧបត្ថម្ភ</strong></div>
-                                    <div class="col-12">
-                                        <small>កាលបរិច្ឆេទផុតកំណត់</small>
-                                        <strong>អាស្រ័យលើការប្រកាសផ្លូវការ</strong>
+                                <div class="card-body d-flex flex-column">
+                                    <h5 class="mb-0">អាហារូបករណ៍ MEXT ផ្នែកស្ថាបត្យកម្ម</h5>
+                                    <small class="fg-3">រដ្ឋាភិបាលប្រទេសជប៉ុន</small>
+                                    <p class="card-text fg-2 mt-2 mb-2 scholar-desc">
+                                        សិក្សានៅជប៉ុន ផ្នែកការរចនាស្ថាបត្យកម្ម ការរៀបចំទីក្រុង
+                                        និងបច្ចេកវិទ្យាសំណង់ទំនើប។
+                                    </p>
+                                    <div class="d-flex flex-wrap gap-2 mb-2">
+                                        <span class="scholar-tag tag-blue">បរិញ្ញាបត្រ / អនុបណ្ឌិត</span>
+                                        <span class="scholar-tag tag-green">Architecture</span>
+                                    </div>
+                                    <small class="fg-3"><i class="fa-solid fa-calendar-days me-1"></i>
+                                        អាស្រ័យលើការប្រកាសផ្លូវការ</small>
+                                    <div class="d-flex gap-2 mt-auto pt-3">
+                                        <button type="button" class="btn-solid theme-secondary flex-fill"
+                                            data-bs-toggle="dialog" data-bs-target="#exampleDialog">មើលលក្ខខណ្ឌ</button>
+                                        <a href="apply.html" class="btn-solid theme-primary flex-fill">ដាក់ពាក្យ <i
+                                                class="fa-solid fa-arrow-right ms-1"></i></a>
                                     </div>
                                 </div>
-                                <a href="apply.html" class="btn btn-primary rounded-pill px-4">
-                                    ដាក់ពាក្យ <i class="fa-solid fa-arrow-right ms-1"></i>
-                                </a>
-                            </article>
+                            </div>
                         </div>
 
                     </div>
@@ -611,6 +857,9 @@
             </section>
         </div>
     </main>
+
+
+
     <!-- Footer -->
     <footer class="pt-12 pb-7">
         <div class="container">
@@ -680,6 +929,68 @@
             </div>
         </div>
     </footer>
+
+    <!-- ======>> JavaScript <<====== -->
+    <script>
+        // Convert 0-9 to Khmer numerals
+        function toKhmerNumber(num) {
+            const khmer = ['០', '១', '២', '៣', '៤', '៥', '៦', '៧', '៨', '៩'];
+            return String(num).split('').map(d => khmer[d] ?? d).join('');
+        }
+
+        // Switch between tabs
+        function switchTab(tab) {
+            const tabs = {
+                checklist: { btn: 'tabBtnChecklist', content: 'tabContentChecklist' },
+                criteria: { btn: 'tabBtnCriteria', content: 'tabContentCriteria' },
+                timeline: { btn: 'tabBtnTimeline', content: 'tabContentTimeline' }
+            };
+
+            Object.entries(tabs).forEach(([key, ids]) => {
+                const btn = document.getElementById(ids.btn);
+                const content = document.getElementById(ids.content);
+                const active = key === tab;
+
+                content.classList.toggle('hidden', !active);
+
+                btn.classList.toggle('border-blue-600', active);
+                btn.classList.toggle('text-blue-600', active);
+                btn.classList.toggle('border-transparent', !active);
+            });
+        }
+
+        // Update checklist progress
+        function updateProgress() {
+            const boxes = document.querySelectorAll('#checklistContainer input[type="checkbox"]');
+            const total = boxes.length;
+            const done = [...boxes].filter(b => b.checked).length;
+            const percent = total ? Math.round((done / total) * 100) : 0;
+
+            document.getElementById('checklistProgressBar').style.width = percent + '%';
+            document.getElementById('checklistProgressText').textContent =
+                `${percent}% (${toKhmerNumber(done)}/${toKhmerNumber(total)})`;
+        }
+
+        // Download checklist (simple text file version)
+        function downloadChecklist() {
+            const items = document.querySelectorAll('#checklistContainer label');
+            let text = 'Scholarship Application Checklist\n\n';
+
+            items.forEach(label => {
+                const checked = label.querySelector('input').checked ? '[x]' : '[ ]';
+                const title = label.querySelector('.font-bold').textContent.trim().replace(/\s+/g, ' ');
+                text += `${checked} ${title}\n`;
+            });
+
+            const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = 'scholarship-checklist.txt';
+            a.click();
+            URL.revokeObjectURL(url);
+        }
+    </script>
 
 
     <script type="module">
