@@ -62,19 +62,38 @@ main input:focus-visible {
 
 /* ---------- Hero ---------- */
 .cv-hero {
-    background: var(--cv-bg);
+    position: relative;
+    background-image: url(../img/Virak/banner/banner-cover-letter.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     padding: 3rem 0 4.5rem;
     border-bottom: 1px solid var(--cv-line);
+    overflow: hidden;
+}
+
+.cv-hero .blur {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    background: rgba(0, 0, 0, 0.255);
+    backdrop-filter: blur(1px);
+}
+
+.cv-hero>.container {
+    position: relative;
+    z-index: 1;
 }
 
 .cv-breadcrumb {
     gap: 0.6rem;
-    color: var(--cv-muted);
+    color: var(--cv-paper);
     margin-bottom: 1rem;
 }
 
 .cv-breadcrumb a {
-    color: var(--cv-blue);
+    color: var(--cv-paper);
     text-decoration: none;
 }
 
@@ -83,15 +102,17 @@ main input:focus-visible {
 }
 
 .cv-hero-title {
-    font-size: clamp(1.9rem, 4.2vw, 3rem);
+    font-size: clamp(2rem, 4.6vw, 3.2rem);
     margin-bottom: 1.25rem;
     max-width: 22ch;
+    color: var(--cv-paper);
 }
 
 .cv-hero-lead {
     font-size: 1.1rem;
     max-width: 720px;
     margin-bottom: 2rem;
+    color: var(--cv-paper);
 }
 
 .cv-hero .btn-hero {
@@ -126,6 +147,7 @@ main input:focus-visible {
 .cv-lead {
     max-width: 70ch;
     margin-bottom: 1.5rem;
+    color: var(--cv-paper);
 }
 
 /* ---------- CV sheet mockup ---------- */
@@ -335,6 +357,7 @@ main input:focus-visible {
 .cv-letter p {
     margin-bottom: 1.1rem;
 }
+
 .cv-letter-sign {
     margin: 1.5rem 0 0 !important;
 }
